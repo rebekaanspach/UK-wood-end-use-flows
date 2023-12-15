@@ -1,0 +1,967 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix quantitykind: <http://qudt.org/vocab/quantitykind/> .
+
+@prefix probs: <https://ukfires.org/probs/ontology/> .
+@prefix sys: <http://ukfires.org/analyses/UK-wood/system/> .
+@prefix data: <http://ukfires.org/analyses/UK-wood/data/> .
+
+# These are just to work around limitations in the flexibility for allowing just
+# imports or just exports.
+
+#import fencing
+
+
+
+data:Observation-NoExports-RefurbishedPallets a probs:DirectObservation ;
+    probs:metric quantitykind:Dimensionless ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:RefurbishedPallets .
+
+data:Observation-NoImports-RefurbishedPallets a probs:DirectObservation ;
+    probs:metric quantitykind:Dimensionless ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:RefurbishedPallets .
+
+
+
+data:Observation-NoExports-RefurbishedPallets a probs:DirectObservation ;
+    probs:metric quantitykind:Mass ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:RefurbishedPallets .
+
+data:Observation-NoImports-RefurbishedPallets a probs:DirectObservation ;
+    probs:metric quantitykind:Mass ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:RefurbishedPallets .
+
+
+data:Observation-NoExports-RecycledWoodFibreToPallets a probs:DirectObservation ;
+    probs:metric quantitykind:Mass ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:RecycledWoodFibreToPallets .
+
+data:Observation-NoImports-RecycledWoodFibreToPallets a probs:DirectObservation ;
+    probs:metric quantitykind:Mass ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:RecycledWoodFibreToPallets .
+
+
+data:Observation-NoExports-WBPFibres a probs:DirectObservation ;
+    probs:metric quantitykind:Mass ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:WBPFibres .
+
+data:Observation-NoImports-WBPFibres a probs:DirectObservation ;
+    probs:metric quantitykind:Mass ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:WBPFibres .
+
+
+
+data:Observation-NoExports-RenovationsWoodFibres a probs:DirectObservation ;
+    probs:metric quantitykind:Mass ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:RenovationsWoodFibres .
+
+data:Observation-NoImports-RenovationsWoodFibres a probs:DirectObservation ; 
+    probs:metric quantitykind:Mass ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:RenovationsWoodFibres .
+
+
+data:Observation-NoExports-OtherEnergyFeedstocksWoodFibres a probs:DirectObservation ;
+    probs:metric quantitykind:Volume ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:OtherEnergyFeedstocksWoodFibres .
+
+data:Observation-NoImports-OtherEnergyFeedstocksWoodFibres a probs:DirectObservation ;
+    probs:metric quantitykind:Volume ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:OtherEnergyFeedstocksWoodFibres .
+
+
+data:Observation-NoExports-WoodPelletsWoodFibres a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:WoodPelletsWoodFibres .
+
+data:Observation-NoImports-WoodPelletsWoodFibres a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:WoodPelletsWoodFibres .
+
+
+data:Observation-NoExports-WoodFramesForNewStructures a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:WoodFramesForNewStructures .
+
+data:Observation-NoImports-WoodFramesForNewStructures a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:WoodFramesForNewStructures .
+
+
+data:Observation-NoExports-WoodFloorFramingForNewStructures a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:WoodFloorFramingForNewStructures .
+
+data:Observation-NoImports-WoodFloorFramingForNewStructures a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:WoodFloorFramingForNewStructures .
+
+
+
+data:Observation-NoImports-WoodRoofsForNewStructures  a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:WoodRoofsForNewStructures  .
+
+
+data:Observation-NoExports-WoodRoofsForNewStructures  a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:WoodRoofsForNewStructures  .
+
+
+data:Observation-NoImports-EndTerracedHouses a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:EndTerracedHouses .
+
+data:Observation-NoImports-MidTerracedHouses a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:MidTerracedHouses .
+
+data:Observation-NoImports-SemiDetachedHouses a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:SemiDetachedHouses .
+
+data:Observation-NoImports-DetachedHouses a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:DetachedHouses .
+
+data:Observation-NoImports-Bungalows a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:Bungalows .
+
+data:Observation-NoImports-FlatLowRise a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:FlatLowRise .
+
+data:Observation-NoImports-ConvertedFlats a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:ConvertedFlats .
+
+
+data:Observation-NoExports-EndTerracedHouses a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:EndTerracedHouses .
+
+data:Observation-NoExports-MidTerracedHouses a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:MidTerracedHouses .
+
+data:Observation-NoExports-SemiDetachedHouses a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:SemiDetachedHouses .
+
+data:Observation-NoExports-DetachedHouses a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:DetachedHouses .
+
+data:Observation-NoExports-Bungalows a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:Bungalows .
+
+data:Observation-NoExports-FlatLowRise a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:FlatLowRise .
+
+data:Observation-NoExports-ConvertedFlats a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:ConvertedFlats .
+
+
+
+data:Observation-NoExports-PostConsumerWood a probs:DirectObservation ;
+    probs:metric quantitykind:Volume ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:PostConsumerWood .
+
+data:Observation-NoImports-PostConsumerWood a probs:DirectObservation ;
+    probs:metric quantitykind:Volume ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:PostConsumerWood .
+
+
+data:Observation-NoExports-ByProducts a probs:DirectObservation ;
+    probs:metric quantitykind:Mass ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:ByProducts .
+
+data:Observation-NoImports-ByProducts a probs:DirectObservation ;
+    probs:metric quantitykind:Mass ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:ByProducts .
+
+
+
+data:Observation-NoExports-NewPulp a probs:DirectObservation ;
+    probs:metric quantitykind:Mass ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:NewPulp .
+
+data:Observation-NoImports-NewPulp a probs:DirectObservation ;
+    probs:metric quantitykind:Mass ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:NewPulp .
+
+
+data:Observation-NoExports-Pulp a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:Pulp .
+
+
+data:Observation-NoExports-RecycledPulp a probs:DirectObservation ;
+    probs:metric quantitykind:Mass ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:RecycledPulp .
+
+data:Observation-NoImports-RecycledPulp a probs:DirectObservation ;
+    probs:metric quantitykind:Mass ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:RecycledPulp .
+
+
+data:Observation-NoImports-OtherEnergyFeedstocks a probs:DirectObservation ;
+    probs:metric quantitykind:Mass ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:OtherEnergyFeedstocks .
+
+data:Observation-NoExports-OtherEnergyFeedstocks a probs:DirectObservation ;
+    probs:metric quantitykind:Mass ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:OtherEnergyFeedstocks .
+
+
+
+
+
+
+
+data:Observation-NoImports-WoodStructuresToRenovations a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:WoodStructuresToRenovations .
+
+data:Observation-NoExports-WoodStructuresToRenovations a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:WoodStructuresToRenovations .
+
+data:Observation-NoImports-SawnwoodToRMIAndOther a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:SawnwoodToRMIAndOther .
+
+
+data:Observation-NoImports-WoodStructuresToRenovations a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:WoodStructuresToRenovations .
+
+data:Observation-NoExports-WoodStructuresToRenovations a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:WoodStructuresToRenovations .
+
+data:Observation-NoImports-ForestResidues a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:ForestResidues .
+
+
+data:Observation-NoExports-ForestResidues a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:ForestResidues .
+
+data:Observation-NoImports-PostConsumerWood a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:PostConsumerWood .
+
+
+data:Observation-NoExports-PostConsumerWood a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:PostConsumerWood .
+
+data:Observation-NoImports-InUse a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:InUse .
+
+
+data:Observation-NoExports-InUse a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:InUse .
+
+
+data:Observation-NoImports-InUseProducts a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:InUseProducts .
+
+
+data:Observation-NoExports-InUseProducts a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:InUseProducts .
+
+
+
+data:Observation-NoImports-OtherEngineeredWoodProductsToCst a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:OtherEngineeredWoodProductsToCst .
+
+data:Observation-NoExports-OtherEngineeredWoodProductsToCst a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:OtherEngineeredWoodProductsToCst .
+
+
+data:Observation-NoExports-SawnwoodToRMIAndOther a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:SawnwoodToRMIAndOther .
+
+
+data:Observation-NoImports-ParticleboardToRMIAndOther a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:ParticleboardToRMIAndOther .
+
+
+data:Observation-NoExports-ParticleboardToRMIAndOther a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:ParticleboardToRMIAndOther .
+
+
+
+data:Observation-NoExports-FibreboardToRMIAndOther a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:FibreboardToRMIAndOther .
+
+data:Observation-NoImports-FibreboardToRMIAndOther a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:FibreboardToRMIAndOther .
+
+
+data:Observation-NoExports-PlywoodToRMIAndOther a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:PlywoodToRMIAndOther .
+
+data:Observation-NoImports-PlywoodToRMIAndOther a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:PlywoodToRMIAndOther .
+
+
+data:Observation-NoImports-PreConsumerWasteProducts a probs:DirectObservation ;
+    probs:metric quantitykind:Mass ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:PreConsumerWasteProducts .
+
+data:Observation-NoExports-PreConsumerWasteProducts a probs:DirectObservation ;
+    probs:metric quantitykind:Mass ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:PreConsumerWasteProducts .
+
+data:Observation-NoExports-PreConsumerWasteConstruction a probs:DirectObservation ;
+    probs:metric quantitykind:Mass ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:PreConsumerWasteConstruction .
+
+data:Observation-NoImports-PreConsumerWasteConstruction a probs:DirectObservation ;
+    probs:metric quantitykind:Mass ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:PreConsumerWasteConstruction .
+
+
+data:Observation-NoImports-NewBuilds a probs:DirectObservation ;
+    probs:metric quantitykind:Mass ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:NewBuilds .
+
+
+data:Observation-NoExports-NewBuilds a probs:DirectObservation ;
+    probs:metric quantitykind:Mass ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:NewBuilds .
+
+
+
+
+
+data:Observation-NoExports-WoodFloorFramingForNewStructuresPlywood a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:WoodFloorFramingForNewStructuresPlywood .
+
+data:Observation-NoImports-WoodFloorFramingForNewStructuresPlywood a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:WoodFloorFramingForNewStructuresPlywood  .
+
+data:Observation-NoExports-FencingRailsAndBoards a probs:DirectObservation ;
+    probs:metric quantitykind:Mass ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:FencingRailsAndBoards  .
+
+data:Observation-NoImports-FencingRailsAndBoards a probs:DirectObservation ;
+    probs:metric quantitykind:Mass ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:FencingRailsAndBoards  .
+
+
+data:Observation-NoExports-Decking a probs:DirectObservation ;
+    probs:metric quantitykind:Dimensionless ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:Decking  .
+
+data:Observation-NoImports-Decking a probs:DirectObservation ;
+    probs:metric quantitykind:Dimensionless ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:Decking  .
+
+
+data:Observation-NoExports-WoodenOutbuildings a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:WoodenOutbuildings   .
+
+data:Observation-NoImports-WoodenOutbuildings a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:WoodenOutbuildings   .
+
+data:Observation-NoExports-SawnProductsToCst a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:SawnProductsToCst   .
+
+data:Observation-NoImports-SawnProductsToCst a probs:DirectObservation ;
+    probs:metric quantitykind:Area ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:SawnProductsToCst   .
+
+
+data:Observation-NoExports-FencingPosts a probs:DirectObservation ;
+    probs:metric quantitykind:Mass ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:FencingPosts   .
+
+data:Observation-NoImports-FencingPosts a probs:DirectObservation ;
+    probs:metric quantitykind:Mass ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:FencingPosts   .
+
+
+data:Observation-NoExports-SawnwoodToFencingAndOutdoor a probs:DirectObservation ;
+    probs:metric quantitykind:Mass ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:SawnwoodToFencingAndOutdoor   .
+
+data:Observation-NoImports-SawnwoodToFencingAndOutdoor a probs:DirectObservation ;
+    probs:metric quantitykind:Mass ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:SawnwoodToFencingAndOutdoor   .
+
+
+data:Observation-NoExports-RoundwoodToFencingAndOutdoor a probs:DirectObservation ;
+    probs:metric quantitykind:Mass ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Export ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:RoundwoodToFencingAndOutdoor   .
+
+data:Observation-NoImports-RoundwoodToFencingAndOutdoor   a probs:DirectObservation ;
+    probs:metric quantitykind:Mass ;
+    probs:measurement 0.0 ;
+    probs:hasRegion probs:Region_UnitedKingdom ;
+    probs:hasTimePeriod probs:TimePeriod_YearOf2019 ;
+    probs:hasRole probs:Import ;
+    probs:partOfDataset data:UKWoodDataExtraObs ;
+    probs:bound probs:ExactBound ;
+    probs:objectDefinedBy sys:RoundwoodToFencingAndOutdoor   .
+
+
+
+
+
+
+
+

@@ -1,0 +1,29 @@
+name: UK-wood-mfa
+channels: [conda-forge, nodefaults]
+dependencies:
+  - python=3.9
+  - doit=0.33.*
+  - numpy=1.20.*
+  - pandas=1.2.*
+  - openpyxl=3.0.*
+  - scipy=1.*
+  - attrs=20.*
+  - matplotlib=3.3.*
+  - libcst=0.3.*
+  - cvxpy=1.1.*
+  - pygraphviz=1.7
+  - rdflib=5.0.*
+  - ipysankeywidget=0.5.*
+  - jupyter-book=0.13.*
+  - jupytext=1.13.*
+  - notebook=6.2.*
+
+  - pytest=6.2.*
+  - pip=21.*
+  - pip:
+      - git+https://github.com/ricklupton/floweaver.git@38215850519d08cd791145cde3c1e8fa0cfe928b#egg=floweaver
+      - sphinx_probs_rdf==0.1.7
+      - rdfox_runner==0.3.1
+      - git+https://github.com/ukfires/semantic-sankeys.git@ee59acd2b2cb5e22263b3896ba6a7ce8cbd486b3#egg=semantic-sankeys
+      - git+https://github.com/ukfires/probs-runner.git@e9f794c5dd6c403f5e217b3ad9cbe7335a3a9141#egg=probs-runner
+      - git+https://github.com/ukfires/probs-models.git@643ddedfdc15beebfae62bc5057b7f269f611449#egg=probs-models

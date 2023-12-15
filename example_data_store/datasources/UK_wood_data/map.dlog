@@ -1,0 +1,19 @@
+@prefix data: <http://ukfires.org/probs/data/UK-wood/> .
+
+# Map the entries in the CSV file to DirectObservations
+
+:DirectObservation[?ID] ,
+[?ID, :objectDirectlyDefinedBy, ?Object] ,
+[?ID, :processDirectlyDefinedBy, ?Process] ,
+[?ID, :hasRegion, ?Region] ,
+[?ID, :hasTimePeriod, ?TimePeriod] ,
+[?ID, :hasRole, ?Role] ,
+[?ID, :partOfDataset, data:UKWoodData] ,
+[?ID, :bound, :ExactBound] ,
+[?ID, :metric, ?Metric]
+        :- ufrd:UKWoodObservations(?ID, ?Region, ?TimePeriod, ?Role, ?Object, ?Process, ?Metric, ?Measurement) .
+
+# if ?PRODQNT is not "absent"
+[?ID, :measurement, ?Measurement]
+        :- ufrd:UKWoodObservations(?ID, ?Region, ?TimePeriod, ?Role, ?Object, ?Process, ?Metric, ?Measurement) ,
+        FILTER(BOUND(?Measurement)) .

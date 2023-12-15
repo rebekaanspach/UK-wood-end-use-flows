@@ -1,0 +1,24 @@
+# Book settings
+title: Global glass MFA model
+author: Rick Lupton
+copyright: "2021"
+# logo: logo.png
+
+# html:
+#   favicon: "favicon.png"
+
+parse:
+  myst_enable_extensions:
+    - amsmath
+    - dollarmath
+  myst_dmath_double_inline: true
+
+latex:
+  latex_documents:
+    targetname: book.tex
+
+sphinx:
+  extra_extensions:
+    - sphinx_probs_rdf
+  config:
+    probs_rdf_system_prefix: "http://ukfires.org/analyses/global-glass/system/"

@@ -1,0 +1,32 @@
+# Load the csv file
+
+dsource register "UK_wood_observations"                    \
+    type    delimitedFile                                       \
+    file    "$(dir.root)/data/UK_wood_data/UK_wood_observations.csv"     \
+    header  true                                                \
+    quote   '"'
+
+# Define the columns:
+# Region,TimePeriod,Role,Object,Process,Measurement
+
+tupletable create ufrd:UKWoodObservations                                   \
+    dataSourceName  "UK_wood_observations"                                  \
+    "columns"       8                                                            \
+    "1"             "http://ukfires.org/probs/data/UK-wood/Observation-{ID}"     \
+    "1.datatype"    "iri"                                                        \
+    "2"             "https://ukfires.org/probs/ontology/Region_{Region}"         \
+    "2.datatype"    "iri"                                                        \
+    "3"             "https://ukfires.org/probs/ontology/TimePeriod_{TimePeriod}" \
+    "3.datatype"    "iri"                                                        \
+    "4"             "https://ukfires.org/probs/ontology/{Role}"                  \
+    "4.datatype"    "iri"                                                        \
+    "4.if-empty"    "absent"                                                     \
+    "5"             "http://ukfires.org/probs/data/UK-wood/{Object}"        \
+    "5.datatype"    "iri"                                                   \
+    "6"             "http://ukfires.org/probs/data/UK-wood/{Process}"        \
+    "6.datatype"    "iri"                                                       \
+    "7"             "http://qudt.org/vocab/quantitykind/{Metric}"               \
+    "7.datatype"    "iri"                                                       \
+    "8"             "{Measurement}"                                              \
+    "8.datatype"    "xsd:decimal"                                                \
+    "8.if-empty"    "absent"

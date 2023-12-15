@@ -1,0 +1,9 @@
+format: jb-book
+root: intro
+options:
+  caption: System structure
+chapters:
+- file: documentation
+- file: structure
+- file: results
+- file: optimisation_model

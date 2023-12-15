@@ -1,0 +1,363 @@
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+@prefix sys: <http://ukfires.org/analyses/UK-wood/system/> .
+@prefix model: <http://ukfires.org/analyses/UK-wood/model/> .
+@prefix recipe: <https://ukfires.org/probs/ontology/recipe/> .
+@prefix probs: <https://ukfires.org/probs/ontology/> .
+
+@prefix wood-data: <http://ukfires.org/probs/data/UK-wood/> .
+
+
+model:Model a probs:MFAModel ;
+    probs:hasProcess sys:SawmillsSoftwood , sys:SawmillsHardwood , sys:WBPFibresByProducts , sys:WBPFibresSoftwoodRoundwood , sys:WBPFibresRecycledWoodFibre , 
+    sys:VeneerSheetsManufacturing , sys:PlywoodManufacturing ,  sys:ParticleboardManufacturing, sys:FibreboardManufacturing ,
+    sys:FormworkScaffoldingManufacturing , sys:PulpmillsRecycledPaper , sys:PulpmillsByProducts ,  sys:NewPulpMaking , 
+    sys:DoorsConsumption , sys:FlooringConsumption , sys:OtherObjectsConsumption , sys:WoodPelletsConsumption , sys:OtherWoodContainersConsumption , sys:WindowsConsumption , 
+    sys:RailwaySleepersConsumption , sys:FormworkScaffoldingConsumption , 
+    sys:OtherEnergyFeedstocksConsumption ,  sys:GraphicPapersConsumption , sys:SanitaryPapersConsumption , sys:PackagingConsumption , 
+    sys:OtherPaperProductsConsumption , sys:FencingPostsConsumption , sys:RecycledWoodFibreDelivery , sys:RecycledPaperDelivery ,
+    sys:FencingRailsAndBoardsConsumption ,
+    sys:RailwaySleepersManufacturing , sys:OtherObjectsManufacturing ,  sys:GraphicPapersManufacturing , 
+    sys:SanitaryPapersManufacturing , sys:PackagingManufacturing , sys:OtherPaperProductsManufacturing ,
+    sys:HardwoodRoundwoodDelivery ,  
+    sys:SoftwoodRoundwoodDelivery ,
+    sys:PalletsConsumption ,  sys:WoodenBedroomFurnitureManufacturing , sys:RefurbishedPalletsConsumption ,
+    sys:WoodenKitchenFurnitureManufacturing , sys:SawnwoodToRepairMaintenanceImprovement , sys:ForestResiduesDelivery ,
+    sys:ParticleboardToRepairMaintenanceImprovement , sys:OtherEnergyFeedstocksForestResidues ,
+    sys:PlywoodToRepairMaintenanceImprovement , sys:WoodWoolAndFlourManufacturing , sys:WoodWoolAndFlourConsumption , sys:WoodCharcoalToOtherEnergyFeedstocks , sys:WoodCharcoalProduction ,
+    sys:FibreboardToRepairMaintenanceImprovement , sys:RecycledWoodFibreProcessingForPallets ,
+    sys:WoodenOfficeFurnitureManufacturing , sys:WoodenSeatsManufacturing , sys:WoodenOtherFurnitureManufacturing ,
+    sys:PalletsManufacturing , sys:RefurbishedPalletsManufacturing ,
+    sys:OtherEnergyFeedstocksSoftwoodRoundwood , sys:OtherEnergyFeedstocksHardwoodRoundwood , sys:OtherEnergyFeedstocksByProducts , sys:OtherEnergyFeedstocksPostConsumerWood ,
+
+    sys:WindowsManufacturing ,  sys:PreConsumerWasteProductsConsumption ,
+    sys:OtherEnergyFeedstocksProduction , sys:WoodPelletsManufacturing , 
+    sys:SawnwoodToFencingAndOutdoorManufacturing , 
+    sys:RoundwoodToFencingAndOutdoorManufacturing , sys:FencingPostsManufacturing , 
+    sys:WoodenBedroomFurnitureConsumption , 
+    sys:SawnwoodToRMIAndOtherConsumption , sys:ParticleboardToRMIAndOtherConsumption , sys:PlywoodToRMIAndOtherConsumption , sys:FibreboardToRMIAndOtherConsumption ,
+    sys:WoodenKitchenFurnitureConsumption , 
+    sys:WoodenOfficeFurnitureConsumption , sys:WoodenSeatsConsumption , sys:WoodenOtherFurnitureConsumption , 
+    sys:FencingRailsAndBoardsManufacturing ,
+     sys:OtherWoodContainersConsumption , sys:NewPulpMaking ,
+    sys:HousesToNewBuilds,
+    sys:EndTerracedHousesConstruction , sys:MidTerracedHousesConstruction , sys:NewBuildsConsumption ,
+    sys:SemiDetachedHousesConstruction , sys:DetachedHousesConstruction , sys:BungalowsConstruction , sys:FlatLowRiseConstruction , sys:ConvertedFlatsConstruction ,
+    sys:WoodFloorFramingForNewStructuresManufacturing , sys:WoodRoofsForNewStructuresManufacturing ,sys:WoodFramesForNewStructuresManufacturing ,
+    sys:DoorsManufacturing , sys:FlooringManufacturing ,  sys:OtherWoodContainersManufacturing ,  sys:OtherEngineeredWoodProductsConsumption ,  sys:OtherEngineeredWoodProductsToConstruction , sys:OtherEngineeredWoodProductsManufacturing,
+    sys:WoodPelletsManufacturingSoftwoodRoundwood , sys:WoodPelletsManufacturingByProducts   ;
+    
+    
+    probs:hasObject sys:SoftwoodRoundwood , sys:HardwoodRoundwood , sys:SoftwoodSawnwood , sys:HardwoodSawnwood , sys:ByProducts , 
+    sys:PostConsumerWood , sys:Particleboard , sys:Fibreboard , sys:WoodWoolAndFlour , sys:WoodCharcoal ,
+    sys:Plywood , sys:VeneerSheets , sys:PreConsumerWasteProducts , sys:PreConsumerWasteConstruction , sys:FormworkScaffolding , sys:RailwaySleepers , sys:OtherObjects , 
+    sys:OtherEnergyFeedstocks , sys:WoodPellets , sys:GraphicPapers , sys:SanitaryPapers , sys:Packaging , sys:OtherPaperProducts ,  sys:Windows , sys:Doors , sys:Flooring , sys:Pallets , 
+    sys:OtherWoodContainers , sys:RefurbishedPallets ,  sys:NewPulp ,  sys:OtherEngineeredWoodProducts ,  sys:OtherEngineeredWoodProductsToCst ,
+    sys:RecycledPaper , sys:RecycledWoodFibre ,  sys:Pulp  , sys:WBPFibres ,   sys:ForestResidues ,
+    sys:SawnwoodToFencingAndOutdoor , sys:RoundwoodToFencingAndOutdoor , sys:FencingPosts , sys:RecycledWoodFibreToPallets , 
+    sys:SawnwoodToRMIAndOther , sys:ParticleboardToRMIAndOther , sys:PlywoodToRMIAndOther , sys:FibreboardToRMIAndOther ,
+    sys:WoodenOfficeFurniture , sys:WoodenBedroomFurniture  , sys:WoodenKitchenFurniture , sys:WoodenSeats , sys:WoodenOtherFurniture  , 
+    sys:FencingRailsAndBoards ,  sys:RecycledPulp ,
+    sys:WoodFramesForNewStructures , sys:WoodFloorFramingForNewStructures, 
+    sys:WoodRoofsForNewStructures , sys:NewBuilds ,
+    sys:Bungalows , sys:FlatLowRise , sys:ConvertedFlats , sys:EndTerracedHouses , sys:MidTerracedHouses , sys:SemiDetachedHouses , sys:DetachedHouses ,
+    sys:OtherEnergyFeedstocksWoodFibres , sys:WoodPelletsWoodFibres  .
+
+
+
+sys:SoftwoodRoundwood probs:objectIsTraded "true"^^xsd:boolean .
+sys:SoftwoodSawnwood probs:objectIsTraded "true"^^xsd:boolean .
+sys:HardwoodRoundwood probs:objectIsTraded "true"^^xsd:boolean .
+sys:HardwoodSawnwood probs:objectIsTraded "true"^^xsd:boolean .
+sys:WoodPellets probs:objectIsTraded "true"^^xsd:boolean .
+sys:Pulp probs:objectIsTraded "true"^^xsd:boolean .
+sys:RecycledPulp probs:objectIsTraded "true"^^xsd:boolean .
+sys:OtherEnergyFeedstocks probs:objectIsTraded "true"^^xsd:boolean .
+sys:FencingPosts probs:objectIsTraded "true"^^xsd:boolean .
+sys:FencingRailsAndBoards probs:objectIsTraded "true"^^xsd:boolean .
+##sys:Decking probs:objectIsTraded "true"^^xsd:boolean .
+sys:WoodenOutbuildings probs:objectIsTraded "true"^^xsd:boolean .
+sys:PostConsumerWood probs:objectIsTraded "true"^^xsd:boolean .
+sys:Fibreboard probs:objectIsTraded "true"^^xsd:boolean .
+sys:Particleboard probs:objectIsTraded "true"^^xsd:boolean .
+sys:VeneerSheets probs:objectIsTraded "true"^^xsd:boolean .
+sys:Plywood probs:objectIsTraded "true"^^xsd:boolean .
+sys:GraphicPapers probs:objectIsTraded "true"^^xsd:boolean .
+sys:SanitaryPapers probs:objectIsTraded "true"^^xsd:boolean .
+sys:Packaging probs:objectIsTraded "true"^^xsd:boolean .
+sys:OtherWoodContainersManufacturing probs:objectIsTraded "true"^^xsd:boolean .
+sys:OtherPaperProducts probs:objectIsTraded "true"^^xsd:boolean .
+sys:WoodenBedroomFurniture probs:objectIsTraded "true"^^xsd:boolean .
+sys:WoodenKitchenFurniture probs:objectIsTraded "true"^^xsd:boolean .
+sys:WoodenOtherFurniture probs:objectIsTraded "true"^^xsd:boolean .
+sys:WoodenOfficeFurniture probs:objectIsTraded "true"^^xsd:boolean .
+sys:WoodenSeats probs:objectIsTraded "true"^^xsd:boolean .
+sys:RailwaySleepers probs:objectIsTraded "true"^^xsd:boolean .
+sys:FormworkScaffolding probs:objectIsTraded "true"^^xsd:boolean .
+sys:OtherObjects probs:objectIsTraded "true"^^xsd:boolean .
+sys:PreConsumerWasteProducts probs:objectIsTraded "true"^^xsd:boolean .
+sys:PreConsumerWasteConstruction probs:objectIsTraded "true"^^xsd:boolean .
+sys:RecycledPaper probs:objectIsTraded "true"^^xsd:boolean .
+sys:ByProducts probs:objectIsTraded "true"^^xsd:boolean .
+sys:WoodFramesForNewStructures probs:objectIsTraded "true"^^xsd:boolean .
+sys:WoodFloorFramingForNewStructures probs:objectIsTraded "true"^^xsd:boolean .
+sys:WoodRoofsForNewStructures probs:objectIsTraded "true"^^xsd:boolean .
+sys:Windows probs:objectIsTraded "true"^^xsd:boolean .
+sys:Doors probs:objectIsTraded "true"^^xsd:boolean .
+sys:EndTerracedHouses probs:objectIsTraded "true"^^xsd:boolean .
+sys:MidTerracedHouses probs:objectIsTraded "true"^^xsd:boolean .
+sys:SemiDetachedHouses probs:objectIsTraded "true"^^xsd:boolean .
+sys:DetachedHouses probs:objectIsTraded "true"^^xsd:boolean .
+sys:Bungalows probs:objectIsTraded "true"^^xsd:boolean .
+sys:FlatLowRise probs:objectIsTraded "true"^^xsd:boolean .
+sys:ConvertedFlats probs:objectIsTraded "true"^^xsd:boolean .
+sys:Flooring probs:objectIsTraded "true"^^xsd:boolean .
+sys:RecycledWoodFibre probs:objectIsTraded "true"^^xsd:boolean .
+sys:Renovations probs:objectIsTraded "true"^^xsd:boolean .
+sys:RMI probs:objectIsTraded "true"^^xsd:boolean .
+sys:NewPulp probs:objectIsTraded "true"^^xsd:boolean .
+sys:PulpWoodFibres probs:objectIsTraded "true"^^xsd:boolean .
+sys:WBPFibres probs:objectIsTraded "true"^^xsd:boolean .
+sys:OtherEnergyFeedstocksWoodFibres probs:objectIsTraded "true"^^xsd:boolean .
+sys:RMIWoodFibres probs:objectIsTraded "true"^^xsd:boolean .
+sys:WoodPelletsWoodFibres probs:objectIsTraded "true"^^xsd:boolean .
+sys:RenovationsWoodFibres probs:objectIsTraded "true"^^xsd:boolean .
+sys:NewBuilds probs:objectIsTraded "true"^^xsd:boolean .
+sys:WoodFramesForNewStructuresParticleboard probs:objectIsTraded "true"^^xsd:boolean .
+sys:WoodFloorFramingForNewStructuresPlywood probs:objectIsTraded "true"^^xsd:boolean .
+sys:Pallets probs:objectIsTraded "true"^^xsd:boolean .
+sys:RefurbishedPallets probs:objectIsTraded "true"^^xsd:boolean .
+sys:BoxPallets probs:objectIsTraded "true"^^xsd:boolean .
+sys:WoodIJoistsFloors probs:objectIsTraded "true"^^xsd:boolean .
+sys:WoodJoistsFloors probs:objectIsTraded "true"^^xsd:boolean . 
+sys:SawnwoodToRMIAndOther probs:objectIsTraded "true"^^xsd:boolean .
+sys:ParticleboardToRMIAndOther  probs:objectIsTraded "true"^^xsd:boolean .
+sys:PlywoodToRMIAndOther probs:objectIsTraded "true"^^xsd:boolean .
+sys:FibreboardToRMIAndOther probs:objectIsTraded "true"^^xsd:boolean .
+sys:WoodStructuresToRenovations probs:objectIsTraded "true"^^xsd:boolean .
+sys:RecycledWoodFibreToPallets probs:objectIsTraded "true"^^xsd:boolean .
+sys:OtherEngineeredWoodProducts probs:objectIsTraded "true"^^xsd:boolean .
+sys:OtherEngineeredWoodProductsToCst probs:objectIsTraded "true"^^xsd:boolean .
+sys:SawnProductsToCst probs:objectIsTraded "true"^^xsd:boolean .
+sys:WoodCharcoal probs:objectIsTraded "true"^^xsd:boolean .
+sys:WoodWoolAndFlour probs:objectIsTraded "true"^^xsd:boolean .
+sys:ForestResidues probs:objectIsTraded "true"^^xsd:boolean .
+
+
+
+
+
+sys:DetachedHouses probs:objectUnits "m2" .
+sys:MidTerracedHouses probs:objectUnits "m2" .
+sys:SemiDetachedHouses probs:objectUnits "m2" .
+sys:Bungalows probs:objectUnits "m2" .
+sys:EndTerracedHouses probs:objectUnits "m2" .
+sys:ConvertedFlats probs:objectUnits "m2" .
+sys:FlatLowRise probs:objectUnits "m2" .
+sys:WoodRoofsForNewStructures probs:objectUnits "m2" .
+sys:WoodFramesForNewStructures probs:objectUnits "m2" .
+sys:WoodFloorFramingForNewStructures probs:objectUnits "m2" .
+sys:NewBuilds probs:objectUnits "m2" .
+sys:BuildingWoodStructures probs:objectUnits "m2" .
+
+
+
+
+sys:Windows probs:objectScale "1000000"^^xsd:integer .
+sys:FormworkScaffolding probs:objectScales "1000000"^^xsd:integer .
+sys:EndTerracedHouses probs:objectScales "1000"^^xsd:integer .
+sys:MidTerracedHouses probs:objectScales "1000"^^xsd:integer .
+sys:SemiDetachedHouses probs:objectScales "1000"^^xsd:integer .
+sys:DetachedHouses probs:objectScales "1000"^^xsd:integer .
+sys:Bungalows probs:objectScales "1000"^^xsd:integer .
+sys:FlatLowRise probs:objectScales "1000"^^xsd:integer .
+sys:ConvertedFlats probs:objectScales "1000"^^xsd:integer .
+sys:NewBuilds probs:objectScales "10000000"^^xsd:integer .
+sys:Flooring probs:objectScales "1000000"^^xsd:integer .
+sys:RailwaySleepers probs:objectScales "100000"^^xsd:integer .
+sys:WoodFramesForNewStructures probs:objectScales "100000"^^xsd:integer .
+sys:WoodFloorFramingForNewStructures probs:objectScales "1000000"^^xsd:integer .
+sys:WoodRoofsForNewStructures probs:objectScales "1000000"^^xsd:integer .
+sys:WoodSeats probs:objectScales "1000000"^^xsd:integer .
+sys:WoodPellets probs:objectScales "10000000000"^^xsd:integer .
+sys:WBPFibres probs:objectScales "1000000"^^xsd:integer .
+sys:NewPulp probs:objectScales "1000000"^^xsd:integer .
+sys:OtherWoodContainers probs:objectScales "100000000"^^xsd:integer .
+
+
+
+
+
+
+
+##sys:Pallets probs:objectUnits "-" .
+##sys:WoodenKitchenFurniture probs:objectUnits "-" .
+##sys:WoodenSeats probs:objectUnits "-" .
+##sys:WoodenOtherFurniture probs:objectUnits "-" .
+##sys:WoodenOfficeFurniture probs:objectUnits "-" .
+##sys:WoodenBedroomFurniture probs:objectUnits "-" .
+##sys:Doors probs:objectUnits "-" .
+##sys:Decking probs:objectUnits "-" .
+
+
+
+
+# Make links to data store objects
+wood-data:SoftwoodRoundwood probs:objectEquivalentTo sys:SoftwoodRoundwood .
+wood-data:SoftwoodSawnwood probs:objectEquivalentTo sys:SoftwoodSawnwood .
+wood-data:HardwoodRoundwood probs:objectEquivalentTo sys:HardwoodRoundwood .
+wood-data:HardwoodSawnwood probs:objectEquivalentTo sys:HardwoodSawnwood .
+wood-data:ByProducts probs:objectEquivalentTo sys:ByProducts .
+wood-data:Pulp probs:objectEquivalentTo sys:Pulp .
+wood-data:RecycledPulp probs:objectEquivalentTo sys:RecycledPulp .
+wood-data:PostConsumerWood probs:objectEquivalentTo sys:PostConsumerWood .
+wood-data:Particleboard probs:objectEquivalentTo sys:Particleboard .
+wood-data:Fibreboard probs:objectEquivalentTo sys:Fibreboard .
+wood-data:VeneerSheets probs:objectEquivalentTo sys:VeneerSheets .
+wood-data:Plywood probs:objectEquivalentTo sys:Plywood .
+wood-data:WoodPellets probs:objectEquivalentTo sys:WoodPellets .
+wood-data:WoodenBedroomFurniture probs:objectEquivalentTo sys:WoodenBedroomFurniture .
+wood-data:WoodenOfficeFurniture probs:objectEquivalentTo sys:WoodenOfficeFurniture .
+wood-data:WoodenOtherFurniture probs:objectEquivalentTo sys:WoodenOtherFurniture .
+wood-data:WoodenSeats probs:objectEquivalentTo sys:WoodenSeats .
+wood-data:WoodenKitchenFurniture probs:objectEquivalentTo sys:WoodenKitchenFurniture .
+wood-data:RailwaySleepers probs:objectEquivalentTo sys:RailwaySleepers .
+wood-data:FormworkScaffolding probs:objectEquivalentTo sys:FormworkScaffolding .
+wood-data:OtherObjects probs:objectEquivalentTo sys:OtherObjects .
+wood-data:Fencing probs:objectEquivalentTo sys:Fencing .
+wood-data:RecycledPaper probs:objectEquivalentTo sys:RecycledPaper .
+wood-data:GraphicPapers probs:objectEquivalentTo sys:GraphicPapers .
+wood-data:SanitaryPapers probs:objectEquivalentTo sys:SanitaryPapers .
+wood-data:Packaging probs:objectEquivalentTo sys:Packaging .
+wood-data:OtherPaperProducts probs:objectEquivalentTo sys:OtherPaperProducts .
+wood-data:WoodFramesForNewStructures probs:objectEquivalentTo sys:WoodFramesForNewStructures .
+wood-data:WoodFloorFramingForNewStructures probs:objectEquivalentTo sys:WoodFloorFramingForNewStructures .
+wood-data:WoodRoofsForNewStructures probs:objectEquivalentTo sys:WoodRoofsForNewStructures .
+wood-data:Windows probs:objectEquivalentTo sys:Windows .
+wood-data:Doors probs:objectEquivalentTo sys:Doors .
+wood-data:Flooring probs:objectEquivalentTo sys:Flooring .
+wood-data:OtherWoodContainers probs:objectEquivalentTo sys:OtherWoodContainers .
+wood-data:DetachedHouses probs:objectEquivalentTo sys:DetachedHouses .
+wood-data:SemiDetachedHouses probs:objectEquivalentTo sys:SemiDetachedHouses .
+wood-data:MidTerracedHouses probs:objectEquivalentTo sys:MidTerracedHouses .
+wood-data:EndTerracedHouses probs:objectEquivalentTo sys:EndTerracedHouses .
+wood-data:Bungalows probs:objectEquivalentTo sys:Bungalows .
+wood-data:ConvertedFlats probs:objectEquivalentTo sys:ConvertedFlats .
+wood-data:FlatLowRise probs:objectEquivalentTo sys:FlatLowRise .
+wood-data:RecycledWoodFibre probs:objectEquivalentTo sys:RecycledWoodFibre .
+wood-data:RecycledWoodFibreToPallets probs:objectEquivalentTo sys:RecycledWoodFibreToPallets .
+wood-data:PreConsumerWasteProducts probs:objectEquivalentTo sys:PreConsumerWasteProducts .
+wood-data:PreConsumerWasteConstruction probs:objectEquivalentTo sys:PreConsumerWasteConstruction .
+wood-data:RMI probs:objectEquivalentTo sys:RMI .
+wood-data:NewPulp probs:objectEquivalentTo sys:NewPulp .
+wood-data:PulpWoodFibres probs:objectEquivalentTo sys:PulpWoodFibres .
+wood-data:OtherEnergyFeedstocksWoodFibres probs:objectEquivalentTo sys:OtherEnergyFeedstocksWoodFibres .
+wood-data:RMIWoodFibres probs:objectEquivalentTo sys:RMIWoodFibres .
+wood-data:WoodPelletsWoodFibres probs:objectEquivalentTo sys:WoodPelletsWoodFibres .
+wood-data:NewBuilds probs:objectEquivalentTo sys:NewBuilds .
+wood-data:BuildingWoodStructures probs:objectEquivalentTo sys:BuildingWoodStructures .
+wood-data:WoodenOutbuildings probs:objectEquivalentTo sys:WoodenOutbuildings .
+wood-data:Pallets probs:objectEquivalentTo sys:Pallets .
+wood-data:RefurbishedPallets probs:objectEquivalentTo sys:RefurbishedPallets .
+wood-data:SawnwoodToRMIAndOther probs:objectEquivalentTo sys:SawnwoodToRMIAndOther .
+wood-data:ParticleboardToRMIAndOther probs:objectEquivalentTo sys:ParticleboardToRMIAndOther   .
+wood-data:PlywoodToRMIAndOther probs:objectEquivalentTo sys:PlywoodToRMIAndOther  .
+wood-data:FibreboardToRMIAndOther probs:objectEquivalentTo sys:FibreboardToRMIAndOther  .
+wood-data:OtherEngineeredWoodProducts probs:objectEquivalentTo sys:OtherEngineeredWoodProducts  .
+wood-data:OtherEngineeredWoodProductsToCst probs:objectEquivalentTo sys:OtherEngineeredWoodProductsToCst  .
+wood-data:SawnProductsToCst probs:objectEquivalentTo sys:SawnProductsToCst  .
+wood-data:WoodCharcoal probs:objectEquivalentTo sys:WoodCharcoal  .
+wood-data:WoodWoolAndFlour probs:objectEquivalentTo sys:WoodWoolAndFlour  .
+wood-data:ForestResidues probs:objectEquivalentTo sys:ForestResidues  .
+wood-data:OtherEnergyFeedstocks probs:objectEquivalentTo sys:OtherEnergyFeedstocks .
+
+
+
+
+wood-data:SawmillsSoftwood probs:processEquivalentTo sys:SawmillsSoftwood .
+wood-data:SawmillsHardwood probs:processEquivalentTo sys:SawmillsHardwood .
+wood-data:FencingManufacturingRoundwood probs:processEquivalentTo sys:FencingManufacturingRoundwood .
+wood-data:FencingManufacturingSawnwood probs:processEquivalentTo sys:FencingManufacturingSawnwood .
+wood-data:FurnitureManufacturing probs:processEquivalentTo sys:FurnitureManufacturing .
+wood-data:RailwaySleepersManufacturing probs:objectEquivalentTo sys:RailwaySleepersManufacturing .
+wood-data:FormworkScaffoldingManufacturing probs:objectEquivalentTo sys:FormworkScaffoldingManufacturing .
+wood-data:OtherObjectsManufacturing probs:objectEquivalentTo sys:OtherObjectsManufacturing .
+wood-data:WoodPelletsManufacturingPostConsumerWood probs:processEquivalentTo sys:WoodPelletsManufacturingPostConsumerWood .
+wood-data:WoodPelletsManufacturingByProducts probs:processEquivalentTo sys:WoodPelletsManufacturingByProducts .
+wood-data:WoodPelletsManufacturingSoftwoodRoundwood probs:processEquivalentTo sys:WoodPelletsManufacturingSoftwoodRoundwood .
+wood-data:GraphicPapersManufacturing probs:processEquivalentTo sys:GraphicPapersProductsManufacturing .
+wood-data:SanitaryPapersManufacturing probs:processEquivalentTo sys:SanitaryPapersProductsManufacturing .
+wood-data:PackagingManufacturing probs:processEquivalentTo sys:PackagingManufacturing .
+wood-data:OtherPaperProductsManufacturing probs:processEquivalentTo sys:OtherPapersProductsManufacturing .
+wood-data:WoodFramesForNewStructuresManufacturing probs:processEquivalentTo sys:WoodFramesForNewStructuresManufacturing .
+wood-data:WoodFloorFramingForNewStructuresManufacturing probs:processEquivalentTo sys:WoodFloorFramingForNewStructuresManufacturing .
+wood-data:WoodRoofsForNewStructuresManufacturing probs:processEquivalentTo sys:WoodRoofsForNewStructuresManufacturing .
+wood-data:WindowsManufacturing probs:processEquivalentTo sys:WindowsManufacturing .
+wood-data:DoorsManufacturing probs:processEquivalentTo sys:DoorsManufacturing .
+wood-data:OtherWoodContainersManufacturing probs:processEquivalentTo sys:OtherWoodContainersManufacturing .
+wood-data:PalletsManufacturing probs:processEquivalentTo sys:PalletsManufacturing .
+wood-data:RefurbishedPalletsManufacturing probs:processEquivalentTo sys:RefurbishedPalletsManufacturing .
+wood-data:FlooringManufacturing probs:processEquivalentTo sys:FlooringManufacturing .
+wood-data:DetachedHousesConstruction probs:processEquivalentTo sys:DetachedHousesConstruction.
+wood-data:SemiDetachedHousesConstruction probs:processEquivalentTo sys:SemiDetachedHousesConstruction.
+wood-data:BungalowsConstruction probs:processEquivalentTo sys:BungalowsConstruction.
+wood-data:MidTerracedHousesConstruction probs:processEquivalentTo sys:MidTerracedHousesConstruction.
+wood-data:EndTerracedHousesConstruction probs:processEquivalentTo sys:EndTerracedHousesConstruction.
+wood-data:ConvertedFlatsConstruction probs:processEquivalentTo sys:ConvertedFlatsConstruction.
+wood-data:FlatLowRiseConstruction probs:processEquivalentTo sys:FlatLowRiseConstruction.
+wood-data:PulpmillsRecycledPaper probs:processEquivalentTo sys:PulpmillsRecycledPaper .
+wood-data:RecycledWoodFibreProcessingForPallets probs:processEquivalentTo sys:RecycledWoodFibreProcessingForPallets .
+wood-data:PulpmillsByProducts probs:processEquivalentTo sys:PulpmillsByProducts .
+wood-data:PulpmillsByProducts probs:processEquivalentTo sys:PulpmillsByProducts .
+wood-data:RenovationsSawnwood probs:processEquivalentTo sys:Renovations .
+wood-data:RepairMaintenanceImprovementSawnwood probs:processEquivalentTo sys:RepairMaintenanceImprovement .
+wood-data:NewPulpMaking probs:processEquivalentTo sys:NewPulpMaking .
+wood-data:OtherEnergyFeedstocksSoftwoodRoundwood probs:processEquivalentTo sys:OtherEnergyFeedstocksSoftwoodRoundwood .
+wood-data:OtherEnergyFeedstocksHardwoodRoundwood probs:processEquivalentTo sys:OtherEnergyFeedstocksHardwoodRoundwood .
+wood-data:OtherEnergyFeedstocksByProducts probs:processEquivalentTo sys:OtherEnergyFeedstocksByProducts .
+wood-data:OtherEnergyFeedstocksPostConsumerWood probs:processEquivalentTo sys:OtherEnergyFeedstocksPostConsumerWood .
+wood-data:SoftwoodRoundwoodDelivery probs:processEquivalentTo sys:SoftwoodRoundwoodDelivery .
+wood-data:HardwoodRoundwoodDelivery probs:processEquivalentTo sys:HardwoodRoundwoodDelivery .
+wood-data:RecycledPaperDelivery probs:processEquivalentTo sys:RecycledPaperDelivery .
+wood-data:RecycledWoodFibreDelivery probs:processEquivalentTo sys:RecycledWoodFibreDelivery .
+wood-data:FencingConsumption probs:processEquivalentTo sys:FencingConsumption .
+wood-data:WBPFibresByProducts probs:processEquivalentTo sys:WBPFibresByProducts .
+wood-data:WBPFibresSoftwoodRoundwood probs:processEquivalentTo sys:WBPFibresSoftwoodRoundwood .
+wood-data:WBPFibresRecycledWoodFibre probs:processEquivalentTo sys:WBPFibresRecycledWoodFibre .
+wood-data:FibreboardManufacturing probs:processEquivalentTo sys:FibreboardManufacturing .
+wood-data:ParticleboardManufacturing probs:processEquivalentTo sys:ParticleboardManufacturing .
+wood-data:Pulpmills probs:processEquivalentTo sys:Pulpmills .
+wood-data:OtherEnergyFeedstocks probs:processEquivalentTo sys:OtherEnergyFeedstocks .
+wood-data:RepairMaintenanceImprovement probs:processEquivalentTo sys:RepairMaintenanceImprovement .
+wood-data:Renovations probs:processEquivalentTo sys:Renovations .
+wood-data:WoodPelletsManufacturing probs:processEquivalentTo sys:WoodPelletsManufacturing .
+wood-data:HousesToNewBuilds probs:processEquivalentTo sys:HousesToNewBuilds .
+wood-data:NewBuildsConsumption probs:processEquivalentTo sys:NewBuildsConsumption .
+wood-data:BuildingStructureConsumption probs:processEquivalentTo sys:BuildingStructureConsumption .
+wood-data:SawnwoodToFencingAndOutdoorManufacturing probs:processEquivalentTo sys:SawnwoodToFencingAndOutdoorManufacturing .
+wood-data:RoundwoodToFencingAndOutdoorManufacturing probs:processEquivalentTo sys:RoundwoodToFencingAndOutdoorManufacturing .
+wood-data:WoodenKitchenFurnitureManufacturing probs:objectEquivalentTo sys:WoodenKitchenFurnitureManufacturing .
+wood-data:DoorsConsumption probs:objectEquivalentTo sys:DoorsConsumption .
+wood-data:RefurbishedPalletsConsumption probs:objectEquivalentTo sys:RefurbishedPalletsConsumption .
+wood-data:PreConsumerWasteConstructionConsumption probs:objectEquivalentTo sys:PreConsumerWasteConstructionConsumption .
+wood-data:SawnwoodToRMIAndOtherConsumption probs:processEquivalentTo sys:SawnwoodToRMIAndOtherConsumption .
+wood-data:PlywoodToRMIAndOtherConsumption probs:processEquivalentTo sys:PlywoodToRMIAndOtherConsumption .
+wood-data:ParticleboardToRMIAndOtherConsumption probs:processEquivalentTo sys:ParticleboardToRMIAndOtherConsumption .
+wood-data:PalletsConsumption probs:processEquivalentTo sys:PalletsConsumption .
+wood-data:WoodenKitchenFurnitureConsumption probs:processEquivalentTo sys:WoodenKitchenFurnitureConsumption .
+wood-data:GraphicPapersConsumption probs:processEquivalentTo sys:GraphicPapersConsumption .
+wood-data:PackagingConsumption probs:processEquivalentTo sys:PackagingConsumption .
+wood-data:PreConsumerWasteProductsConsumption probs:processEquivalentTo sys:PreConsumerWasteProductsConsumption .
+wood-data:WoodPelletsConsumption probs:processEquivalentTo sys:WoodPelletsConsumption .
+wood-data:OtherEngineeredWoodProductsConsumption probs:processEquivalentTo sys:OtherEngineeredWoodProductsConsumption .
+wood-data:OtherEngineeredWoodProductsManufacturing probs:processEquivalentTo sys:OtherEngineeredWoodProductsManufacturing .
+wood-data:OtherEngineeredWoodProductsToConstruction probs:processEquivalentTo sys:OtherEngineeredWoodProductsToConstruction .
+wood-data:SawnwoodToConstruction probs:processEquivalentTo sys:SawnwoodToConstruction .
+wood-data:WoodCharcoalProduction probs:processEquivalentTo sys:WoodCharcoalProduction .
+wood-data:WoodCharcoalToOtherEnergyFeedstocks probs:processEquivalentTo sys:WoodCharcoalToOtherEnergyFeedstocks .
+wood-data:WoodWoolAndFlourManufacturing probs:processEquivalentTo sys:WoodWoolAndFlourManufacturing .
+wood-data:WoodWoolAndFlourConsumption probs:processEquivalentTo sys:WoodWoolAndFlourConsumption .
+wood-data:ForestResiduesDelivery probs:processEquivalentTo sys:ForestResiduesDelivery .
+wood-data:OtherEnergyFeedstocksForestResidues probs:processEquivalentTo sys:OtherEnergyFeedstocksForestResidues .
+wood-data:OtherEnergyFeedstocksConsumption probs:processEquivalentTo sys:OtherEnergyFeedstocksConsumption .

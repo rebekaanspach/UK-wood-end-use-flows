@@ -1,0 +1,8 @@
+sphinx:
+  extra_extensions:
+    - sphinx_probs_rdf
+  config:
+    probs_rdf_system_prefix: "http://ukfires.org/analyses/UK-wood/system/"
+
+execute:
+  execute_notebooks: "off"

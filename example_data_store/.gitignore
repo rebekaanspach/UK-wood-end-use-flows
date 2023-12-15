@@ -1,0 +1,6 @@
+/system-definitions/_build/
+.ipynb_checkpoints
+/.doit.db.db
+__pycache__
+/build/
+.DS_Store

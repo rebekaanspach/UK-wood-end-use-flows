@@ -1,0 +1,13 @@
+/system-definitions/_build/
+.ipynb_checkpoints
+.doit.db.db
+.doit.db.dat
+.doit.db.dir
+.doit.db.bak
+__pycache__
+/build/
+/datasources/this_model/model_definition.ttl
+/datasources/this_model/output.ttl
+.DS_Store
+data_analysis/comparison_obs_results_*.xlsx
+data_analysis/~$*.xlsx

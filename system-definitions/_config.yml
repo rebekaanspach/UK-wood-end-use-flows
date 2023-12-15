@@ -1,0 +1,34 @@
+# Book settings
+title: UK wood MFA model
+author: Rick Lupton
+copyright: "2019"
+# logo: logo.png
+
+# html:
+#   favicon: "favicon.png"
+
+parse:
+  myst_enable_extensions:
+    - amsmath
+    - dollarmath
+  myst_dmath_double_inline: true
+
+latex:
+  latex_documents:
+    targetname: book.tex
+
+
+bibtex_bibfiles:
+    - recipe_references.bib
+
+sphinx:
+  extra_extensions:
+    - sphinx_probs_rdf
+  config:
+    probs_rdf_system_prefix: "http://ukfires.org/analyses/UK-wood/system/"
+    bibtex_reference_style: author_year
+
+
+
+
+
