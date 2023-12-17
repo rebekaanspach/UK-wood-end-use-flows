@@ -622,17 +622,6 @@ produces: |
 ---
 ```
 
-
-```{system:process} RailwaySleepersManufacturing
----
-label: Railway sleepers manufacturing
-consumes: |
-      HardwoodSawnwood                    = 1    kg
-produces: |
-      RailwaySleepers                     = 1    kg
-
----
-```
  
 ```{end-sub-processes} 
 ``` 
@@ -932,7 +921,7 @@ produces: |
 ```{system:process} SawnConstructionProductsManufacturing
 :label: Sawn construction products manufacturing
 :consumes: SoftwoodSawnwood
-:produces: NewBuilds  PreConsumerWasteProducts SawnwoodToRMIAndOther FormworkScaffolding
+:produces: NewBuilds  PreConsumerWasteProducts SawnwoodToRMIAndOther FormworkScaffolding RailwaySleepers
 :become_parent: true
 ```
 
@@ -950,6 +939,19 @@ produces: |
       FormworkScaffolding                 = 1     kg
   
 --- 
+```
+
+
+
+```{system:process} RailwaySleepersManufacturing
+---
+label: Railway sleepers manufacturing
+consumes: |
+      HardwoodSawnwood                    = 1    kg
+produces: |
+      RailwaySleepers                     = 1    kg
+
+---
 ```
 
 

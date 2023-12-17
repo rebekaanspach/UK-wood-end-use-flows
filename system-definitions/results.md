@@ -233,7 +233,7 @@ print("])")
 ```
 
 ```{code-cell} ipython3
-with open("temp_sdd_2.py", "wt") as f:
+with open("temp_sdd.py", "wt") as f:
     f.write("nodes = " + repr(sdd.nodes) + "\n")
     f.write("bundles = " + repr(list(sdd.bundles.values())) + "\n")
     f.write("ordering = " + repr(sdd.ordering.layers) + "\n")
@@ -242,7 +242,7 @@ with open("temp_sdd_2.py", "wt") as f:
 ```{code-cell} ipython3
 %load_ext autoreload
 %autoreload 2
-import final_sdd_backup_2
+import final_sdd
 ```
 
 ```{code-cell} ipython3
@@ -336,17 +336,17 @@ link_color = CategoricalScale(
 ```{code-cell} ipython3
 %load_ext autoreload
 %autoreload 2
-import final_sdd_backup_2
+import final_sdd
 ```
 
 ```{code-cell} ipython3
-weave(final_sdd_backup_2.sdd, flows_mean_reset_index, link_color=link_color).to_widget(width=1800, height=1800, debugging=True)
+weave(final_sdd.sdd, flows_mean_reset_index, link_color=link_color).to_widget(width=1800, height=1800, debugging=True)
 ```
 
 ```{code-cell} ipython3
 %load_ext autoreload
 %autoreload 2
-import final_sdd_backup_3
+import final_sdd
 ```
 
 ```{code-cell} ipython3

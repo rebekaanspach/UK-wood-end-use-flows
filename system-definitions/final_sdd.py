@@ -22,26 +22,6 @@ nodes = {
         title="Sawmills",
         node_type="process",
     ),
-    "http://ukfires.org/analyses/UK-wood/system/PaperProductsConsumption": ProcessGroupExtra(
-        selection=[
-            "Graphic papers consumption",
-            "In use",
-            "In use leave",
-            "Other paper products consumption",
-            "Packaging consumption",
-            "Sanitary papers consumption",
-            "http://ukfires.org/analyses/UK-wood/system/GraphicPapersConsumption",
-            "http://ukfires.org/analyses/UK-wood/system/InUse",
-            "http://ukfires.org/analyses/UK-wood/system/InUseLeave",
-            "http://ukfires.org/analyses/UK-wood/system/OtherPaperProductsConsumption",
-            "http://ukfires.org/analyses/UK-wood/system/PackagingConsumption",
-            "http://ukfires.org/analyses/UK-wood/system/SanitaryPapersConsumption",
-        ],
-        partition=None,
-        direction="R",
-        title="Paper products consumption",
-        node_type="process",
-    ),
     "http://ukfires.org/analyses/UK-wood/system/Pulpmills": ProcessGroupExtra(
         selection=[
             "New pulp making",
@@ -64,79 +44,20 @@ nodes = {
         title="Pulpmills (recycled)",
         node_type="process",
     ),
- "http://ukfires.org/analyses/UK-wood/system/CommercialProductsConsumption": ProcessGroupExtra(
-        selection=[
-            "Doors consumption",
-            "Fencing posts consumption",
-            "Fencing rails and boards consumption",
-            "FibreboardToRMIAndOther consumption",
-            "Flat and Box Pallets consumption",
-            "Flooring consumption",
-            "Formwork scaffolding consumption",
-            "In use products",
-            "In use products leave",
-            "Other objects consumption",
-            "Other wood containers consumption",
-            "OtherEngineeredWoodProducts consumption",
-            "ParticleboardToRMIAndOther consumption",
-            "PlywoodToRMIAndOther consumption",
-            "Railway sleepers consumption",
-            "Refurbished pallets consumption",
-            "SawnwoodToRMIAndOther consumption",
-            "Windows consumption",
-            "Wooden Bedroom Furniture consumption",
-            "Wooden Kitchen Furniture consumption",
-            "Wooden Office Furniture consumption",
-            "Wooden Other Furniture consumption",
-            "Wooden Seats consumption",
-            "Upper floors manufacturing",
-            "WoodFloorFramingForNewStructures consumption"
-            "WoodRoofsForNewStructures consumption",
-            "WoodFramesForNewStructures consumption",
-            "http://ukfires.org/analyses/UK-wood/system/DoorsConsumption",
-            "http://ukfires.org/analyses/UK-wood/system/FencingPostsConsumption",
-            "http://ukfires.org/analyses/UK-wood/system/FencingRailsAndBoardsConsumption",
-            "http://ukfires.org/analyses/UK-wood/system/FibreboardToRMIAndOtherConsumption",
-            "http://ukfires.org/analyses/UK-wood/system/FlooringConsumption",
-            "http://ukfires.org/analyses/UK-wood/system/FormworkScaffoldingConsumption",
-            "http://ukfires.org/analyses/UK-wood/system/InUseProducts",
-            "http://ukfires.org/analyses/UK-wood/system/InUseProductsLeave",
-            "http://ukfires.org/analyses/UK-wood/system/OtherEngineeredWoodProductsConsumption",
-            "http://ukfires.org/analyses/UK-wood/system/OtherObjectsConsumption",
-            "http://ukfires.org/analyses/UK-wood/system/OtherWoodContainersConsumption",
-            "http://ukfires.org/analyses/UK-wood/system/PalletsConsumption",
-            "http://ukfires.org/analyses/UK-wood/system/ParticleboardToRMIAndOtherConsumption",
-            "http://ukfires.org/analyses/UK-wood/system/PlywoodToRMIAndOtherConsumption",
-            "http://ukfires.org/analyses/UK-wood/system/RailwaySleepersConsumption",
-            "http://ukfires.org/analyses/UK-wood/system/RefurbishedPalletsConsumption",
-            "http://ukfires.org/analyses/UK-wood/system/SawnwoodToRMIAndOtherConsumption",
-            "http://ukfires.org/analyses/UK-wood/system/WindowsConsumption",
-            "http://ukfires.org/analyses/UK-wood/system/WoodenBedroomFurnitureConsumption",
-            "http://ukfires.org/analyses/UK-wood/system/WoodenKitchenFurnitureConsumption",
-            "http://ukfires.org/analyses/UK-wood/system/WoodenOfficeFurnitureConsumption",
-            "http://ukfires.org/analyses/UK-wood/system/WoodenOtherFurnitureConsumption",
-            "http://ukfires.org/analyses/UK-wood/system/WoodenSeatsConsumption",
-            "http://ukfires.org/analyses/UK-wood/system/WoodFloorFramingForNewStructuresConsumption",
-            "http://ukfires.org/analyses/UK-wood/system/WoodFramesForNewStructuresConsumption",
-            "http://ukfires.org/analyses/UK-wood/system/WoodRoofsForNewStructuresConsumption",
-        ],
-        partition=None,
-        direction="R",
-        title="Commercial products consumption",
-        node_type="process",
-    ),
     "http://ukfires.org/analyses/UK-wood/system/RoundwoodToEnergyProduction": ProcessGroupExtra(
         selection=[
             "Hardwood roundwood to other energy feedstocks",
             "Softwood roundwood to other energy feedstocks",
             "Softwood roundwood to wood pellets manufacturing",
+            "Wood charcoal production",
             "http://ukfires.org/analyses/UK-wood/system/OtherEnergyFeedstocksHardwoodRoundwood",
+            "http://ukfires.org/analyses/UK-wood/system/WoodCharcoalProduction",
             "http://ukfires.org/analyses/UK-wood/system/OtherEnergyFeedstocksSoftwoodRoundwood",
             "http://ukfires.org/analyses/UK-wood/system/WoodPelletsManufacturingSoftwoodRoundwood",
         ],
         partition=None,
         direction="R",
-        title="Fuelwood",
+        title="",
         node_type="process",
     ),
     "http://ukfires.org/analyses/UK-wood/system/ByProductsToEnergyProduction": ProcessGroupExtra(
@@ -148,7 +69,7 @@ nodes = {
         ],
         partition=None,
         direction="R",
-        title="By-products",
+        title="",
         node_type="process",
     ),
     "http://ukfires.org/analyses/UK-wood/system/RecycledFibresToEnergyProduction": ProcessGroupExtra(
@@ -158,7 +79,17 @@ nodes = {
         ],
         partition=None,
         direction="R",
-        title="Wood fibre waste",
+        title="",
+        node_type="process",
+    ),
+    "http://ukfires.org/analyses/UK-wood/system/ForestResiduesToEnergyProduction": ProcessGroupExtra(
+        selection=[
+            "Forest residues to other energy feedstocks",
+            "http://ukfires.org/analyses/UK-wood/system/OtherEnergyFeedstocksForestResidues",
+        ],
+        partition=None,
+        direction="R",
+        title="",
         node_type="process",
     ),
     "http://ukfires.org/analyses/UK-wood/system/RecycledWoodFibreProcessingForPallets": ProcessGroupExtra(
@@ -168,7 +99,7 @@ nodes = {
         ],
         partition=None,
         direction="R",
-        title="Recycled fibres",
+        title="",
         node_type="process",
     ),
     "http://ukfires.org/analyses/UK-wood/system/FurnitureManufacturing": ProcessGroupExtra(
@@ -221,14 +152,12 @@ nodes = {
         selection=[
             "Fencing posts manufacturing",
             "Fencing rails and boards manufacturing",
-            "Railway sleepers manufacturing",
             "Roundwood to fencing and outdoor",
             "Roundwood to fencing manufacturing",
             "Sawnwood to fencing and outdoor",
             "Sawnwood to fencing manufacturing",
             "http://ukfires.org/analyses/UK-wood/system/FencingPostsManufacturing",
             "http://ukfires.org/analyses/UK-wood/system/FencingRailsAndBoardsManufacturing",
-            "http://ukfires.org/analyses/UK-wood/system/RailwaySleepersManufacturing",
             "http://ukfires.org/analyses/UK-wood/system/RoundwoodToFencingAndOutdoor",
             "http://ukfires.org/analyses/UK-wood/system/RoundwoodToFencingAndOutdoorManufacturing",
             "http://ukfires.org/analyses/UK-wood/system/SawnwoodToFencingAndOutdoor",
@@ -239,27 +168,30 @@ nodes = {
         title="Fencing mfg",
         node_type="process",
     ),
-    "http://ukfires.org/analyses/UK-wood/system/OtherObjectsManufacturing": ProcessGroupExtra(
+    "http://ukfires.org/analyses/UK-wood/system/OtherProductsManufacturing": ProcessGroupExtra(
         selection=[
             "Oth. objects manufacturing",
+            "Wood wool and flour  manufacturing",
             "http://ukfires.org/analyses/UK-wood/system/OtherObjectsManufacturing",
+            "http://ukfires.org/analyses/UK-wood/system/WoodWoolAndFlourManufacturing",
         ],
         partition=None,
         direction="R",
-        title="Oth. objects mfg",
+        title="Oth prod mfg",
         node_type="process",
     ),
     "http://ukfires.org/analyses/UK-wood/system/OtherEnergyFeedstocksProduction": ProcessGroupExtra(
         selection=[
             "Other energy feedstocks production",
+            "Wood charcoal to other energy feedstocks",
             "http://ukfires.org/analyses/UK-wood/system/OtherEnergyFeedstocksProduction",
+            "http://ukfires.org/analyses/UK-wood/system/WoodCharcoalToOtherEnergyFeedstocks",
         ],
         partition=None,
         direction="R",
-        title="Feedstocks prod",
+        title="",
         node_type="process",
     ),
-
     "http://ukfires.org/analyses/UK-wood/system/WoodPelletsManufacturing": ProcessGroupExtra(
         selection=[
             "Wood pellets manufacturing",
@@ -270,22 +202,12 @@ nodes = {
         title="Wood pellets mfg",
         node_type="process",
     ),
-    "http://ukfires.org/analyses/UK-wood/system/SawnwoodToConstruction": ProcessGroupExtra(
-        selection=[
-            "Sawnwood to construction",
-            "http://ukfires.org/analyses/UK-wood/system/SawnwoodToConstruction",
-        ],
-        partition=None,
-        direction="R",
-        title="Sawnwood to construction",
-        node_type="process",
-    ),
     "http://ukfires.org/analyses/UK-wood/system/OtherConstructionProductsManufacturing": ProcessGroupExtra(
         selection=[
             "Fibreboard to RMI",
             "Particleboard to RMI",
             "Plywood to RMI",
-            "Other engineered product to construction",
+            "Other engineered products to construction",
             "http://ukfires.org/analyses/UK-wood/system/FibreboardToRepairMaintenanceImprovement",
             "http://ukfires.org/analyses/UK-wood/system/ParticleboardToRepairMaintenanceImprovement",
             "http://ukfires.org/analyses/UK-wood/system/PlywoodToRepairMaintenanceImprovement",
@@ -293,16 +215,18 @@ nodes = {
         ],
         partition=None,
         direction="R",
-        title="Other construction products mfg",
+        title="Eng cst prod mfg",
         node_type="process",
     ),
-        "http://ukfires.org/analyses/UK-wood/system/SawnConstructionProductsManufacturing": ProcessGroupExtra(
+    "http://ukfires.org/analyses/UK-wood/system/SawnConstructionProductsManufacturing": ProcessGroupExtra(
         selection=[
             "FormworkScaffolding manufacturing",
             "Sawnwood to RMI",
+            "Railway sleepers manufacturing",
             "Upper floors manufacturing",
             "WoodFramesForNewStructures manufacturing",
             "WoodRoofsForNewStructures manufacturing",
+            "http://ukfires.org/analyses/UK-wood/system/RailwaySleepersManufacturing",
             "http://ukfires.org/analyses/UK-wood/system/FormworkScaffoldingManufacturing",
             "http://ukfires.org/analyses/UK-wood/system/SawnwoodToRepairMaintenanceImprovement",
             "http://ukfires.org/analyses/UK-wood/system/WoodFloorFramingForNewStructuresManufacturing",
@@ -311,24 +235,72 @@ nodes = {
         ],
         partition=None,
         direction="R",
-        title="Sawn construction products mfg",
+        title="Sawn cst prod mfg",
         node_type="process",
+    ),
+    "http://ukfires.org/analyses/UK-wood/system/SawnConstructionProducts": ProcessGroupExtra(
+        selection=[
+            "Formwork Scaffolding",
+            "Sawnwood to construction",
+            "Railway sleepers",
+            "Wood floor framing for new structures",
+            "Wood frames for new structures",
+            "Wood roof for new structures",
+            "http://ukfires.org/analyses/UK-wood/system/FormworkScaffolding",
+            "http://ukfires.org/analyses/UK-wood/system/RailwaySleepers",
+            "http://ukfires.org/analyses/UK-wood/system/SawnwoodToRMIAndOther",
+            "http://ukfires.org/analyses/UK-wood/system/WoodFloorFramingForNewStructures",
+            "http://ukfires.org/analyses/UK-wood/system/WoodFramesForNewStructures",
+            "http://ukfires.org/analyses/UK-wood/system/WoodRoofsForNewStructures",
+        ],
+        partition=None,
+        direction="R",
+        title="Sawn cst prod",
+        node_type="object",
+    ),
+    "http://ukfires.org/analyses/UK-wood/system/OtherConstructionProducts": ProcessGroupExtra(
+        selection=[
+            "Fibreboard to construction",
+            "Particleboard to construction",
+            "Plywood to construction",
+            "Other engineered products to construction",
+            "Other engineered wood products to cst",
+            "http://ukfires.org/analyses/UK-wood/system/OtherEngineeredWoodProductsToCst",
+            "http://ukfires.org/analyses/UK-wood/system/FibreboardToRMIAndOther",
+            "http://ukfires.org/analyses/UK-wood/system/ParticleboardToRMIAndOther",
+            "http://ukfires.org/analyses/UK-wood/system/PlywoodToRMIAndOther",
+            "http://ukfires.org/analyses/UK-wood/system/OtherEngineeredWoodProductsToCst",
+        ],
+        partition=None,
+        direction="R",
+        title="Eng cst prod",
+        node_type="object",
+    ),
+    "http://ukfires.org/analyses/UK-wood/system/OtherEngineeredWoodProducts": ProcessGroupExtra(
+        selection=[
+            "OtherEngineeredWoodProducts",
+            "http://ukfires.org/analyses/UK-wood/system/OtherEngineeredWoodProducts",
+        ],
+        partition=None,
+        direction="R",
+        title="Oth eng prod",
+        node_type="object",
     ),
     "http://ukfires.org/analyses/UK-wood/system/WBPmanufacturing": ProcessGroupExtra(
         selection=[
             "By-products to WBP fibres",
             "Fibreboard manufacturing",
             "Particleboard manufacturing",
+            "Other engineered wood products manufacturing",
             "Plywood manufacturing",
-            "Other engineered product manufacturing",
             "Recycled fibres to WBP fibres",
             "Roundwood to WBP fibres",
             "Veneer sheets manufacturing",
             "WBP Fibres",
             "http://ukfires.org/analyses/UK-wood/system/FibreboardManufacturing",
-            "http://ukfires.org/analyses/UK-wood/system/OtherEngineeredWoodProductsManufacturing",
             "http://ukfires.org/analyses/UK-wood/system/ParticleboardManufacturing",
             "http://ukfires.org/analyses/UK-wood/system/PlywoodManufacturing",
+            "http://ukfires.org/analyses/UK-wood/system/OtherEngineeredWoodProductsManufacturing",
             "http://ukfires.org/analyses/UK-wood/system/VeneerSheetsManufacturing",
             "http://ukfires.org/analyses/UK-wood/system/WBPFibres",
             "http://ukfires.org/analyses/UK-wood/system/WBPFibresByProducts",
@@ -347,17 +319,19 @@ nodes = {
         ],
         partition=None,
         direction="R",
-        title="to pellets",
+        title="to wood pellets",
         node_type="object",
     ),
     "http://ukfires.org/analyses/UK-wood/system/WoodFibresToOtherEnergyFeedstocks": ProcessGroupExtra(
         selection=[
             "Other energy feedstocks wood fibres",
+            "Wood pellets wood fibres",
             "http://ukfires.org/analyses/UK-wood/system/OtherEnergyFeedstocksWoodFibres",
+            "http://ukfires.org/analyses/UK-wood/system/WoodCharcoal",
         ],
         partition=None,
         direction="R",
-        title="to other energy",
+        title="to oth energy",
         node_type="object",
     ),
     "http://ukfires.org/analyses/UK-wood/system/Fibreboard": ProcessGroupExtra(
@@ -368,16 +342,6 @@ nodes = {
         partition=None,
         direction="R",
         title="Fibreboard",
-        node_type="object",
-    ),
-    "http://ukfires.org/analyses/UK-wood/system/OtherEngineeredWoodProducts": ProcessGroupExtra(
-        selection=[
-            "OtherEngineeredWoodProducts",
-            "http://ukfires.org/analyses/UK-wood/system/OtherEngineeredWoodProducts",
-        ],
-        partition=None,
-        direction="R",
-        title="Other engineered products",
         node_type="object",
     ),
     "http://ukfires.org/analyses/UK-wood/system/Particleboard": ProcessGroupExtra(
@@ -397,17 +361,17 @@ nodes = {
         ],
         partition=None,
         direction="R",
-        title="Sof Sawnwood",
+        title="Sawnwood (Soft)",
         node_type="object",
     ),
     "http://ukfires.org/analyses/UK-wood/system/HardwoodSawnwood": ProcessGroupExtra(
         selection=[
-            "Hard Sawnwood",
+            "Sawnwood (Hard)",
             "http://ukfires.org/analyses/UK-wood/system/HardwoodSawnwood",
         ],
         partition=None,
         direction="R",
-        title="Hard Sawnwood",
+        title="Sawnwood (Hard)",
         node_type="object",
     ),
     "http://ukfires.org/analyses/UK-wood/system/Plywood": ProcessGroupExtra(
@@ -461,17 +425,7 @@ nodes = {
         ],
         partition=None,
         direction="R",
-        title="Recycled fibres",
-        node_type="object",
-    ),
-    "http://ukfires.org/analyses/UK-wood/system/SawnProductsToCst": ProcessGroupExtra(
-        selection=[
-            "Sawn products to construction",
-            "http://ukfires.org/analyses/UK-wood/system/SawnProductsToCst",
-        ],
-        partition=None,
-        direction="R",
-        title="Sawn products to construction",
+        title="to pallets",
         node_type="object",
     ),
     "http://ukfires.org/analyses/UK-wood/system/GraphicPapersManufacturing": ProcessGroupExtra(
@@ -491,7 +445,7 @@ nodes = {
         ],
         partition=None,
         direction="R",
-        title="Other paper mfg",
+        title="Oth paper mfg",
         node_type="process",
     ),
     "http://ukfires.org/analyses/UK-wood/system/PackagingManufacturing": ProcessGroupExtra(
@@ -524,6 +478,16 @@ nodes = {
         title="Softwood",
         node_type="object",
     ),
+    "http://ukfires.org/analyses/UK-wood/system/ForestResidues": ProcessGroupExtra(
+        selection=[
+            "Forest residues",
+            "http://ukfires.org/analyses/UK-wood/system/ForestResidues",
+        ],
+        partition=None,
+        direction="R",
+        title="Forest residues",
+        node_type="object",
+    ),
     "http://ukfires.org/analyses/UK-wood/system/HardwoodRoundwood": ProcessGroupExtra(
         selection=[
             "Hardwood",
@@ -534,14 +498,16 @@ nodes = {
         title="Hardwood",
         node_type="object",
     ),
-    "http://ukfires.org/analyses/UK-wood/system/RecycledWoodFibre": ProcessGroupExtra(
+    "http://ukfires.org/analyses/UK-wood/system/RecycledWoodFibres": ProcessGroupExtra(
         selection=[
+            "PostConsumerWood",
             "Recycled wood fibre",
+            "http://ukfires.org/analyses/UK-wood/system/PostConsumerWood",
             "http://ukfires.org/analyses/UK-wood/system/RecycledWoodFibre",
         ],
         partition=None,
         direction="R",
-        title="Fibres to recycling",
+        title="Recycled fibres",
         node_type="object",
     ),
     "http://ukfires.org/analyses/UK-wood/system/RecycledPaper": ProcessGroupExtra(
@@ -572,14 +538,12 @@ nodes = {
         selection=[
             "Fencing posts",
             "Fencing rails",
-            "Railway sleepers",
             "http://ukfires.org/analyses/UK-wood/system/FencingPosts",
             "http://ukfires.org/analyses/UK-wood/system/FencingRailsAndBoards",
-            "http://ukfires.org/analyses/UK-wood/system/RailwaySleepers",
         ],
         partition=None,
         direction="R",
-        title="Fencing & outdoor",
+        title="Fencing",
         node_type="object",
     ),
     "http://ukfires.org/analyses/UK-wood/system/Furniture": ProcessGroupExtra(
@@ -624,14 +588,16 @@ nodes = {
         title="Wood pellets",
         node_type="object",
     ),
-    "http://ukfires.org/analyses/UK-wood/system/OtherObjects": ProcessGroupExtra(
+    "http://ukfires.org/analyses/UK-wood/system/OtherProducts": ProcessGroupExtra(
         selection=[
             "Other objects",
+            "Wood wool and flour",
             "http://ukfires.org/analyses/UK-wood/system/OtherObjects",
+            "http://ukfires.org/analyses/UK-wood/system/WoodWoolAndFlour",
         ],
         partition=None,
         direction="R",
-        title="Other objects",
+        title="Oth prod",
         node_type="object",
     ),
     "http://ukfires.org/analyses/UK-wood/system/OtherEnergyFeedstocks": ProcessGroupExtra(
@@ -641,7 +607,7 @@ nodes = {
         ],
         partition=None,
         direction="R",
-        title="Other feedstocks",
+        title="Oth feedstocks",
         node_type="object",
     ),
     "http://ukfires.org/analyses/UK-wood/system/GraphicPapers": ProcessGroupExtra(
@@ -678,60 +644,21 @@ nodes = {
         ],
         partition=None,
         direction="R",
-        title="Other paper products",
+        title="Oth paper prod",
         node_type="object",
     ),
-    "http://ukfires.org/analyses/UK-wood/system/OtherConstructionProducts": ProcessGroupExtra(
-        selection=[
-            "Fibreboard to construction",
-            "Particleboard to construction",
-            "Plywood to construction",
-            "Other engineered products to construction",
-            "http://ukfires.org/analyses/UK-wood/system/FibreboardToRMIAndOther",
-            "http://ukfires.org/analyses/UK-wood/system/ParticleboardToRMIAndOther",
-            "http://ukfires.org/analyses/UK-wood/system/PlywoodToRMIAndOther",
-            "http://ukfires.org/analyses/UK-wood/system/OtherEngineeredWoodProductsToCst",
-    
-        ],
-        partition=None,
-        direction="R",
-        title="Other construction products",
-        node_type="object",
-    ),
-
-    "http://ukfires.org/analyses/UK-wood/system/SawnConstructionProducts": ProcessGroupExtra(
-        selection=[
-            "Formwork Scaffolding",
-            "Sawnwood to construction",
-            "Wood floor framing for new structures",
-            "Wood frames for new structures",
-            "Wood roof for new structures",
-            "http://ukfires.org/analyses/UK-wood/system/FormworkScaffolding",
-            "http://ukfires.org/analyses/UK-wood/system/SawnwoodToRMIAndOther",
-            "http://ukfires.org/analyses/UK-wood/system/WoodFloorFramingForNewStructures",
-            "http://ukfires.org/analyses/UK-wood/system/WoodFramesForNewStructures",
-            "http://ukfires.org/analyses/UK-wood/system/WoodRoofsForNewStructures",
-        ],
-        partition=None,
-        direction="R",
-        title="Sawn construction products",
-        node_type="object",
-    ),
- 
-
-     "http://ukfires.org/analyses/UK-wood/system/PreConsumerWasteProducts": ProcessGroupExtra(
-        selection=[
-    
-            "Pre Consumer Waste Products",
-            "Pre Consumer Waste Products Consumption",
-            "http://ukfires.org/analyses/UK-wood/system/PreConsumerWasteProducts",
-            "http://ukfires.org/analyses/UK-wood/system/PreConsumerWasteProductsConsumption",
-        ],
-        partition=None,
-        direction="R",
-        title="Industrial residues",
-        node_type="object",
-    ),
+    # "http://ukfires.org/analyses/UK-wood/system/IndustrialResidues": ProcessGroupExtra(
+    #     selection=[
+    #         "Pre Consumer Waste Construction",
+    #         "Pre Consumer Waste Products",
+    #         "http://ukfires.org/analyses/UK-wood/system/PreConsumerWasteConstruction",
+    #         "http://ukfires.org/analyses/UK-wood/system/PreConsumerWasteProducts",
+    #     ],
+    #     partition=None,
+    #     direction="R",
+    #     title="Industrial residues",
+    #     node_type="object",
+    # ),
     "__output_Products": Waypoint(
         partition=Partition(
             groups=(
@@ -771,18 +698,23 @@ nodes = {
                         ),
                     ),
                 ),
+            )
+        ),
+        title="Products",
+    ),
+    "__output_Products_1": Waypoint(
+        partition=Partition(
+            groups=(
                 Group(
-                    label="Fencing & outdoor",
+                    label="Fencing",
                     query=(
                         (
                             "material",
                             (
                                 "Fencing posts",
                                 "Fencing rails and boards",
-                                "Railway sleepers",
                                 "http://ukfires.org/analyses/UK-wood/system/FencingPosts",
                                 "http://ukfires.org/analyses/UK-wood/system/FencingRailsAndBoards",
-                                "http://ukfires.org/analyses/UK-wood/system/RailwaySleepers",
                             ),
                         ),
                     ),
@@ -808,60 +740,26 @@ nodes = {
                     ),
                 ),
                 Group(
-                    label="Other objects",
+                    label="Other products",
                     query=(
                         (
                             "material",
                             (
                                 "Other objects",
                                 "http://ukfires.org/analyses/UK-wood/system/OtherObjects",
+                                "Wood wool and flour",
+                                "http://ukfires.org/analyses/UK-wood/system/WoodWoolAndFlour",
                             ),
                         ),
                     ),
                 ),
             )
         ),
-        title="Products",
+        title="Products_1",
     ),
     "__output_Construction": Waypoint(
         partition=Partition(
             groups=(
-                Group(
-                    label="Fibreboard to construction",
-                    query=(
-                        (
-                            "material",
-                            (
-                                "Fibreboard to construction",
-                                "http://ukfires.org/analyses/UK-wood/system/FibreboardToRMIAndOther",
-                            ),
-                        ),
-                    ),
-                ),
-                Group(
-                    label="Particleboard to construction",
-                    query=(
-                        (
-                            "material",
-                            (
-                                "Particleboard to construction",
-                                "http://ukfires.org/analyses/UK-wood/system/ParticleboardToRMIAndOther",
-                            ),
-                        ),
-                    ),
-                ),
-                Group(
-                    label="Other engineered products to construction",
-                    query=(
-                        (
-                            "material",
-                            (
-                                "Other engineered products to construction",
-                                "http://ukfires.org/analyses/UK-wood/system/OtherEngineeredWoodProductsToCst",
-                            ),
-                        ),
-                    ),
-                ),
                 Group(
                     label="Plywood to construction",
                     query=(
@@ -875,17 +773,37 @@ nodes = {
                     ),
                 ),
                 Group(
-                    label="Joinery",
+                    label="Fibreboard to construction",
                     query=(
                         (
                             "material",
                             (
-                                "Doors",
-                                "Flooring",
-                                "Windows",
-                                "http://ukfires.org/analyses/UK-wood/system/Doors",
-                                "http://ukfires.org/analyses/UK-wood/system/Flooring",
-                                "http://ukfires.org/analyses/UK-wood/system/Windows",
+                                "Fibreboard to construction",
+                                "http://ukfires.org/analyses/UK-wood/system/FibreboardToRMIAndOther",
+                            ),
+                        ),
+                    ),
+                ),
+                Group(
+                    label="Other engineered products to construction",
+                    query=(
+                        (
+                            "material",
+                            (
+                                "Other engineered wood products to cst",
+                                "http://ukfires.org/analyses/UK-wood/system/OtherEngineeredWoodProductsToCst",
+                            ),
+                        ),
+                    ),
+                ),
+                Group(
+                    label="Particleboard to construction",
+                    query=(
+                        (
+                            "material",
+                            (
+                                "Particleboard to construction",
+                                "http://ukfires.org/analyses/UK-wood/system/ParticleboardToRMIAndOther",
                             ),
                         ),
                     ),
@@ -914,8 +832,26 @@ nodes = {
                             (
                                 "Formwork Scaffolding",
                                 "Sawnwood to construction",
+                                "RailwaySleepers",
+                                "http://ukfires.org/analyses/UK-wood/system/RailwaySleepers",
                                 "http://ukfires.org/analyses/UK-wood/system/FormworkScaffolding",
                                 "http://ukfires.org/analyses/UK-wood/system/SawnwoodToRMIAndOther",
+                            ),
+                        ),
+                    ),
+                ),
+                Group(
+                    label="Joinery",
+                    query=(
+                        (
+                            "material",
+                            (
+                                "Doors",
+                                "Flooring",
+                                "Windows",
+                                "http://ukfires.org/analyses/UK-wood/system/Doors",
+                                "http://ukfires.org/analyses/UK-wood/system/Flooring",
+                                "http://ukfires.org/analyses/UK-wood/system/Windows",
                             ),
                         ),
                     ),
@@ -974,7 +910,7 @@ nodes = {
                 ),
             )
         ),
-        title="Residues",
+        title="Industrial residues",
     ),
     "__output_Paper": Waypoint(
         partition=Partition(
@@ -1050,18 +986,37 @@ nodes = {
         ),
         title="Recycled paper",
     ),
-    "__input_Recycled fibres": Waypoint(
+    "__input_Forest_residues": Waypoint(
         partition=Partition(
             groups=(
                 Group(
-                    label="Fibres to recycling",
+                    label="Forest residues",
                     query=(
                         (
                             "material",
                             (
-                            
+                                "Forest residues",
+                                "http://ukfires.org/analyses/UK-wood/system/ForestResidues",
+                            ),
+                        ),
+                    ),
+                ),
+            )
+        ),
+        title="Forest residues",
+    ),
+    "__input_Recycled fibres": Waypoint(
+        partition=Partition(
+            groups=(
+                Group(
+                    label="Recycled fibres",
+                    query=(
+                        (
+                            "material",
+                            (
+                                "PostConsumerWood",
                                 "Recycled wood fibre",
-                                
+                                "http://ukfires.org/analyses/UK-wood/system/PostConsumerWood",
                                 "http://ukfires.org/analyses/UK-wood/system/RecycledWoodFibre",
                             ),
                         ),
@@ -1069,24 +1024,11 @@ nodes = {
                 ),
             )
         ),
-        title="Fibres to recycling",
+        title="Recycled fibres",
     ),
-    "__input_Roundwood": Waypoint(
+    "__input_Soft_Roundwood": Waypoint(
         partition=Partition(
             groups=(
-                Group(
-                    label="Hardwood",
-                    query=(
-                        (
-                            "material",
-                            (
-                                "Hardwood",
-                                "HardwoodRoundwood",
-                                "http://ukfires.org/analyses/UK-wood/system/HardwoodRoundwood",
-                            ),
-                        ),
-                    ),
-                ),
                 Group(
                     label="Softwood",
                     query=(
@@ -1102,10 +1044,32 @@ nodes = {
                 ),
             )
         ),
-        title="Roundwood",
+        title="Soft Roundwood",
+    ),
+    "__input_Hard_Roundwood": Waypoint(
+        partition=Partition(
+            groups=(
+                Group(
+                    label="Hardwood",
+                    query=(
+                        (
+                            "material",
+                            (
+                                "Hardwood",
+                                "HardwoodRoundwood",
+                                "http://ukfires.org/analyses/UK-wood/system/HardwoodRoundwood",
+                            ),
+                        ),
+                    ),
+                ),
+            )
+        ),
+        title="Hard Roundwood",
     ),
     "_wpt_recycled_fibres_1": Waypoint(title=""),
     "_wpt_recycled_fibres_2": Waypoint(title=""),
+    "_wpt_forest_residues_1": Waypoint(title=""),
+    "_wpt_forest_residues_2": Waypoint(title=""),
     "_wpt_softwood_1": Waypoint(title=""),
     "_wpt_softwood_2": Waypoint(title=""),
     "_wpt_softwood_3": Waypoint(title=""),
@@ -1114,16 +1078,27 @@ nodes = {
     "_wpt_softsawn_2": Waypoint(title=""),
     "_wpt_hardsawn_1": Waypoint(title=""),
     "_wpt_hardsawn_2": Waypoint(title=""),
-  #  "Residues pulpmills": Waypoint(title="Residues"),
- #   "Residues_products": Waypoint(title="Residues"),
- #   "Residues_sf_products": Waypoint(title="Residues"),
-  #  "Residues_products": Waypoint(title="Residues"),
+    "Residues_1": Waypoint(title=""),
+    "Residues_2": Waypoint(title="Industrial residues"),
+    "Residues_3": Waypoint(title=""),
+    "Residues_4": Waypoint(title=""),
+    # "Residues_sf_products": Waypoint(title="Residues"),
 }
 bundles = [
     Bundle(
         source="http://ukfires.org/analyses/UK-wood/system/SoftwoodSawnwood",
-        target="http://ukfires.org/analyses/UK-wood/system/OtherObjectsManufacturing",
+        target="http://ukfires.org/analyses/UK-wood/system/OtherProductsManufacturing",
         waypoints=["_wpt_softsawn_1", "_wpt_softsawn_2"],
+    ),
+    Bundle(
+        source="http://ukfires.org/analyses/UK-wood/system/SoftwoodRoundwood",
+        target="http://ukfires.org/analyses/UK-wood/system/OtherProductsManufacturing",
+        waypoints=[
+            "_wpt_softwood_1",
+            "_wpt_softwood_2",
+            "_wpt_softwood_3",
+            "_wpt_softwood_4",
+        ],
     ),
     Bundle(
         source="http://ukfires.org/analyses/UK-wood/system/SoftwoodRoundwood",
@@ -1140,76 +1115,30 @@ bundles = [
         target="http://ukfires.org/analyses/UK-wood/system/FurnitureManufacturing",
     ),
     Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/Joinery",
-        target="http://ukfires.org/analyses/UK-wood/system/CommercialProductsConsumption",
-    ),
-    Bundle(
-        source=Elsewhere,
-        target="http://ukfires.org/analyses/UK-wood/system/CommercialProductsConsumption",
-        flow_selection="is_trade",
-    ),
-
-    Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/OtherObjects",
-        target="http://ukfires.org/analyses/UK-wood/system/CommercialProductsConsumption",
-    ),
- 
-    Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/OtherConstructionProducts",
-        target="http://ukfires.org/analyses/UK-wood/system/CommercialProductsConsumption",
-    ),
-    Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/SawnConstructionProducts",
-        target="http://ukfires.org/analyses/UK-wood/system/CommercialProductsConsumption",
-    ),
-    Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/WoodContainers",
-        target="http://ukfires.org/analyses/UK-wood/system/CommercialProductsConsumption",
-    ),
-    Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/CommercialProductsConsumption",
-        target="http://ukfires.org/analyses/UK-wood/system/RecycledWoodFibre",
-    ),
-
-    Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/Furniture",
-        target="http://ukfires.org/analyses/UK-wood/system/CommercialProductsConsumption",
-    ),
-    Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/FencingAndOutdoor",
-        target="http://ukfires.org/analyses/UK-wood/system/CommercialProductsConsumption",
-    ),
-    Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/CommercialProductsConsumption",
-        target=Elsewhere,
-        flow_selection="is_trade",
-    ),
-    Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/SoftwoodSawnwood",
-        target="http://ukfires.org/analyses/UK-wood/system/SawnwoodToConstruction",
-    ),
-    Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/SawnwoodToConstruction",
-        target="http://ukfires.org/analyses/UK-wood/system/SawnProductsToCst",
-    ),
-    Bundle(
-        source=Elsewhere,
-        target="http://ukfires.org/analyses/UK-wood/system/SawnProductsToCst",
-        flow_selection="is_trade",
-    ),
-    Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/SawnProductsToCst",
-        target=Elsewhere,
-        flow_selection="is_trade",
-    ),
-    Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/SawnProductsToCst",
-        target="http://ukfires.org/analyses/UK-wood/system/SawnConstructionProductsManufacturing",
-    ),
-    
-    Bundle(
         source="http://ukfires.org/analyses/UK-wood/system/Sawmills",
         target="http://ukfires.org/analyses/UK-wood/system/ByProducts",
+    ),
+    Bundle(
+        source="http://ukfires.org/analyses/UK-wood/system/SawnConstructionProductsManufacturing",
+        #  target="http://ukfires.org/analyses/UK-wood/system/IndustrialResidues",
+        target=Elsewhere,
+        waypoints=["Residues_1", "Residues_2"],
+    ),
+    Bundle(
+        source="http://ukfires.org/analyses/UK-wood/system/OtherConstructionProductsManufacturing",
+        #  target="http://ukfires.org/analyses/UK-wood/system/IndustrialResidues",
+        target=Elsewhere,
+        waypoints=["Residues_1", "Residues_2"],
+    ),
+    Bundle(
+        source=Elsewhere,
+        target="http://ukfires.org/analyses/UK-wood/system/OtherEngineeredWoodProducts",
+        flow_selection="is_trade",
+    ),
+    Bundle(
+        source="http://ukfires.org/analyses/UK-wood/system/OtherEngineeredWoodProducts",
+        target=Elsewhere,
+        flow_selection="is_trade",
     ),
     Bundle(
         source="http://ukfires.org/analyses/UK-wood/system/Pulp",
@@ -1226,6 +1155,115 @@ bundles = [
     Bundle(
         source="http://ukfires.org/analyses/UK-wood/system/Pulp",
         target="http://ukfires.org/analyses/UK-wood/system/PackagingManufacturing",
+    ),
+    Bundle(
+        source="http://ukfires.org/analyses/UK-wood/system/OtherConstructionProducts",
+        target=Elsewhere,
+        waypoints=("__output_Construction",),
+        flow_selection="material in ['Fibreboard to construction', 'http://ukfires.org/analyses/UK-wood/system/FibreboardToRMIAndOther'] and not is_trade",
+    ),
+    Bundle(
+        source="http://ukfires.org/analyses/UK-wood/system/SawnConstructionProductsManufacturing",
+        target=Elsewhere,
+        flow_selection="is_trade",
+    ),
+    Bundle(
+        source=Elsewhere,
+        target="http://ukfires.org/analyses/UK-wood/system/OtherConstructionProducts",
+        flow_selection="is_trade",
+    ),
+    Bundle(
+        source="http://ukfires.org/analyses/UK-wood/system/OtherConstructionProducts",
+        target=Elsewhere,
+        flow_selection="is_trade",
+    ),
+    Bundle(
+        source="http://ukfires.org/analyses/UK-wood/system/SoftwoodSawnwood",
+        target="http://ukfires.org/analyses/UK-wood/system/SawnConstructionProductsManufacturing",
+        waypoints=["_wpt_softsawn_1", "_wpt_softsawn_2"],
+    ),
+    Bundle(
+        source="http://ukfires.org/analyses/UK-wood/system/OtherConstructionProducts",
+        target=Elsewhere,
+        waypoints=("__output_Construction",),
+        flow_selection="material in ['Other engineered products to construction', 'http://ukfires.org/analyses/UK-wood/system/OtherEngineeredWoodProductsToCst', ] and not is_trade",
+    ),
+    Bundle(
+        source="http://ukfires.org/analyses/UK-wood/system/OtherConstructionProducts",
+        target=Elsewhere,
+        waypoints=("__output_Construction",),
+        flow_selection="material in ['Particleboard to construction', 'http://ukfires.org/analyses/UK-wood/system/ParticleboardToRMIAndOther'] and not is_trade",
+    ),
+    Bundle(
+        source="http://ukfires.org/analyses/UK-wood/system/SawnConstructionProducts",
+        target=Elsewhere,
+        waypoints=("__output_Construction",),
+        flow_selection="material in ['Wood floor framing for new structures', 'Wood frames for new structures', 'Wood roof for new structures', 'http://ukfires.org/analyses/UK-wood/system/WoodFloorFramingForNewStructures', 'http://ukfires.org/analyses/UK-wood/system/WoodFramesForNewStructures', 'http://ukfires.org/analyses/UK-wood/system/WoodRoofsForNewStructures'] and not is_trade",
+    ),
+    Bundle(
+        source="http://ukfires.org/analyses/UK-wood/system/OtherConstructionProducts",
+        target=Elsewhere,
+        waypoints=("__output_Construction",),
+        flow_selection="material in ['Plywood to construction', 'http://ukfires.org/analyses/UK-wood/system/PlywoodToRMIAndOther'] and not is_trade",
+    ),
+    Bundle(
+        source="http://ukfires.org/analyses/UK-wood/system/SawnConstructionProducts",
+        target=Elsewhere,
+        waypoints=("__output_Construction",),
+        flow_selection="material in ['Formwork Scaffolding', 'RailwaySleepers', 'Sawnwood to construction',  'http://ukfires.org/analyses/UK-wood/system/FormworkScaffolding', 'http://ukfires.org/analyses/UK-wood/system/RailwaySleepers','http://ukfires.org/analyses/UK-wood/system/SawnwoodToRMIAndOther'] and not is_trade",
+    ),
+    Bundle(
+        source="http://ukfires.org/analyses/UK-wood/system/SawnConstructionProducts",
+        target=Elsewhere,
+        flow_selection="is_trade",
+    ),
+    Bundle(
+        source="http://ukfires.org/analyses/UK-wood/system/SawnConstructionProductsManufacturing",
+        target="http://ukfires.org/analyses/UK-wood/system/SawnConstructionProducts",
+    ),
+    Bundle(
+        source="http://ukfires.org/analyses/UK-wood/system/Particleboard",
+        target="http://ukfires.org/analyses/UK-wood/system/OtherConstructionProductsManufacturing",
+    ),
+    Bundle(
+        source="http://ukfires.org/analyses/UK-wood/system/Fibreboard",
+        target="http://ukfires.org/analyses/UK-wood/system/OtherConstructionProductsManufacturing",
+    ),
+    Bundle(
+        source="http://ukfires.org/analyses/UK-wood/system/Plywood",
+        target="http://ukfires.org/analyses/UK-wood/system/OtherConstructionProductsManufacturing",
+    ),
+    Bundle(
+        source="http://ukfires.org/analyses/UK-wood/system/WBPmanufacturing",
+        target="http://ukfires.org/analyses/UK-wood/system/OtherEngineeredWoodProducts",
+    ),
+    Bundle(
+        source=Elsewhere,
+        target="http://ukfires.org/analyses/UK-wood/system/OtherConstructionProductsManufacturing",
+        flow_selection="is_trade",
+    ),
+    Bundle(
+        source=Elsewhere,
+        target="http://ukfires.org/analyses/UK-wood/system/SawnConstructionProductsManufacturing",
+        flow_selection="is_trade",
+    ),
+    Bundle(
+        source="http://ukfires.org/analyses/UK-wood/system/OtherEngineeredWoodProducts",
+        target="http://ukfires.org/analyses/UK-wood/system/OtherConstructionProductsManufacturing",
+    ),
+    Bundle(
+        source="http://ukfires.org/analyses/UK-wood/system/OtherConstructionProductsManufacturing",
+        target="http://ukfires.org/analyses/UK-wood/system/OtherConstructionProducts",
+    ),
+    Bundle(
+        source=Elsewhere,
+        target="http://ukfires.org/analyses/UK-wood/system/SawnConstructionProducts",
+        flow_selection="is_trade",
+    ),
+    Bundle(
+        source="http://ukfires.org/analyses/UK-wood/system/OtherConstructionProductsManufacturing",
+        target=Elsewhere,
+        flow_selection="is_trade",
     ),
     Bundle(
         source="http://ukfires.org/analyses/UK-wood/system/FurnitureManufacturing",
@@ -1246,45 +1284,15 @@ bundles = [
         source="http://ukfires.org/analyses/UK-wood/system/Plywood",
         target="http://ukfires.org/analyses/UK-wood/system/FurnitureManufacturing",
     ),
-    Bundle(
-        source=Elsewhere,
-        target="http://ukfires.org/analyses/UK-wood/system/PreConsumerWasteProducts",
-        flow_selection="is_trade",
-     ),
-    Bundle(
-        source=Elsewhere,
-        target="http://ukfires.org/analyses/UK-wood/system/PaperProductsConsumption",
-        flow_selection="is_trade",
-    ),
-    Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/PaperProductsConsumption",
-        target="http://ukfires.org/analyses/UK-wood/system/RecycledPaper",
-    ),
-    Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/Packaging",
-        target="http://ukfires.org/analyses/UK-wood/system/PaperProductsConsumption",
-    ),
-    Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/OtherPaperProducts",
-        target="http://ukfires.org/analyses/UK-wood/system/PaperProductsConsumption",
-    ),
-    Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/PaperProductsConsumption",
-        target=Elsewhere,
-        flow_selection="is_trade",
-    ),
-    Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/SanitaryPapers",
-        target="http://ukfires.org/analyses/UK-wood/system/PaperProductsConsumption",
-    ),
+    # Bundle(
+    #     source=Elsewhere,
+    #     target="http://ukfires.org/analyses/UK-wood/system/IndustrialResidues",
+    #     flow_selection="is_trade",
+    # ),
     Bundle(
         source="http://ukfires.org/analyses/UK-wood/system/WBPmanufacturing",
         target=Elsewhere,
         flow_selection="is_trade",
-    ),
-    Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/GraphicPapers",
-        target="http://ukfires.org/analyses/UK-wood/system/PaperProductsConsumption",
     ),
     Bundle(
         source="http://ukfires.org/analyses/UK-wood/system/Plywood",
@@ -1303,7 +1311,7 @@ bundles = [
     Bundle(
         source=Elsewhere,
         target="http://ukfires.org/analyses/UK-wood/system/SoftwoodRoundwood",
-        waypoints=("__input_Roundwood",),
+        waypoints=("__input_Soft_Roundwood",),
         flow_selection="material in ['Softwood', 'http://ukfires.org/analyses/UK-wood/system/SoftwoodRoundwood'] and not is_trade",
     ),
     Bundle(
@@ -1334,19 +1342,15 @@ bundles = [
         target="http://ukfires.org/analyses/UK-wood/system/PackagingManufacturing",
     ),
     Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/Plywood",
-        target="http://ukfires.org/analyses/UK-wood/system/OtherConstructionProductsManufacturing",
-    ),
-    Bundle(
         source="http://ukfires.org/analyses/UK-wood/system/JoineryManufacturing",
-         target="http://ukfires.org/analyses/UK-wood/system/PreConsumerWasteProducts",
-       # target=Elsewhere,
-       # waypoints=["Residues_products"],
+        # target="http://ukfires.org/analyses/UK-wood/system/IndustrialResidues",
+        target=Elsewhere,
+        waypoints=["Residues_1", "Residues_2"],
     ),
     Bundle(
         source="http://ukfires.org/analyses/UK-wood/system/FencingAndOutdoorManufacturing",
         target=Elsewhere,
-        waypoints=("__output_Products",),
+        waypoints=("__output_Products_1",),
         flow_selection="material in ['Roundwood to fencing and outdoor', 'Sawnwood to fencing and outdoor', 'http://ukfires.org/analyses/UK-wood/system/RoundwoodToFencingAndOutdoor', 'http://ukfires.org/analyses/UK-wood/system/SawnwoodToFencingAndOutdoor'] and not is_trade",
     ),
     Bundle(
@@ -1364,30 +1368,20 @@ bundles = [
         flow_selection="is_trade",
     ),
     Bundle(
-        source=Elsewhere,
-        target="http://ukfires.org/analyses/UK-wood/system/OtherEngineeredWoodProducts",
-        flow_selection="is_trade",
-    ),
-    Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/OtherEngineeredWoodProducts",
-        target=Elsewhere,
-        flow_selection="is_trade",
-    ),
-    Bundle(
         source="http://ukfires.org/analyses/UK-wood/system/OtherPaperProductsManufacturing",
         target="http://ukfires.org/analyses/UK-wood/system/OtherPaperProducts",
     ),
     Bundle(
         source="http://ukfires.org/analyses/UK-wood/system/Pulpmills",
-        target="http://ukfires.org/analyses/UK-wood/system/PreConsumerWasteProducts",
-        #target=Elsewhere,
-        #waypoints=["Residues pulpmills"],
+        # target="http://ukfires.org/analyses/UK-wood/system/IndustrialResidues",
+        target=Elsewhere,
+        waypoints=["Residues_3", "Residues_4", "Residues_1", "Residues_2"],
     ),
     Bundle(
         source="http://ukfires.org/analyses/UK-wood/system/PulpmillsRecycled",
-        target="http://ukfires.org/analyses/UK-wood/system/PreConsumerWasteProducts",
-        #target=Elsewhere,
-        #waypoints=["Residues pulpmills"],
+        # target="http://ukfires.org/analyses/UK-wood/system/IndustrialResidues",
+        target=Elsewhere,
+        waypoints=["Residues_3", "Residues_4", "Residues_1", "Residues_2"],
     ),
     Bundle(
         source="http://ukfires.org/analyses/UK-wood/system/SoftwoodSawnwood",
@@ -1396,19 +1390,13 @@ bundles = [
     ),
     Bundle(
         source="http://ukfires.org/analyses/UK-wood/system/HardwoodSawnwood",
-        target="http://ukfires.org/analyses/UK-wood/system/FencingAndOutdoorManufacturing",
+        target="http://ukfires.org/analyses/UK-wood/system/SawnConstructionProductsManufacturing",
         waypoints=["_wpt_hardsawn_1", "_wpt_hardsawn_2"],
     ),
     Bundle(
         source=Elsewhere,
         target="http://ukfires.org/analyses/UK-wood/system/RecycledPaper",
         flow_selection="is_trade",
-    ),
-    Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/OtherConstructionProducts",
-        target=Elsewhere,
-        waypoints=("__output_Construction",),
-        flow_selection="material in ['Fibreboard to construction', 'http://ukfires.org/analyses/UK-wood/system/FibreboardToRMIAndOther'] and not is_trade",
     ),
     Bundle(
         source="http://ukfires.org/analyses/UK-wood/system/SoftwoodSawnwood",
@@ -1420,55 +1408,33 @@ bundles = [
         target="http://ukfires.org/analyses/UK-wood/system/FurnitureManufacturing",
     ),
     Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/OtherConstructionProductsManufacturing",
-        target=Elsewhere,
-        flow_selection="is_trade",
-    ),
-    Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/SawnConstructionProductsManufacturing",
-        target=Elsewhere,
-        flow_selection="is_trade",
-    ),
-    Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/RecycledWoodFibre",
+        source="http://ukfires.org/analyses/UK-wood/system/RecycledWoodFibres",
         target="http://ukfires.org/analyses/UK-wood/system/RecycledFibresToEnergyProduction",
     ),
     Bundle(
-    source="http://ukfires.org/analyses/UK-wood/system/PreConsumerWasteProducts",
-    target="http://ukfires.org/analyses/UK-wood/system/RecycledWoodFibre",
-    ),
-    Bundle(
         source=Elsewhere,
-        target="http://ukfires.org/analyses/UK-wood/system/OtherConstructionProducts",
-        flow_selection="is_trade",
-    ),
-    Bundle(
-        source=Elsewhere,
-        target="http://ukfires.org/analyses/UK-wood/system/SawnConstructionProducts",
-        flow_selection="is_trade",
-    ),
-    Bundle(
-        source=Elsewhere,
-        target="http://ukfires.org/analyses/UK-wood/system/RecycledWoodFibre",
+        target="http://ukfires.org/analyses/UK-wood/system/RecycledWoodFibres",
         waypoints=(
             "__input_Recycled fibres",
             "_wpt_recycled_fibres_1",
             "_wpt_recycled_fibres_2",
         ),
-        flow_selection="material in [ 'Recycled wood fibre',  'http://ukfires.org/analyses/UK-wood/system/RecycledWoodFibre'] and not is_trade",
+        flow_selection="material in ['PostConsumerWood', 'Recycled wood fibre', 'http://ukfires.org/analyses/UK-wood/system/PostConsumerWood', 'http://ukfires.org/analyses/UK-wood/system/RecycledWoodFibre'] and not is_trade",
+    ),
+    Bundle(
+        source=Elsewhere,
+        target="http://ukfires.org/analyses/UK-wood/system/ForestResidues",
+        waypoints=(
+            "__input_Forest_residues",
+            "_wpt_forest_residues_1",
+            "_wpt_forest_residues_2",
+        ),
+        flow_selection="material in ['ForestResidues',  'http://ukfires.org/analyses/UK-wood/system/ForestResidues'] and not is_trade",
     ),
     Bundle(
         source=Elsewhere,
         target="http://ukfires.org/analyses/UK-wood/system/FencingAndOutdoor",
         flow_selection="is_trade",
-    ),
-    Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/Particleboard",
-        target="http://ukfires.org/analyses/UK-wood/system/OtherConstructionProductsManufacturing",
-    ),
-    Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/OtherEngineeredWoodProducts",
-        target="http://ukfires.org/analyses/UK-wood/system/OtherConstructionProductsManufacturing",
     ),
     Bundle(
         source=Elsewhere,
@@ -1480,11 +1446,11 @@ bundles = [
         target=Elsewhere,
         flow_selection="is_trade",
     ),
-    Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/PreConsumerWasteProducts",
-        target=Elsewhere,
-       flow_selection="is_trade",
-     ),
+    # Bundle(
+    #     source="http://ukfires.org/analyses/UK-wood/system/IndustrialResidues",
+    #     target=Elsewhere,
+    #     flow_selection="is_trade",
+    # ),
     Bundle(
         source="http://ukfires.org/analyses/UK-wood/system/Fibreboard",
         target=Elsewhere,
@@ -1519,9 +1485,9 @@ bundles = [
     ),
     Bundle(
         source="http://ukfires.org/analyses/UK-wood/system/WoodenContainersManufacturing",
-        target="http://ukfires.org/analyses/UK-wood/system/PreConsumerWasteProducts",
-       # target=Elsewhere,
-       # waypoints=["Residues_products"],
+        # target="http://ukfires.org/analyses/UK-wood/system/IndustrialResidues",
+        target=Elsewhere,
+        waypoints=["Residues_1", "Residues_2"],
     ),
     Bundle(
         source="http://ukfires.org/analyses/UK-wood/system/WoodContainers",
@@ -1549,9 +1515,14 @@ bundles = [
     ),
     Bundle(
         source="http://ukfires.org/analyses/UK-wood/system/WBPmanufacturing",
-        target="http://ukfires.org/analyses/UK-wood/system/PreConsumerWasteProducts",
-        #target=Elsewhere,
-        #waypoints=["Residues_sf_products"],
+        #  target="http://ukfires.org/analyses/UK-wood/system/IndustrialResidues",
+        target=Elsewhere,
+        waypoints=[
+            "Residues_3",
+            "Residues_4",
+            "Residues_1",
+            "Residues_2",
+        ],
     ),
     Bundle(
         source=Elsewhere,
@@ -1569,16 +1540,6 @@ bundles = [
     Bundle(
         source="http://ukfires.org/analyses/UK-wood/system/Pulpmills",
         target="http://ukfires.org/analyses/UK-wood/system/Pulp",
-    ),
-    Bundle(
-        source=Elsewhere,
-        target="http://ukfires.org/analyses/UK-wood/system/OtherConstructionProductsManufacturing",
-        flow_selection="is_trade",
-    ),
-    Bundle(
-        source=Elsewhere,
-        target="http://ukfires.org/analyses/UK-wood/system/SawnConstructionProductsManufacturing",
-        flow_selection="is_trade",
     ),
     Bundle(
         source=Elsewhere,
@@ -1600,17 +1561,18 @@ bundles = [
         target="http://ukfires.org/analyses/UK-wood/system/Plywood",
     ),
     Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/WBPmanufacturing",
-        target="http://ukfires.org/analyses/UK-wood/system/OtherEngineeredWoodProducts",
-    ),
-    Bundle(
         source=Elsewhere,
         target="http://ukfires.org/analyses/UK-wood/system/HardwoodRoundwood",
-        waypoints=("__input_Roundwood",),
+        waypoints=("__input_Hard_Roundwood",),
         flow_selection="material in ['Hardwood', 'http://ukfires.org/analyses/UK-wood/system/HardwoodRoundwood'] and not is_trade",
     ),
     Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/RecycledWoodFibre",
+        source="http://ukfires.org/analyses/UK-wood/system/RecycledWoodFibres",
+        target=Elsewhere,
+        flow_selection="is_trade",
+    ),
+    Bundle(
+        source="http://ukfires.org/analyses/UK-wood/system/ForestResidues",
         target=Elsewhere,
         flow_selection="is_trade",
     ),
@@ -1635,9 +1597,9 @@ bundles = [
     ),
     Bundle(
         source="http://ukfires.org/analyses/UK-wood/system/FurnitureManufacturing",
-        target="http://ukfires.org/analyses/UK-wood/system/PreConsumerWasteProducts",
-       # target=Elsewhere,
-       # waypoints=["Residues_products"],
+        #  target="http://ukfires.org/analyses/UK-wood/system/IndustrialResidues",
+        target=Elsewhere,
+        waypoints=["Residues_1", "Residues_2"],
     ),
     Bundle(
         source="http://ukfires.org/analyses/UK-wood/system/Fibreboard",
@@ -1663,10 +1625,10 @@ bundles = [
         target="http://ukfires.org/analyses/UK-wood/system/Particleboard",
     ),
     Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/OtherObjectsManufacturing",
-        target="http://ukfires.org/analyses/UK-wood/system/PreConsumerWasteProducts",
-        #target=Elsewhere,
-       # waypoints=["Residues_products"],
+        source="http://ukfires.org/analyses/UK-wood/system/OtherProductsManufacturing",
+        # target="http://ukfires.org/analyses/UK-wood/system/IndustrialResidues",
+        target=Elsewhere,
+        waypoints=["Residues_1", "Residues_2"],
     ),
     Bundle(
         source="http://ukfires.org/analyses/UK-wood/system/SoftwoodRoundwood",
@@ -1692,24 +1654,6 @@ bundles = [
         source="http://ukfires.org/analyses/UK-wood/system/Joinery",
         target=Elsewhere,
         flow_selection="is_trade",
-    ),
-    Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/SawnConstructionProducts",
-        target=Elsewhere,
-        waypoints=("__output_Construction",),
-        flow_selection="material in ['Formwork Scaffolding', 'Sawnwood to construction', 'http://ukfires.org/analyses/UK-wood/system/FormworkScaffolding', 'http://ukfires.org/analyses/UK-wood/system/SawnwoodToRMIAndOther'] and not is_trade",
-    ),
-    Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/SawnConstructionProductsManufacturing",
-        target="http://ukfires.org/analyses/UK-wood/system/PreConsumerWasteProducts",
-       # target=Elsewhere,
-       # waypoints=["Residues_products"],
-    ),
-    Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/OtherConstructionProductsManufacturing",
-        target="http://ukfires.org/analyses/UK-wood/system/PreConsumerWasteProducts",
-        #target=Elsewhere,
-        #waypoints=["Residues_products"],
     ),
     Bundle(
         source="http://ukfires.org/analyses/UK-wood/system/WoodContainers",
@@ -1746,11 +1690,11 @@ bundles = [
         flow_selection="is_trade",
     ),
     Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/OtherObjectsManufacturing",
-        target="http://ukfires.org/analyses/UK-wood/system/OtherObjects",
+        source="http://ukfires.org/analyses/UK-wood/system/OtherProductsManufacturing",
+        target="http://ukfires.org/analyses/UK-wood/system/OtherProducts",
     ),
     Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/RecycledWoodFibre",
+        source="http://ukfires.org/analyses/UK-wood/system/RecycledWoodFibres",
         target="http://ukfires.org/analyses/UK-wood/system/RecycledWoodFibreProcessingForPallets",
     ),
     Bundle(
@@ -1759,15 +1703,15 @@ bundles = [
         waypoints=["_wpt_softsawn_1", "_wpt_softsawn_2"],
     ),
     Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/OtherObjectsManufacturing",
+        source="http://ukfires.org/analyses/UK-wood/system/OtherProductsManufacturing",
         target=Elsewhere,
         flow_selection="is_trade",
     ),
     Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/OtherObjects",
+        source="http://ukfires.org/analyses/UK-wood/system/OtherProducts",
         target=Elsewhere,
-        waypoints=("__output_Products",),
-        flow_selection="material in ['Other objects', 'http://ukfires.org/analyses/UK-wood/system/OtherObjects'] and not is_trade",
+        waypoints=("__output_Products_1",),
+        flow_selection="material in ['Other objects', 'http://ukfires.org/analyses/UK-wood/system/OtherObjects','Wood wool and flour', 'http://ukfires.org/analyses/UK-wood/system/WoodWoolAndFlour'] and not is_trade",
     ),
     Bundle(
         source="http://ukfires.org/analyses/UK-wood/system/HardwoodSawnwood",
@@ -1781,9 +1725,9 @@ bundles = [
     ),
     Bundle(
         source="http://ukfires.org/analyses/UK-wood/system/WoodPelletsManufacturing",
-        target="http://ukfires.org/analyses/UK-wood/system/PreConsumerWasteProducts",
-       # target=Elsewhere,
-        #waypoints=["Residues_products"],
+        # target="http://ukfires.org/analyses/UK-wood/system/IndustrialResidues",
+        target=Elsewhere,
+        waypoints=["Residues_1", "Residues_2"],
     ),
     Bundle(
         source="http://ukfires.org/analyses/UK-wood/system/WoodPellets",
@@ -1806,10 +1750,6 @@ bundles = [
     Bundle(
         source="http://ukfires.org/analyses/UK-wood/system/VeneerSheets",
         target="http://ukfires.org/analyses/UK-wood/system/JoineryManufacturing",
-    ),
-    Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/VeneerSheets",
-        target="http://ukfires.org/analyses/UK-wood/system/OtherConstructionProductsManufacturing",
     ),
     Bundle(
         source="http://ukfires.org/analyses/UK-wood/system/Joinery",
@@ -1863,7 +1803,12 @@ bundles = [
     ),
     Bundle(
         source=Elsewhere,
-        target="http://ukfires.org/analyses/UK-wood/system/RecycledWoodFibre",
+        target="http://ukfires.org/analyses/UK-wood/system/RecycledWoodFibres",
+        flow_selection="is_trade",
+    ),
+    Bundle(
+        source=Elsewhere,
+        target="http://ukfires.org/analyses/UK-wood/system/ForestResidues",
         flow_selection="is_trade",
     ),
     Bundle(
@@ -1871,16 +1816,12 @@ bundles = [
         target="http://ukfires.org/analyses/UK-wood/system/RoundwoodToEnergyProduction",
     ),
     Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/Fibreboard",
-        target="http://ukfires.org/analyses/UK-wood/system/OtherConstructionProductsManufacturing",
-    ),
-    Bundle(
         source="http://ukfires.org/analyses/UK-wood/system/FencingAndOutdoorManufacturing",
         target=Elsewhere,
         flow_selection="is_trade",
     ),
     Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/RecycledWoodFibre",
+        source="http://ukfires.org/analyses/UK-wood/system/RecycledWoodFibres",
         target="http://ukfires.org/analyses/UK-wood/system/WBPmanufacturing",
     ),
     Bundle(
@@ -1915,36 +1856,18 @@ bundles = [
         flow_selection="is_trade",
     ),
     Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/SawnConstructionProducts",
-        target=Elsewhere,
-        flow_selection="is_trade",
-    ),
-    Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/OtherConstructionProducts",
-        target=Elsewhere,
-        flow_selection="is_trade",
-    ),
-    Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/OtherConstructionProductsManufacturing",
-        target="http://ukfires.org/analyses/UK-wood/system/OtherConstructionProducts",
-    ),
-    Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/SawnConstructionProductsManufacturing",
-        target="http://ukfires.org/analyses/UK-wood/system/SawnConstructionProducts",
-    ),
-    Bundle(
         source="http://ukfires.org/analyses/UK-wood/system/SoftwoodSawnwood",
         target=Elsewhere,
         flow_selection="is_trade",
     ),
     Bundle(
         source=Elsewhere,
-        target="http://ukfires.org/analyses/UK-wood/system/OtherObjects",
+        target="http://ukfires.org/analyses/UK-wood/system/OtherProducts",
         flow_selection="is_trade",
     ),
     Bundle(
         source=Elsewhere,
-        target="http://ukfires.org/analyses/UK-wood/system/OtherObjectsManufacturing",
+        target="http://ukfires.org/analyses/UK-wood/system/OtherProductsManufacturing",
         flow_selection="is_trade",
     ),
     Bundle(
@@ -1957,17 +1880,11 @@ bundles = [
         flow_selection="is_trade",
     ),
     Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/OtherConstructionProducts",
-        target=Elsewhere,
-        waypoints=("__output_Construction",),
-        flow_selection="material in ['Plywood to construction', 'http://ukfires.org/analyses/UK-wood/system/PlywoodToRMIAndOther'] and not is_trade",
-    ),
-    Bundle(
         source="http://ukfires.org/analyses/UK-wood/system/ByProducts",
         target="http://ukfires.org/analyses/UK-wood/system/Pulpmills",
     ),
     Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/OtherObjects",
+        source="http://ukfires.org/analyses/UK-wood/system/OtherProducts",
         target=Elsewhere,
         flow_selection="is_trade",
     ),
@@ -1984,7 +1901,7 @@ bundles = [
     Bundle(
         source="http://ukfires.org/analyses/UK-wood/system/FencingAndOutdoor",
         target=Elsewhere,
-        waypoints=("__output_Products",),
+        waypoints=("__output_Products_1",),
         flow_selection="material in ['Fencing posts', 'Fencing rails and boards', 'Railway sleepers', 'http://ukfires.org/analyses/UK-wood/system/FencingPosts', 'http://ukfires.org/analyses/UK-wood/system/FencingRailsAndBoards', 'http://ukfires.org/analyses/UK-wood/system/RailwaySleepers'] and not is_trade",
     ),
     Bundle(
@@ -2021,26 +1938,8 @@ bundles = [
         flow_selection="is_trade",
     ),
     Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/SawnConstructionProducts",
-        target=Elsewhere,
-        waypoints=("__output_Construction",),
-        flow_selection="material in ['Wood floor framing for new structures', 'Wood frames for new structures', 'Wood roof for new structures', 'http://ukfires.org/analyses/UK-wood/system/WoodFloorFramingForNewStructures', 'http://ukfires.org/analyses/UK-wood/system/WoodFramesForNewStructures', 'http://ukfires.org/analyses/UK-wood/system/WoodRoofsForNewStructures'] and not is_trade",
-    ),
-    Bundle(
         source="http://ukfires.org/analyses/UK-wood/system/JoineryManufacturing",
         target="http://ukfires.org/analyses/UK-wood/system/Joinery",
-    ),
-    Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/OtherConstructionProducts",
-        target=Elsewhere,
-        waypoints=("__output_Construction",),
-        flow_selection="material in ['Particleboard to construction', 'http://ukfires.org/analyses/UK-wood/system/ParticleboardToRMIAndOther'] and not is_trade",
-    ),
-    Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/OtherConstructionProducts",
-        target=Elsewhere,
-        waypoints=("__output_Construction",),
-        flow_selection="material in ['Other engineered products to construction', 'http://ukfires.org/analyses/UK-wood/system/OtherEngineeredWoodProductsToCst'] and not is_trade",
     ),
     Bundle(
         source=Elsewhere,
@@ -2054,14 +1953,9 @@ bundles = [
     ),
     Bundle(
         source="http://ukfires.org/analyses/UK-wood/system/FencingAndOutdoorManufacturing",
-        target="http://ukfires.org/analyses/UK-wood/system/PreConsumerWasteProducts",
-        #target=Elsewhere,
-        #waypoints=["Residues_products"],
-    ),
-    Bundle(
-        source="http://ukfires.org/analyses/UK-wood/system/SoftwoodSawnwood",
-        target="http://ukfires.org/analyses/UK-wood/system/SawnConstructionProductsManufacturing",
-        waypoints=["_wpt_softsawn_1", "_wpt_softsawn_2"],
+        # target="http://ukfires.org/analyses/UK-wood/system/IndustrialResidues",
+        target=Elsewhere,
+        waypoints=["Residues_1", "Residues_2"],
     ),
     Bundle(
         source="http://ukfires.org/analyses/UK-wood/system/OtherEnergyFeedstocks",
@@ -2094,6 +1988,14 @@ bundles = [
         target="http://ukfires.org/analyses/UK-wood/system/WoodFibresToOtherEnergyFeedstocks",
     ),
     Bundle(
+        source="http://ukfires.org/analyses/UK-wood/system/ForestResiduesToEnergyProduction",
+        target="http://ukfires.org/analyses/UK-wood/system/WoodFibresToOtherEnergyFeedstocks",
+    ),
+    Bundle(
+        source="http://ukfires.org/analyses/UK-wood/system/ForestResidues",
+        target="http://ukfires.org/analyses/UK-wood/system/ForestResiduesToEnergyProduction",
+    ),
+    Bundle(
         source="http://ukfires.org/analyses/UK-wood/system/RoundwoodToEnergyProduction",
         target="http://ukfires.org/analyses/UK-wood/system/WoodFibresToWoodPellets",
     ),
@@ -2121,7 +2023,7 @@ bundles = [
     Bundle(
         source="http://ukfires.org/analyses/UK-wood/system/Furniture",
         target=Elsewhere,
-        waypoints=("__output_Products",),
+        waypoints=("__output_Products_1",),
         flow_selection="material in ['Wooden bedroom furniture', 'Wooden kitchen furniture', 'Wooden office furniture', 'Wooden other furniture', 'Wooden seats', 'http://ukfires.org/analyses/UK-wood/system/WoodenBedroomFurniture', 'http://ukfires.org/analyses/UK-wood/system/WoodenKitchenFurniture', 'http://ukfires.org/analyses/UK-wood/system/WoodenOfficeFurniture', 'http://ukfires.org/analyses/UK-wood/system/WoodenOtherFurniture', 'http://ukfires.org/analyses/UK-wood/system/WoodenSeats'] and not is_trade",
     ),
     Bundle(
@@ -2145,154 +2047,173 @@ bundles = [
     ),
 ]
 ordering = (
-    (("__input_Recycled paper",), ("__input_Roundwood",), ("__input_Recycled fibres",)),
-
-    (   (
-            
-        ),
-        
-        (   "http://ukfires.org/analyses/UK-wood/system/HardwoodRoundwood",
-            "http://ukfires.org/analyses/UK-wood/system/SoftwoodRoundwood",),
-        
-        ("_wpt_recycled_fibres_1",),
-    ),
-
-
     (
+        (
+            "__input_Forest_residues",
+            "__input_Recycled fibres",
+        ),
+        ("__input_Hard_Roundwood",),
+        (),
+        ("__input_Soft_Roundwood",),
+        (),
+        ("__input_Recycled paper",),
+    ),
+    (
+        (
+            "_wpt_forest_residues_1",
+            "_wpt_recycled_fibres_1",
+        ),
+        ("http://ukfires.org/analyses/UK-wood/system/HardwoodRoundwood",),
+        (),
+        ("http://ukfires.org/analyses/UK-wood/system/SoftwoodRoundwood",),
+        (),
+        (),
+    ),
+    (
+        (
+            "_wpt_forest_residues_2",
+            "_wpt_recycled_fibres_2",
+        ),
+        (),
         (),
         (
             "_wpt_softwood_1",
             "http://ukfires.org/analyses/UK-wood/system/Sawmills",
         ),
-        ("_wpt_recycled_fibres_2",),
-        
-       
+        (),
+        ("http://ukfires.org/analyses/UK-wood/system/RecycledPaper",),
     ),
-
-
     (
         (
-         "http://ukfires.org/analyses/UK-wood/system/RecycledPaper",),
+            "http://ukfires.org/analyses/UK-wood/system/ForestResidues",
+            "http://ukfires.org/analyses/UK-wood/system/RecycledWoodFibres",
+        ),
+        (),
+        ("_wpt_softwood_2",),
         (
-            "_wpt_softwood_2",
             "http://ukfires.org/analyses/UK-wood/system/ByProducts",
             "http://ukfires.org/analyses/UK-wood/system/HardwoodSawnwood",
             "http://ukfires.org/analyses/UK-wood/system/SoftwoodSawnwood",
         ),
-        ("http://ukfires.org/analyses/UK-wood/system/RecycledWoodFibre",),
-        
-        
+        (),
+        (),
     ),
-    (   (
+    (
+        (
+            "http://ukfires.org/analyses/UK-wood/system/ForestResiduesToEnergyProduction",
+            "http://ukfires.org/analyses/UK-wood/system/RecycledFibresToEnergyProduction",
+            "http://ukfires.org/analyses/UK-wood/system/RoundwoodToEnergyProduction",
+            "http://ukfires.org/analyses/UK-wood/system/ByProductsToEnergyProduction",
+        ),
+        (
+            "http://ukfires.org/analyses/UK-wood/system/RecycledWoodFibreProcessingForPallets",
+            "_wpt_softwood_3",
+        ),
+         ("http://ukfires.org/analyses/UK-wood/system/WBPmanufacturing",),
+        (
             
+            "_wpt_hardsawn_1",
+            "_wpt_softsawn_1",
+        ),
+        (),
+        (
             "http://ukfires.org/analyses/UK-wood/system/Pulpmills",
             "http://ukfires.org/analyses/UK-wood/system/PulpmillsRecycled",
         ),
-        
-        (
-            "http://ukfires.org/analyses/UK-wood/system/RecycledWoodFibreProcessingForPallets",
-            "http://ukfires.org/analyses/UK-wood/system/WBPmanufacturing",
-            "_wpt_softwood_3",
-            "_wpt_hardsawn_1",
-            "_wpt_softsawn_1",
-            "http://ukfires.org/analyses/UK-wood/system/SawnwoodToConstruction",
-        ),
-        ("http://ukfires.org/analyses/UK-wood/system/RecycledFibresToEnergyProduction",
-            "http://ukfires.org/analyses/UK-wood/system/RoundwoodToEnergyProduction",
-            "http://ukfires.org/analyses/UK-wood/system/ByProductsToEnergyProduction",
-            
-        ),
-        
-        
     ),
     (
-        ( "http://ukfires.org/analyses/UK-wood/system/Pulp",
-            "http://ukfires.org/analyses/UK-wood/system/RecycledPulp",
-           
+        (
+            "http://ukfires.org/analyses/UK-wood/system/WoodFibresToOtherEnergyFeedstocks",
+            "http://ukfires.org/analyses/UK-wood/system/WoodFibresToWoodPellets",
         ),
         (
             "http://ukfires.org/analyses/UK-wood/system/RecycledWoodFibreToPallets",
-            "http://ukfires.org/analyses/UK-wood/system/Fibreboard",
-            "http://ukfires.org/analyses/UK-wood/system/VeneerSheets",
             "_wpt_softwood_4",
-            "http://ukfires.org/analyses/UK-wood/system/Particleboard",
-            "http://ukfires.org/analyses/UK-wood/system/Plywood",
-            "http://ukfires.org/analyses/UK-wood/system/OtherEngineeredWoodProducts",
+            "http://ukfires.org/analyses/UK-wood/system/Fibreboard",
+           
             
+           
+        ),
+         (   "http://ukfires.org/analyses/UK-wood/system/Particleboard",
+            
+            
+            ),
+        ( 
+            "http://ukfires.org/analyses/UK-wood/system/Plywood",
+          "http://ukfires.org/analyses/UK-wood/system/VeneerSheets",
+            "http://ukfires.org/analyses/UK-wood/system/OtherEngineeredWoodProducts",
             "_wpt_hardsawn_2",
             "_wpt_softsawn_2",
-            "http://ukfires.org/analyses/UK-wood/system/SawnProductsToCst",
         ),
-        (  "http://ukfires.org/analyses/UK-wood/system/WoodFibresToOtherEnergyFeedstocks",
-            "http://ukfires.org/analyses/UK-wood/system/WoodFibresToWoodPellets",
-           
-           
+        ("Residues_3",),
+        (
+            "http://ukfires.org/analyses/UK-wood/system/Pulp",
+            "http://ukfires.org/analyses/UK-wood/system/RecycledPulp",
         ),
-        
-        
     ),
-    (    (
-           
-             "http://ukfires.org/analyses/UK-wood/system/OtherPaperProductsManufacturing",
+    (
+        (
+            "http://ukfires.org/analyses/UK-wood/system/OtherEnergyFeedstocksProduction",
+            "http://ukfires.org/analyses/UK-wood/system/WoodPelletsManufacturing",
+        ),
+        (
+            "http://ukfires.org/analyses/UK-wood/system/WoodenContainersManufacturing",
+          
+        ),
+         (  "http://ukfires.org/analyses/UK-wood/system/FencingAndOutdoorManufacturing",
+            "http://ukfires.org/analyses/UK-wood/system/FurnitureManufacturing",
+            "http://ukfires.org/analyses/UK-wood/system/OtherProductsManufacturing",),
+        (
+            "http://ukfires.org/analyses/UK-wood/system/OtherConstructionProductsManufacturing",
+            "http://ukfires.org/analyses/UK-wood/system/SawnConstructionProductsManufacturing",
+            "http://ukfires.org/analyses/UK-wood/system/JoineryManufacturing",
+        ),
+        ("Residues_4",),
+        (
+            "http://ukfires.org/analyses/UK-wood/system/OtherPaperProductsManufacturing",
             "http://ukfires.org/analyses/UK-wood/system/GraphicPapersManufacturing",
             "http://ukfires.org/analyses/UK-wood/system/SanitaryPapersManufacturing",
             "http://ukfires.org/analyses/UK-wood/system/PackagingManufacturing",
         ),
-        
-        (
-            "http://ukfires.org/analyses/UK-wood/system/WoodenContainersManufacturing",
-            "http://ukfires.org/analyses/UK-wood/system/FencingAndOutdoorManufacturing",
-            "http://ukfires.org/analyses/UK-wood/system/FurnitureManufacturing",
-            "http://ukfires.org/analyses/UK-wood/system/OtherObjectsManufacturing",
-            "http://ukfires.org/analyses/UK-wood/system/OtherConstructionProductsManufacturing",
-            "http://ukfires.org/analyses/UK-wood/system/JoineryManufacturing",
-            "http://ukfires.org/analyses/UK-wood/system/SawnConstructionProductsManufacturing",
-        ),
-        (  "http://ukfires.org/analyses/UK-wood/system/OtherEnergyFeedstocksProduction",
-            "http://ukfires.org/analyses/UK-wood/system/WoodPelletsManufacturing",
-           
-        ),
-        
-        
     ),
     (
         (
-           
-              "http://ukfires.org/analyses/UK-wood/system/OtherPaperProducts",
+            "http://ukfires.org/analyses/UK-wood/system/OtherEnergyFeedstocks",
+            "Residues_1",
+            "http://ukfires.org/analyses/UK-wood/system/WoodPellets",
+        ),
+        (
+            "http://ukfires.org/analyses/UK-wood/system/WoodContainers",
+            
+            #  "http://ukfires.org/analyses/UK-wood/system/IndustrialResidues",
+        ),
+         ("http://ukfires.org/analyses/UK-wood/system/FencingAndOutdoor",
+            "http://ukfires.org/analyses/UK-wood/system/Furniture",
+            "http://ukfires.org/analyses/UK-wood/system/OtherProducts",),
+        (
+            "http://ukfires.org/analyses/UK-wood/system/OtherConstructionProducts",
+            "http://ukfires.org/analyses/UK-wood/system/SawnConstructionProducts",
+            "http://ukfires.org/analyses/UK-wood/system/Joinery",
+        ),
+        ("Residues_1",),
+        (
+            "http://ukfires.org/analyses/UK-wood/system/OtherPaperProducts",
             "http://ukfires.org/analyses/UK-wood/system/GraphicPapers",
             "http://ukfires.org/analyses/UK-wood/system/SanitaryPapers",
             "http://ukfires.org/analyses/UK-wood/system/Packaging",
         ),
-        (
-            "http://ukfires.org/analyses/UK-wood/system/WoodContainers",
-            "http://ukfires.org/analyses/UK-wood/system/FencingAndOutdoor",
-            "http://ukfires.org/analyses/UK-wood/system/Furniture",
-            "http://ukfires.org/analyses/UK-wood/system/OtherObjects",
-            "http://ukfires.org/analyses/UK-wood/system/OtherConstructionProducts",
-            "http://ukfires.org/analyses/UK-wood/system/Joinery",
-            "http://ukfires.org/analyses/UK-wood/system/SawnConstructionProducts",
-            "http://ukfires.org/analyses/UK-wood/system/PreConsumerWasteProducts",
-            
-        ),
-        (  "http://ukfires.org/analyses/UK-wood/system/OtherEnergyFeedstocks",
-            
-            "http://ukfires.org/analyses/UK-wood/system/WoodPellets",
-          
-        ),
-        
-        
     ),
     (
-        
-        ("__output_Paper",),
+        ("__output_Energy",),
         (
             "__output_Products",
-            "__output_Construction",
+           
         ),
-        ("__output_Energy",),
-        
-        
-  
+         ( "__output_Products_1",),
+        ("__output_Construction",),
+        ("Residues_2",),
+        ("__output_Paper",),
+    ),
 )
 
 flow_partition = Partition.Simple(
@@ -2386,10 +2307,8 @@ flow_partition = Partition.Simple(
             (
                 "Fencing posts",
                 "Fencing rails and boards",
-                "Railway sleepers",
                 "http://ukfires.org/analyses/UK-wood/system/FencingPosts",
                 "http://ukfires.org/analyses/UK-wood/system/FencingRailsAndBoards",
-                "http://ukfires.org/analyses/UK-wood/system/RailwaySleepers",
             ),
         ),
         (
@@ -2415,9 +2334,11 @@ flow_partition = Partition.Simple(
             ),
         ),
         (
-            "Other objects",
+            "Other products",
             (
                 "Other objects",
+                "Wood wool and flour",
+                "http://ukfires.org/analyses/UK-wood/system/WoodWoolAndFloor",
                 "http://ukfires.org/analyses/UK-wood/system/OtherObjects",
             ),
         ),
@@ -2454,6 +2375,13 @@ flow_partition = Partition.Simple(
             ),
         ),
         (
+            "Other engineered products to construction",
+            (
+                "Other engineered products to construction",
+                "http://ukfires.org/analyses/UK-wood/system/OtherEngineeredWoodProductsToCst",
+            ),
+        ),
+        (
             "Plywood to construction",
             (
                 "Plywood to construction",
@@ -2482,16 +2410,19 @@ flow_partition = Partition.Simple(
             "Sawnwood to construction",
             (
                 "Formwork Scaffolding",
+                "RailwaySleepers",
                 "Sawnwood to construction",
+                "http://ukfires.org/analyses/UK-wood/system/RailwaySleepers",
                 "http://ukfires.org/analyses/UK-wood/system/FormworkScaffolding",
                 "http://ukfires.org/analyses/UK-wood/system/SawnwoodToRMIAndOther",
             ),
         ),
         (
-            "Fibres to recycling",
+            "Recycled fibres",
             (
+                "PostConsumerWood",
                 "Recycled wood fibre",
-                
+                "http://ukfires.org/analyses/UK-wood/system/PostConsumerWood",
                 "http://ukfires.org/analyses/UK-wood/system/RecycledWoodFibre",
             ),
         ),
@@ -2507,8 +2438,10 @@ flow_partition = Partition.Simple(
             (
                 "Other energy feedstocks wood fibres",
                 "Wood pellets wood fibres",
+                "WoodCharcoal",
                 "http://ukfires.org/analyses/UK-wood/system/OtherEnergyFeedstocksWoodFibres",
                 "http://ukfires.org/analyses/UK-wood/system/WoodPelletsWoodFibres",
+                "http://ukfires.org/analyses/UK-wood/system/WoodCharcoal",
             ),
         ),
         (
@@ -2516,13 +2449,6 @@ flow_partition = Partition.Simple(
             (
                 "Veneer sheets",
                 "http://ukfires.org/analyses/UK-wood/system/VeneerSheets",
-            ),
-        ),
-        (
-            "Other engineered products",
-            (
-                "Other engineered produts",
-                "http://ukfires.org/analyses/UK-wood/system/OtherEngineeredWoodProducts",
             ),
         ),
         (
@@ -2544,7 +2470,9 @@ flow_partition = Partition.Simple(
         (
             "Industrial residues",
             (
+                "Pre Consumer Waste Construction",
                 "Pre Consumer Waste Products",
+                "http://ukfires.org/analyses/UK-wood/system/PreConsumerWasteConstruction",
                 "http://ukfires.org/analyses/UK-wood/system/PreConsumerWasteProducts",
             ),
         ),
