@@ -14,12 +14,15 @@ kernelspec:
 
 # Recipes 
 
+
 ```{system:process} Wood
 :label: Wood
 :consumes: Roundwood RecycledWoodFibre RecycledPaper
 :produces: CommercialProducts WoodFramesForNewStructures WoodRoofsForNewStructures WoodFloorFramingForNewStructures PreConsumerWasteProducts PreConsumerWasteProducts PaperProducts EnergyIndustry Construction 
 :become_parent: true
 ```
+
+## Wood fibres delivery
 
 ```{system:process} HardwoodRoundwoodDelivery
 ---
@@ -45,9 +48,9 @@ produces: |
 ---
 label: Forest residues delivery
 consumes: |
-      ForestResidues  = 0 kg
+      ForestResidues    = 0 kg
 produces: |
-      ForestResidues  = 1 kg
+      ForestResidues    = 1 kg
 ---
 ```
 
@@ -55,9 +58,9 @@ produces: |
 ---
 label: Recycled paper delivery
 consumes: |
-      RecycledPaper  = 0 kg
+      RecycledPaper     = 0 kg
 produces: |
-      RecycledPaper  = 1 kg
+      RecycledPaper     = 1 kg
 ---
 ```
 
@@ -65,17 +68,13 @@ produces: |
 ---
 label: Recycled wood fibre delivery
 consumes: |
-      RecycledWoodFibre  = 0 kg
+      RecycledWoodFibre = 0 kg
 produces: |
-      RecycledWoodFibre  = 1 kg
+      RecycledWoodFibre = 1 kg
 ---
 ```
 
-
-
-
-
-## Primary wood processing
+## Semi-finished product manufacturing
 
 ```{system:process} PrimaryWoodProcessing
 :label: Primary Wood Processing
@@ -84,12 +83,11 @@ produces: |
 :become_parent: true
 ```
 
-  
 ### Sawmills
 
 Sawmills are facilities where logs of roundwood are cut into lumber. The yield of sawmills is between 45-62% {cite}`UNECE`. Around half of the roundwood input leaves sawmills as by-products (chips, shavings and sawdust).
 
-![diagram of sawmills ratio](images/Sawmillsyield.png)
+![diagram of sawmills yield](images/sawmills_yield.png)
 
 **Source**: {cite}`UNECE`
 
@@ -103,10 +101,10 @@ Sawmills are facilities where logs of roundwood are cut into lumber. The yield o
 ---
 label: Sawmills Softwood
 consumes: |
-      SoftwoodRoundwood  = 1 kg
+      SoftwoodRoundwood  = 1   kg
 produces: |
-      SoftwoodSawnwood = 0.5 kg
-      ByProducts       = 0.5 kg
+      SoftwoodSawnwood   = 0.5 kg
+      ByProducts         = 0.5 kg
 ---
 ```
 
@@ -114,17 +112,15 @@ produces: |
 ---
 label: Sawmills Hardwood
 consumes: |
-      HardwoodRoundwood  = 1 kg
+      HardwoodRoundwood  = 1   kg
 produces: |
-      HardwoodSawnwood = 0.5 kg
-      ByProducts       = 0.5 kg
+      HardwoodSawnwood   = 0.5 kg
+      ByProducts         = 0.5 kg
 ---
 ```
 
 ```{end-sub-processes}
 ```
-
-
 
 ### Recycled wood to pallets
 
@@ -132,21 +128,18 @@ produces: |
 ---
 label: Recycled fibres processing to pallets
 consumes: |
-      RecycledWoodFibre                 = 1 kg
+      RecycledWoodFibre          = 1 kg
 produces: |
-      RecycledWoodFibreToPallets        = 1  kg
+      RecycledWoodFibreToPallets = 1 kg
 ---
 ```
 
-
-
 ### WBP manufacturing 
 
-The wood fibres used for making wood-based panels come from small sections of roundwood, from sawmills in the form of wood chips and sawdust or from recovered wood from post-industrial (demolitions) or post-consumer sources {cite}`ForestResearchExcelTimber`. The share of these three raw materials in UK wood-based panel mills is taken from {cite}`ForestResearchExcelTimber`. The input of "other materials" designates binders and adhesives. The share of adhesives was taken from the Ecoinvent life-cycle database, for particleboard from the activity "particleboard production, uncoated, average glue mix, RER", for fibreboard from the activity "medium density fibreboard production, uncoated, RER", for plywood (18%) from the activity "plywood production, RER" {cite}`Ecoinvent`.
+The wood fibres used for making wood-based panels come from small sections of roundwood, from sawmills in the form of wood chips and sawdust or from recovered wood from post-industrial (demolitions) or post-consumer sources {cite}`ForestResearchExcelTimber`. The share of these three raw materials in UK wood-based panel mills is taken from {cite}`ForestResearchExcelTimber`.
 
-![diagram of share of products going into WBP manufacturing](images/WBPmanuf.png) 
+![diagram of share of products going into WBP manufacturing](images/wbp_manuf.png) 
 
-![diagram of import and export of WBP](images/WBPimportexport.png)
 
 **Source**: {cite}`ForestResearchExcelTimber`
 
@@ -178,25 +171,23 @@ produces: |
 ---
 label: By-products to WBP fibres
 consumes: |
-      ByProducts                     = 1  kg
+      ByProducts                       = 1  kg
 produces: |
-      WBPFibres                      = 1  kg
+      WBPFibres                        = 1  kg
 ---
 ```
 ```{system:process} WBPFibresRecycledWoodFibre
 ---
 label: Recycled fibres to WBP fibres
 consumes: |
-      RecycledWoodFibre              = 1    kg
+      RecycledWoodFibre                = 1  kg
 produces: |
-      WBPFibres                      = 1    kg
+      WBPFibres                        = 1  kg
 ---
 ```
 
 ```{end-sub-processes}
 ```
-
-
 
 ```{system:process} WBPBoardsProduction
 :label: WBP boards production
@@ -209,7 +200,7 @@ produces: |
 ---
 label: Fibreboard manufacturing 
 consumes: |
-      WBPFibres                        = 1 kg
+      WBPFibres                      =   1  kg
 produces: |
       Fibreboard                     = 0.9  kg
       PreConsumerWasteProducts       = 0.1  kg
@@ -220,7 +211,7 @@ produces: |
 ---
 label: Particleboard manufacturing 
 consumes: |
-      WBPFibres                      = 1    kg
+      WBPFibres                      =   1  kg
 produces: |
       Particleboard                  = 0.9  kg
       PreConsumerWasteProducts       = 0.1  kg
@@ -234,7 +225,7 @@ label: Veneer sheets manufacturing
 consumes: |
       
 produces: |
-      VeneerSheets  = 1 kg    
+      VeneerSheets                    = 1    kg    
                       
 ---
 ```
@@ -245,7 +236,7 @@ label: Plywood manufacturing
 consumes: |
 
 produces: |
-     Plywood =  1 kg                      
+     Plywood                         =  1    kg                      
 ---
 ```
 
@@ -256,7 +247,7 @@ label: Other engineered wood products manufacturing
 consumes: |
 
 produces: |
-     OtherEngineeredWoodProducts =  1 kg                      
+     OtherEngineeredWoodProducts      =  1    kg                      
 ---
 ```
 
@@ -266,11 +257,10 @@ produces: |
 ```{end-sub-processes}
 ```
 
-
-## Pulpmills
+### Pulpmills
 
 A pulpmill is a manufacturing facility which processes pulpwood and wood chips into pulp which is further processed into paper products in papermills. Pulp can be manufactured using mechanical, semi-chemical, or fully chemical methods. The finished product may be either bleached or non-bleached. Recycled paper goes through a chemical treatment, is processed into pulp and is delivered into papermills. 
-68% of pulpmills use fully chemical methods in Europe {cite}`Cepi`. The yield of pulpmills is taken from {cite}`EwijkStijn2018GLCP` and is calculated as a weighted average between the average yield of chemical (92.5%) and mechanical methods (47.5%). 
+68% of pulpmills use fully chemical methods in Europe {cite}`Cepi`. The yield of pulpmills is taken from {cite}`EwijkStijn2018GLCP` and is calculated as a weighted average between the average yield of chemical (47.5%) and mechanical methods (92.5%). 
 
 ```{system:process} Pulpmills
 :label: Pulpmills
@@ -283,10 +273,10 @@ A pulpmill is a manufacturing facility which processes pulpwood and wood chips i
 ---
 label: New pulp making
 consumes: |
-      SoftwoodRoundwood       = 1 kg
+      SoftwoodRoundwood           = 1    kg
 produces: |
-      Pulp                     = 0.58 kg
-      PreConsumerWasteProducts = 0.42 kg
+      Pulp                        = 0.58 kg
+      PreConsumerWasteProducts    = 0.42 kg
 ---
 ```  
 
@@ -295,7 +285,7 @@ produces: |
 label: Pulpmills recycled paper
 
 consumes: |
-      RecycledPaper               = 1 kg
+      RecycledPaper               = 1     kg
 produces: |
       RecycledPulp                = 0.81  kg
       PreConsumerWasteProducts    = 0.19  kg
@@ -306,25 +296,18 @@ produces: |
 ---
 label: Pulpmills by products
 consumes: |
-      ByProducts                = 1 kg
+      ByProducts                  = 1    kg
 produces: |
-      Pulp                     = 0.92 kg
-      PreConsumerWasteProducts = 0.08 kg
+      Pulp                        = 0.92 kg
+      PreConsumerWasteProducts    = 0.08 kg
 ---
 ```
 
 ```{end-sub-processes}
 ```
 
+### Wood fibres to fuel production
 
-
-## Wood fibres to fuel production
-
-
-Information on the quantity of wood pellets used in large OtherEnergyFeedstocks plants was taken from the following sources>
-- <https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/490572/Woodfuel_Disclosure_Survey_2015.pdf>
-- <https://www.ons.gov.uk/economy/environmentalaccounts/articles/aburningissuebiomassisthebiggestsourceofrenewableenergyconsumedintheuk/2019-08-30>
-- <https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/462361/Trade_of_wood_pellets.pdf>
 
 ```{system:process} WoodFibresForEnergyProduction
 :label: Energy
@@ -390,7 +373,7 @@ label: Post consumer wood to other energy feedstocks
 consumes: |
       RecycledWoodFibre                         = 1 kg
 produces: |
-      OtherEnergyFeedstocksWoodFibres          = 1 kg
+      OtherEnergyFeedstocksWoodFibres           = 1 kg
 ---
 ```
 
@@ -398,9 +381,9 @@ produces: |
 ---
 label: Forest residues to other energy feedstocks
 consumes: |
-      ForestResidues                        = 1 kg
+      ForestResidues                            = 1 kg
 produces: |
-      OtherEnergyFeedstocksWoodFibres          = 1 kg
+      OtherEnergyFeedstocksWoodFibres           = 1 kg
 ---
 ```
 
@@ -408,25 +391,17 @@ produces: |
 ---
 label: Wood charcoal production
 consumes: |
-      SoftwoodRoundwood                        = 1 kg
+      SoftwoodRoundwood                         = 1 kg
 produces: |
-      WoodCharcoal          = 1 kg
+      WoodCharcoal                              = 1 kg
 ---
 ```
-
-
 
 ```{end-sub-processes}
 ```
 
 ```{end-sub-processes} 
 ```
-
-
-
-
-
-
 
 ## The paper industry
 
@@ -443,10 +418,10 @@ Papermills transform paper pulp into paper products. Other materials designate f
 ---
 label: Graphic papers manufacturing
 consumes: |
-      Pulp                        =  0.25  kg
-      RecycledPulp                =  0.75 kg
+      Pulp                         =  0.25   kg
+      RecycledPulp                 =  0.75   kg
 produces: |
-      GraphicPapers               = 1     kg
+      GraphicPapers                =  1      kg
       
 ---
 ``` 
@@ -455,10 +430,10 @@ produces: |
 ---
 label: Sanitary papers manufacturing   
 consumes: |
-      Pulp                          =  0.66   kg
+      Pulp                          =  0.66  kg
       RecycledPulp                  =  0.34  kg
 produces: |
-      SanitaryPapers               =  1   kg
+      SanitaryPapers                =  1     kg
 
 ---
 ``` 
@@ -470,7 +445,7 @@ consumes: |
       Pulp                          =  0.37  kg
       RecycledPulp                  =  0.63  kg
 produces: |
-      Packaging                     =  1    kg
+      Packaging                     =  1     kg
 ---
 ```
 
@@ -478,19 +453,17 @@ produces: |
 ---
 label: Other paper products manufacturing
 consumes: |
-      Pulp                          =  0.65 kg
-      RecycledPulp                  =  0.35 kg
+      Pulp                          =  0.65  kg
+      RecycledPulp                  =  0.35  kg
 produces: |
-      OtherPaperProducts            = 1    kg
+      OtherPaperProducts            =  1     kg
 ---
 ```
 
 ```{end-sub-processes}
 ``` 
 
-
 ## The energy industry
-
 
 ```{system:process} EnergyIndustry
 :label: Energy industry
@@ -503,10 +476,10 @@ produces: |
 ---
 label: Wood pellets manufacturing 
 consumes: |
-      WoodPelletsWoodFibres                    = 1 kg
+      WoodPelletsWoodFibres                       = 1   kg
 produces: |
-      WoodPellets                              = 0.7 kg
-      PreConsumerWasteProducts                 = 0.3 kg
+      WoodPellets                                 = 0.7 kg
+      PreConsumerWasteProducts                    = 0.3 kg
 ---
 ```
 
@@ -514,9 +487,9 @@ produces: |
 ---
 label: Other energy feedstocks production 
 consumes: |
-      OtherEnergyFeedstocksWoodFibres             = 1 kg
+      OtherEnergyFeedstocksWoodFibres             = 1   kg
 produces: |
-      OtherEnergyFeedstocks                       = 1 kg
+      OtherEnergyFeedstocks                       = 1   kg
 ---
 ```
 
@@ -524,16 +497,14 @@ produces: |
 ---
 label: Wood charcoal to other energy feedstocks 
 consumes: |
-      WoodCharcoal             = 1 kg
+      WoodCharcoal                                = 1   kg
 produces: |
-      OtherEnergyFeedstocks                       = 1 kg
+      OtherEnergyFeedstocks                       = 1   kg
 ---
 ```
 
 ```{end-sub-processes}
 ```
-
-
 
 ```{system:process} ProductsManufacturing
 :label: Products manufacturing
@@ -542,11 +513,9 @@ produces: |
 :become_parent: true
 ```
 
-
-
 ## Products manufacturing
 
-![diagram of sawnwood going into products](images/SawnwoodtoProductsMarkets.png)
+![sawnwood consumed by products](images/sawnwood_to_products_markets.png)
 
 ```{system:process} CommercialProductsManufacturing
 :label: Commercial products 
@@ -555,10 +524,10 @@ produces: |
 :become_parent: true
 ```
 
-### FencingManufacturing
+### Fencing manufacturing
  
-Fencing manufacturing includes the processing of roundwood into round fencing posts and the processing of sawnwood into fence panels, it also includes other outdoor products such as prefabricated buildings. 
-The data on by-product output was collected by surveying round-fencing manufacturers in the UK by Forest Research {cite}`ForestResearchExcelTimber`. 
+Fencing manufacturing includes the processing of roundwood into round fencing posts and the processing of sawnwood into fence panels.. 
+The data on industrial residue output was collected by surveying round-fencing manufacturers in the UK by Forest Research {cite}`ForestResearchExcelTimber`. 
  
 
 
@@ -573,43 +542,33 @@ The data on by-product output was collected by surveying round-fencing manufactu
 ---
 label: Sawnwood to fencing manufacturing 
 consumes: |
-      SoftwoodSawnwood                         = 1    kg
+      SoftwoodSawnwood                              = 1   kg
 produces: |
-      SawnwoodToFencingAndOutdoor              = 1    kg
+      SawnwoodToFencingAndOutdoor                   = 1   kg
 
 ---
 ```
-
-
-
 
 ```{system:process} RoundwoodToFencingAndOutdoorManufacturing
 ---
 label: Roundwood to fencing manufacturing 
 consumes: |
-      SoftwoodRoundwood                             = 1  kg
+      SoftwoodRoundwood                             = 1   kg
 produces: |
-      RoundwoodToFencingAndOutdoor                  = 1  kg
+      RoundwoodToFencingAndOutdoor                  = 1   kg
 --- 
 ```
-
-
-
 
 ```{system:process} FencingPostsManufacturing
 ---
 label: Fencing posts manufacturing 
 consumes: |
-      RoundwoodToFencingAndOutdoor              = 1    kg
+      RoundwoodToFencingAndOutdoor                  = 1    kg
 produces: |
-      FencingPosts                             = 0.80 kg
-      PreConsumerWasteProducts                 = 0.2  kg
+      FencingPosts                                  = 0.80 kg
+      PreConsumerWasteProducts                      = 0.2  kg
 ---
 ```
-
-
- 
-
 
 ```{system:process} FencingRailsAndBoardsManufacturing
 ---
@@ -621,7 +580,6 @@ produces: |
       PreConsumerWasteProducts                      = 0.2  kg
 ---
 ```
-
  
 ```{end-sub-processes} 
 ``` 
@@ -629,9 +587,7 @@ produces: |
 ### Wood container manufacturing
 
 This production process describes the manufacturing of industrial wood containers such as flat pallets, box pallets, crates, cable drums, cases, casks, boxes, barrels, vats and tubs.
-Other materials designate the binder and the iron content (screws) of wood containers which is estimated to be around 5.1% {cite}`Thunen`. The yield of wood container manufacturing is 90% {cite}`SAAL2022100199`.
-
-
+Other materials designate the binder and the iron content (screws) of wood containers. The yield of wood container manufacturing is 90% {cite}`SAAL2022100199`.
 
 ```{system:process} WoodenContainersManufacturing
 ---
@@ -646,22 +602,21 @@ become_parent: true
 label: Pallets manufacturing
 consumes: |
       SoftwoodSawnwood                    = 0.9   kg
-      Plywood                       = 0.1  kg
+      Plywood                             = 0.1   kg
 produces: |
-      Pallets                             = 0.9     kg 
+      Pallets                             = 0.9   kg 
       PreConsumerWasteProducts            = 0.1   kg
 ---
 ```  
-
 
 ```{system:process} RefurbishedPalletsManufacturing
 ---
 label: Refurbished pallets manufacturing
 consumes: |
-      RecycledWoodFibreToPallets           = 0.9   kg
+      RecycledWoodFibreToPallets          = 0.9   kg
       SoftwoodSawnwood                    = 0.1   kg
 produces: |
-      RefurbishedPallets                 = 0.9     kg 
+      RefurbishedPallets                  = 0.9   kg 
       PreConsumerWasteProducts            = 0.1   kg
 ---
 ``` 
@@ -672,11 +627,11 @@ label: Other wood containers manufacturing
 consumes: |
       SoftwoodSawnwood                    = 0.4    kg 
       HardwoodSawnwood                    = 0.1    kg
-      Particleboard                       = 0.2   kg
+      Particleboard                       = 0.2    kg
       Plywood                             = 0.3    kg
 produces: |
-      OtherWoodContainers                  = 0.9    kg
-      PreConsumerWasteProducts            = 0.1    kg
+      OtherWoodContainers                  = 0.9   kg
+      PreConsumerWasteProducts             = 0.1   kg
       
 ---  
 ```
@@ -686,12 +641,10 @@ produces: |
 
 ### Furniture 
 
-This process describes the raw material inputs into furniture manufacturing. Furniture manufacturing designates the manufacturing of the wooden components of seats, office, shop, dining room, kitchen, bedroom furniture and furniture for non-domestic uses. The production inpus were taken from a 2002 report on the furniture industry and were expressed as shares {cite}`TradaFurniture`. An average of 15% of the raw material inputs leave as waste which are either incinerated or sent for recycling {cite}`TradaFurniture`. 
+This process describes the raw material inputs into furniture manufacturing. Furniture manufacturing designates the manufacturing of the wooden components of seats, office, shop, dining room, kitchen, bedroom furniture and furniture for non-domestic uses. The production inpus were taken from a 2002 report on the furniture industry and were expressed as shares {cite}`TradaFurniture`. An average of 25% of the raw material inputs leave as waste which are either incinerated or sent for recycling {cite}`TradaFurniture`. 
 
-![diagram of raw materials going into furniture](images/InputsOfFurniture.png) 
-**Source**: TRADA Wood Used in Furniture: The UK Mass Balance and Efficiency of Use, 
-
-
+![diagram of raw materials going into furniture](images/wood_input_furniture.png) 
+**Source**: TRADA Wood Used in Furniture: The UK Mass Balance and Efficiency of Use
 
 ```{system:process} FurnitureManufacturing
 ---
@@ -712,7 +665,7 @@ consumes: |
       Plywood                             = 0.02    kg
       VeneerSheets                        = 0.12    kg
 produces: |
-      WoodenOfficeFurniture               = 0.75      kg
+      WoodenOfficeFurniture               = 0.75    kg
       PreConsumerWasteProducts            = 0.25    kg
 ---
 ```
@@ -729,7 +682,7 @@ consumes: |
       Plywood                             = 0.02    kg
       VeneerSheets                        = 0.12    kg
 produces: |
-      WoodenBedroomFurniture              = 0.75      kg
+      WoodenBedroomFurniture              = 0.75    kg
       PreConsumerWasteProducts            = 0.25    kg
 ---
 ``` 
@@ -745,7 +698,7 @@ consumes: |
       Plywood                             = 0.02    kg
       VeneerSheets                        = 0.12    kg
 produces: |
-      WoodenKitchenFurniture              = 0.75      kg
+      WoodenKitchenFurniture              = 0.75    kg
       PreConsumerWasteProducts            = 0.25    kg
 ---
 ```
@@ -777,7 +730,7 @@ consumes: |
       Plywood                             = 0.02    kg
       VeneerSheets                        = 0.12    kg
 produces: |
-      WoodenOtherFurniture                = 0.75       kg
+      WoodenOtherFurniture                = 0.75    kg
       PreConsumerWasteProducts            = 0.25    kg
 ---
 ```
@@ -785,15 +738,8 @@ produces: |
 ```{end-sub-processes}
 ```
 
+### Other objects
 
-
-
-
-
-
-### OtherObjects
-
-This process is an aggregate for all small commercial objects produced from wood. 
 
 ```{system:process} OtherProductsManufacturing
 ---
@@ -808,10 +754,10 @@ become_parent: true
 ---
 label: Oth. objects manufacturing
 consumes: |
-      SoftwoodSawnwood                    = 1   kg
+      SoftwoodSawnwood                        = 1   kg
 produces: |
-      OtherObjects                        = 0.8   kg
-      PreConsumerWasteProducts            = 0.2   kg
+      OtherObjects                            = 0.8 kg
+      PreConsumerWasteProducts                = 0.2 kg
 
 ---
 ```
@@ -820,7 +766,7 @@ produces: |
 ---
 label: Wood wool and flour  manufacturing
 consumes: |
-      SoftwoodRoundwood                    = 1   kg
+      SoftwoodRoundwood                       = 1   kg
 produces: |
       WoodWoolAndFlour                        = 1   kg
 
@@ -830,22 +776,13 @@ produces: |
 ```{end-sub-processes}
 ```
 
-
 ```{end-sub-processes}
 ```
 
+## The construction industry
 
+### Wood fibres to construction
 
-## The construction and joinery industries
-
-
-
-`
-
-
-## Repair Maintenance and Improvement 
-
-Repair maintenance and improvement works are the routine works carried-out to a property to preserve its good condition and prevent deterioration. The 70% yield of wood-based repair, maintenance and improvement works was estimated using data from 2002 on the quantity of wood products imported and produced locally for the construction industry, the share of these wood products embodied into construction projects and the quantity of wood products leaving for recycling, re-use or final disposal {cite}`TradaConstruction`. 
 
 ```{system:process} WoodFibresProductionForRMI
 :label: Wood fibres production for RMI
@@ -853,16 +790,13 @@ Repair maintenance and improvement works are the routine works carried-out to a 
 :produces: PreConsumerWasteProducts ParticleboardToRMIAndOther  PlywoodToRMIAndOther  FibreboardToRMIAndOther
 :become_parent: true
 ```
-
-
-
 ```{system:process} OtherEngineeredWoodProductsToConstruction
 ---
 label:  Other engineered wood products to construction
 consumes: |
-      OtherEngineeredWoodProducts                   = 1    kg   
+      OtherEngineeredWoodProducts                 = 1   kg   
 produces: |
-      OtherEngineeredWoodProductsToCst                = 1 kg       
+      OtherEngineeredWoodProductsToCst            = 1   kg       
 ---
 ```
 
@@ -873,7 +807,7 @@ consumes: |
       Particleboard                               = 1    kg   
 produces: |
       ParticleboardToRMIAndOther                  = 0.9  kg       
-      PreConsumerWasteProducts                = 0.1  kg
+      PreConsumerWasteProducts                    = 0.1  kg
 ---
 ```
 
@@ -881,23 +815,21 @@ produces: |
 ---
 label: Plywood to RMI
 consumes: | 
-      Plywood                                      = 1    kg   
+      Plywood                                     = 1    kg   
 produces: |
       PlywoodToRMIAndOther                        = 0.9  kg       
-      PreConsumerWasteProducts                = 0.1  kg
+      PreConsumerWasteProducts                    = 0.1  kg
 ---
 ```
-
-
 
 ```{system:process} FibreboardToRepairMaintenanceImprovement
 ---
 label: Fibreboard to RMI
 consumes: |
-      Fibreboard                                   = 1    kg   
+      Fibreboard                                   = 1  kg   
 produces: |
       FibreboardToRMIAndOther                      = 1  kg       
-      PreConsumerWasteProducts                = 0  kg
+      PreConsumerWasteProducts                     = 0  kg
 ---
 ```
 
@@ -909,13 +841,13 @@ produces: |
 ---
 label:  Sawnwood to construction
 consumes: |
-      SoftwoodSawnwood                             = 1    kg   
+      SoftwoodSawnwood                             = 1  kg   
 produces: |
-      SawnProductsToCst                        = 1 kg       
+      SawnProductsToCst                            = 1  kg       
 ---
 ```
 
-## Sawn construction products manufacturing
+### Sawn construction products manufacturing
 
 
 ```{system:process} SawnConstructionProductsManufacturing
@@ -927,35 +859,27 @@ produces: |
 
 
 
-
-### Formwork-Scaffolding
-
 ```{system:process} FormworkScaffoldingManufacturing
 ---
 label: FormworkScaffolding manufacturing
 consumes: | 
-      SoftwoodSawnwood                    = 1   kg
+      SoftwoodSawnwood                           = 1    kg
 produces: | 
-      FormworkScaffolding                 = 1     kg
+      FormworkScaffolding                        = 1    kg
   
 --- 
 ```
-
-
 
 ```{system:process} RailwaySleepersManufacturing
 ---
 label: Railway sleepers manufacturing
 consumes: |
-      HardwoodSawnwood                    = 1    kg
+      HardwoodSawnwood                           = 1    kg
 produces: |
-      RailwaySleepers                     = 1    kg
+      RailwaySleepers                            = 1    kg
 
 ---
 ```
-
-
-
 
 ```{system:process} SawnwoodToRepairMaintenanceImprovement
 ---
@@ -963,14 +887,14 @@ label:  Sawnwood to RMI
 consumes: |
       SoftwoodSawnwood                           = 1    kg   
 produces: |
-      SawnwoodToRMIAndOther                       = 0.9 kg 
-      PreConsumerWasteProducts                = 0.1  kg      
+      SawnwoodToRMIAndOther                      = 0.9  kg 
+      PreConsumerWasteProducts                   = 0.1  kg      
 ---
 ```
 
 ### Building elements manufacturing
 
-These processes describe the construction of WoodRoofsForNewStructures , floor and frame WoodStructures for new residential houses. They include structural elements (post and beams, noggings) and cellular wood panels used for floor boards and sheathing. WoodFramesForNewStructures are modelled as an open panel system consisting of horizontal softwood beams and softwood structural noggins weighting 14.3 kg per square meter of frame and of a OSB/plywood sheathing weighting 13.3 kg per sqaure meter of frame {cite}`WoodForGoodOpenPanel`. WoodRoofsForNewStructures s are modelled with timber trusses weighting 19 kg per meter square of WoodRoofsForNewStructures  {cite}`WoodRoofsForNewStructures AllanCormackJoiners`. The floor structure is modelled with beams weighting 13.2 kg per meter sqaure of floor (47x175 mm every 400mm) and of 10 kg per meter square particleboard or plywood foor boards {cite}`DrewniokMichałP.2023Mtec`.  
+Process recipes for the production of roofs, frames and floors are defined as volumes of sawnwood consumed per component area. Frames are modelled as a closed panel system consisting of horizontal softwood beams and softwood structural noggins weighting 14.6 kg per square meter of frame {cite}`WoodForGoodOpenPanel`. Roofs are modelled as timber trusses weighting 19 kg per roof area {cite}`RoofAllanCormackJoiners`. The floor structure is modelled with beams weighting 13.2 kg per floor area (47x175 mm every 400mm) {cite}`DrewniokMichałP.2023Mtec`. Data on the share of typologies which have their component constructed of wood was taken from {cite}`DrewniokMichałP.2023Mtec`.
 
 
 ```{system:process} BuildingElementsManufacturing
@@ -986,60 +910,52 @@ become_parent: true
 ---
 label: WoodFramesForNewStructures manufacturing
 consumes: |
-      SoftwoodSawnwood                    = 29  kg
+      SoftwoodSawnwood                    = 14.6  kg
 produces: |
       WoodFramesForNewStructures          = 1     m2
-      PreConsumerWasteProducts        = 2.9   kg
+      PreConsumerWasteProducts            = 1.46  kg
 ---.
 ```
-
 
 ```{system:process} WoodRoofsForNewStructuresManufacturing
 ---
 label: WoodRoofsForNewStructures manufacturing
 consumes: |
-      SoftwoodSawnwood                    = 38  kg
+      SoftwoodSawnwood                   = 19    kg
 produces: |
       WoodRoofsForNewStructures          = 1     m2
-      PreConsumerWasteProducts        = 3.8   kg
+      PreConsumerWasteProducts           = 1.9   kg
 ---.
 ```
-
-
  
 ```{system:process} WoodFloorFramingForNewStructuresManufacturing
 ---
 label: Upper floors manufacturing
 consumes: |
-      SoftwoodSawnwood                   = 42  kg
+      SoftwoodSawnwood                   = 13.2 kg
 produces: |
-      WoodFloorFramingForNewStructures    = 1    m2
-      PreConsumerWasteProducts        = 4.2   kg
+      WoodFloorFramingForNewStructures   = 1    m2
+      PreConsumerWasteProducts           = 1.32 kg
 --- 
 ```
- 
 
 
-
-### Residential houses
+### Wood in new residential houses 
 
 The use of wood-based products in residential houses by typology is based on the following equation:
 
-Softwood sawnwood <sub>k=1</sub> = Σ<sub>j</sub> ρ<sub>jk</sub> Σ<sub>i</sub> β<sub>ij</sub> * γ<sub>ij</sub> * D * α<sub>i</sub> * A<sub>i</sub>
+V = Σ<sub>i,j</sub> D t<sub>i</sub> A<sub>i</sub> γ<sub>j</sub> ρ<sub>j</sub> β<sub>ij</sub> 
 
 *Where*:
-- *D* is the number of new builds in 2019. It is estimated that 210 690 new houses were built in 2019. This value is used in this study. 
-- *α* is the share of typologies among the total number of new builds (ex: 17% of the total new builds are end-terraces)
-- *A* is the avearge floor area by typology
-- *ρ* is the mass of the sawnwood or wood-based panel per square meter of the component (ex: 14.6 kg of timber per wall area for WoodFramesForNewStructures)
-- *γ* is the area of each component per floor area. 
-- *β* is the share of houses which have their WoodRoofsForNewStructures , floor or frame constructed out of wood-based products (ex: 20% of end-terraces have a timber frame)
+- *V* is the volume of sawnwood in the structure of residential new-builds
+- *D* is the number of new builds in 2019
+- *t<sub>i</sub>* is the share of typology i among the total number of new builds
+- *A<sub>i</sub>* is the average floor area by typology i
+- *γ<sub>j</sub>* is the volume of sawnwood per area of component j (frame, roof or floor)
+- *ρ<sub>j</sub>* is the area of each component j per floor area
+- *β<sub>ij</sub>* is the share of typology i which have their component j constructed of wood
 
-- j designates the component type
-- k designates the studies materials (ie. softwood sawnwood)
-- i designated the house type
-
-Data on the share of typologies in the total number of new-builds constructed in 2019 in the UK can be found in {cite}`EnglishHousingSurvey`. Information on the share of newly-built houses which have their WoodRoofsForNewStructures , floor or frame constructed out of wood-based products is taken from {cite}`DrewniokMichałP.2023Mtec`. 
+Data on the share of typologies in the total number of new-builds constructed in 2019 in the UK can be found in {cite}`EnglishHousingSurvey`. Information on the share of newly-built houses which have their roof , floor or frame constructed out of wood-based products is taken from {cite}`DrewniokMichałP.2023Mtec`. 
 
 
 ```{system:process} HousesConstruction
@@ -1054,19 +970,19 @@ become_parent: true
 ---
 label: End-terraced houses
 defs: |
-      WoodFramesForNewStructures_to_endterraced_ratio      = 0.2 
+      WoodFramesForNewStructures_to_endterraced_ratio       = 0.2 
       WoodFloorFramingForNewStructures_to_endterraced_ratio = 0.6 
       WoodRoofsForNewStructures_to_endterraced_ratio        = 0.6 
 
-      wall_to_floor_ratio        = 1.4
-      upperfloor_to_floor_ratio  = 0.6
-      roof_to_floor_ratio        = 0.6
+      wall_to_floor_ratio                                   = 1.4
+      upperfloor_to_floor_ratio                             = 0.6
+      roof_to_floor_ratio                                   = 0.6
 consumes: |
       {object: WoodFramesForNewStructures, amount: 1.4 * WoodFramesForNewStructures_to_endterraced_ratio, unit: m2}
       {object: WoodFloorFramingForNewStructures, amount: 0.6 * WoodFloorFramingForNewStructures_to_endterraced_ratio, unit: m2}
       {object: WoodRoofsForNewStructures , amount: 0.6* WoodRoofsForNewStructures_to_endterraced_ratio, unit: m2 }
 produces: |
-      EndTerracedHouses                 = 1 m2
+      EndTerracedHouses                                     = 1 m2
 ---
 ```
 
@@ -1074,19 +990,19 @@ produces: |
 ---
 label: Mid Terraced Houses Construction
 defs: |
-      WoodFramesForNewStructures_to_midterraced_ratio           = 0.2
-      WoodFloorFramingForNewStructures_to_midterraced_ratio      = 0.6
-      WoodRoofsForNewStructures_to_midterraced_ratio             = 0.6
+      WoodFramesForNewStructures_to_midterraced_ratio       = 0.2
+      WoodFloorFramingForNewStructures_to_midterraced_ratio = 0.6
+      WoodRoofsForNewStructures_to_midterraced_ratio        = 0.6
 
-      wall_to_floor_ratio        = 1.4
-      upperfloor_to_floor_ratio  = 0.6
-      WoodRoofsForNewStructures_to_floor_ratio   = 0.6
+      wall_to_floor_ratio                                   = 1.4
+      upperfloor_to_floor_ratio                             = 0.6
+      WoodRoofsForNewStructures_to_floor_ratio              = 0.6
 consumes: |
       {object: WoodFramesForNewStructures, amount: 1.4 * WoodFramesForNewStructures_to_midterraced_ratio, unit: m2}
       {object: WoodFloorFramingForNewStructures, amount: 0.6 * WoodFloorFramingForNewStructures_to_midterraced_ratio, unit: m2}
       {object: WoodRoofsForNewStructures , amount: 0.6 * WoodRoofsForNewStructures_to_midterraced_ratio, unit: m2 }
 produces: |
-      MidTerracedHouses                    = 1 m2
+      MidTerracedHouses                                     = 1 m2
 ---
 ``` 
 
@@ -1094,19 +1010,19 @@ produces: |
 ---
 label: Semi Detached Houses Construction
 defs: |
-      WoodFramesForNewStructures_to_semidetached_ratio      = 0.2
+      WoodFramesForNewStructures_to_semidetached_ratio       = 0.2
       WoodFloorFramingForNewStructures_to_semidetached_ratio = 0.6
       WoodRoofsForNewStructures_to_semidetached_ratio        = 0.6
 
-      wall_to_floor_ratio        = 1.4
-      upperfloor_to_floor_ratio  = 0.6
-      WoodRoofsForNewStructures_to_floor_ratio        = 0.6
+      wall_to_floor_ratio                                    = 1.4
+      upperfloor_to_floor_ratio                              = 0.6
+      WoodRoofsForNewStructures_to_floor_ratio               = 0.6
 consumes: |
       {object: WoodFramesForNewStructures, amount: 1.4 * WoodFramesForNewStructures_to_semidetached_ratio, unit: m2}
       {object: WoodFloorFramingForNewStructures, amount: 0.6 * WoodFloorFramingForNewStructures_to_semidetached_ratio, unit: m2}
       {object: WoodRoofsForNewStructures , amount: 0.6 * WoodRoofsForNewStructures_to_semidetached_ratio, unit: m2 }
 produces: |
-      SemiDetachedHouses                 = 1 m2
+      SemiDetachedHouses                                     = 1 m2
 ---
 ```
 
@@ -1114,19 +1030,19 @@ produces: |
 ---
 label: Detached Houses Construction
 defs: |
-      WoodFramesForNewStructures_to_detached_ratio      = 0.2
-      WoodFloorFramingForNewStructures_to_detached_ratio = 0.6
-      WoodRoofsForNewStructures_to_detached_ratio        = 0.6
+      WoodFramesForNewStructures_to_detached_ratio           = 0.2
+      WoodFloorFramingForNewStructures_to_detached_ratio     = 0.6
+      WoodRoofsForNewStructures_to_detached_ratio            = 0.6
 
-      wall_to_floor_ratio        = 1.4
-      upperfloor_to_floor_ratio  = 0.6
-      WoodRoofsForNewStructures_to_floor_ratio        = 0.6
+      wall_to_floor_ratio                                    = 1.4
+      upperfloor_to_floor_ratio                              = 0.6
+      WoodRoofsForNewStructures_to_floor_ratio               = 0.6
 consumes: |
       {object: WoodFramesForNewStructures, amount: 1.4 * WoodFramesForNewStructures_to_detached_ratio, unit: m2}
       {object: WoodFloorFramingForNewStructures, amount: 0.6 * WoodFloorFramingForNewStructures_to_detached_ratio, unit: m2}      
       {object: WoodRoofsForNewStructures , amount: 0.6 * WoodRoofsForNewStructures_to_detached_ratio, unit: m2 }
 produces: |
-      DetachedHouses                      = 1 m2
+      DetachedHouses                                         = 1 m2
 ---
 ```
 
@@ -1134,19 +1050,19 @@ produces: |
 ---
 label: Bungalows Construction 
 defs: |
-      WoodFramesForNewStructures_to_bungalows_ratio      = 0.2
-      WoodFloorFramingForNewStructures_to_bungalows_ratio = 0.6
-      WoodRoofsForNewStructures_to_bungalows_ratio        = 0.6
+      WoodFramesForNewStructures_to_bungalows_ratio          = 0.2
+      WoodFloorFramingForNewStructures_to_bungalows_ratio    = 0.6
+      WoodRoofsForNewStructures_to_bungalows_ratio           = 0.6
 
-      wall_to_floor_ratio        = 1.4
-      upperfloor_to_floor_ratio  = 0.6
-      WoodRoofsForNewStructures_to_floor_ratio        = 0.6
+      wall_to_floor_ratio                                    = 1.4
+      upperfloor_to_floor_ratio                              = 0.6
+      WoodRoofsForNewStructures_to_floor_ratio               = 0.6
 consumes: |
       {object: WoodFramesForNewStructures, amount: 1.4 * WoodFramesForNewStructures_to_bungalows_ratio, unit: m2}
       {object: WoodFloorFramingForNewStructures, amount: 0.6 * WoodFloorFramingForNewStructures_to_bungalows_ratio, unit: m2}
       {object: WoodRoofsForNewStructures , amount: 0.6 * WoodRoofsForNewStructures_to_bungalows_ratio, unit: m2 }
 produces: |
-      Bungalows                            = 1 m2
+      Bungalows                                              = 1 m2
 ---
 ```
  
@@ -1154,19 +1070,19 @@ produces: |
 ---
 label: Converted Flats Construction 
 defs: |
-      WoodFramesForNewStructures_to_convertedflats_ratio      = 0
+      WoodFramesForNewStructures_to_convertedflats_ratio       = 0
       WoodFloorFramingForNewStructures_to_convertedflats_ratio = 0
       WoodRoofsForNewStructures_to_convertedflats_ratio        = 0
 
-      wall_to_floor_ratio        = 1.4
-      upperfloor_to_floor_ratio  = 0.5
-      WoodRoofsForNewStructures_to_floor_ratio        = 0.5
+      wall_to_floor_ratio                                      = 1.4
+      upperfloor_to_floor_ratio                                = 0.5
+      WoodRoofsForNewStructures_to_floor_ratio                 = 0.5
 consumes: |
       {object: WoodFramesForNewStructures, amount: 0 * WoodFramesForNewStructures_to_convertedflats_ratio, unit: m2}
       {object: WoodFloorFramingForNewStructures, amount: 0 * WoodFloorFramingForNewStructures_to_convertedflats_ratio, unit: m2}
       {object: WoodRoofsForNewStructures , amount: 0 * WoodRoofsForNewStructures_to_convertedflats_ratio, unit: m2}
 produces: | 
-      ConvertedFlats                         = 1 m2
+      ConvertedFlats                                           = 1 m2
 ---
 ``` 
 
@@ -1174,27 +1090,25 @@ produces: |
 ---
 label: Flat low rise Construction 
 defs: |
-      WoodFramesForNewStructures_to_flatlowrise_ratio      = 0
-      WoodFloorFramingForNewStructures_to_flatlowrise_ratio = 0.2
-      WoodRoofsForNewStructures_to_flatlowrise_ratio        = 0.2
+      WoodFramesForNewStructures_to_flatlowrise_ratio          = 0
+      WoodFloorFramingForNewStructures_to_flatlowrise_ratio    = 0.2
+      WoodRoofsForNewStructures_to_flatlowrise_ratio           = 0.2
 
-      wall_to_floor_ratio        = 1.4
-      upperfloor_to_floor_ratio  = 0.6
-      WoodRoofsForNewStructures_to_floor_ratio        = 0.6
+      wall_to_floor_ratio                                      = 1.4
+      upperfloor_to_floor_ratio                                = 0.6
+      WoodRoofsForNewStructures_to_floor_ratio                 = 0.6
 consumes: | 
       {object: WoodFramesForNewStructures, amount: 0 * WoodFramesForNewStructures_to_flatlowrise_ratio, unit: m2}
       {object: WoodFloorFramingForNewStructures, amount: 0.6* WoodFloorFramingForNewStructures_to_flatlowrise_ratio, unit: m2}
       {object: WoodRoofsForNewStructures , amount: 0.6 * WoodRoofsForNewStructures_to_flatlowrise_ratio, unit: m2}
 produces: |
-      FlatLowRise                           = 1 m2
+      FlatLowRise                                              = 1 m2
 ---
 ```
  
 
 ```{end-sub-processes}
 ```
-
-
 
 
 ```{system:process} NewBuildsConstruction
@@ -1209,15 +1123,15 @@ become_parent: true
 ---
 label: Wood Structures To NewBuilds
 consumes: |
-      EndTerracedHouses     = 0.09  m2
-      MidTerracedHouses     = 0.15  m2
+      EndTerracedHouses     = 0.09 m2
+      MidTerracedHouses     = 0.15 m2
       SemiDetachedHouses    = 0.27 m2
-      DetachedHouses        = 0.2 m2
+      DetachedHouses        = 0.2  m2
       Bungalows             = 0.02 m2
       ConvertedFlats        = 0.02 m2
       FlatLowRise           = 0.23 m2
 produces: |
-      NewBuilds             = 1 m2
+      NewBuilds             = 1    m2
 ---
 ```
 
@@ -1231,13 +1145,9 @@ produces: |
 ```
  
 
+### Joinery manufacturing
 
-
-
-
-## Joinery manufacturing
-
-Joinery manufavturing is comprised of doors, windows, their WoodFramesForNewStructures and thresholds manufacturing processes and flooring. Each raw material input for door manufacturing was calculated as a share of the total wood fibre inputs in the Ecoinvent life-cycle production activity "door production, inner, wood, RER" {cite}`Ecoinvent`. The British Woodworking Federation estimates a low yield in joinery manufacturing of around 50%. This low yield can be explained by procurement practices and availability of raw materials: joinery manufacturers procur larger than necessary sections of timber which they then have to cut to size {cite}`JoineryWasteYield`.
+Joinery manufavturing is comprised of doors, windows, their WoodFramesForNewStructures and thresholds manufacturing processes and flooring. Each raw material input for door manufacturing was calculated as a share of the total wood fibre inputs in the Ecoinvent life-cycle production activity "door production, inner, wood, RER" {cite}`Ecoinvent`. The British Woodworking Federation estimates a low yield in joinery manufacturing of around 50%. This low yield can be explained by procurement practices and availability of raw materials: joinery manufacturers procur larger than necessary sections of timber which they then have to cut to size {cite}`JoineryYield`.
 
 ```{system:process} JoineryManufacturing
 :label: Joinery manufacturing
@@ -1251,7 +1161,7 @@ Joinery manufavturing is comprised of doors, windows, their WoodFramesForNewStru
 ---
 label: Windows manufacturing
 consumes: |
-   SoftwoodSawnwood                        = 1     kg
+   SoftwoodSawnwood                        = 1    kg
 produces: |
       Windows                             = 0.5   kg
       PreConsumerWasteProducts            = 0.5   kg
@@ -1268,8 +1178,8 @@ consumes: |
       VeneerSheets                        = 0.03   kg 
 
 produces: |
-      Doors                               = 0.5 kg
-      PreConsumerWasteProducts               = 0.5 kg
+      Doors                               = 0.5    kg
+      PreConsumerWasteProducts            = 0.5    kg
 ---
 ``` 
 
@@ -1279,8 +1189,8 @@ label: Flooring manufacturing
 consumes: |
       SoftwoodSawnwood                   = 1   kg
 produces: |
-      Flooring                           = 0.5   kg
-      PreConsumerWasteProducts              = 0.5   kg
+      Flooring                           = 0.5 kg
+      PreConsumerWasteProducts           = 0.5 kg
 ---
 ```
 
@@ -1294,10 +1204,7 @@ produces: |
 ```{end-sub-processes}
 ```
 
-
-
-
-
+## Consumption
 
 ```{system:process} CommercialProductsConsumption
 ---
@@ -1437,7 +1344,6 @@ produces: |
 ---
 ```  
 
-
  
 ```{system:process} RefurbishedPalletsConsumption
 ---
@@ -1566,10 +1472,6 @@ produces: |
 ```
 
 
-
-
-
-
 ```{system:process} WoodFramesForNewStructuresConsumption
 ---
 label:  WoodFramesForNewStructures consumption
@@ -1597,20 +1499,6 @@ consumes: |
       WoodFloorFramingForNewStructures  = 1 m2
 produces: |
       
----
-```
-
-
-
-
-```{system:process} InUseProductsLeave
----
-label:  In use products leave
-consumes: |
-      InUseProducts  = 1 kg
-produces: |
-      RecycledWoodFibre = 0.18 kg
-
 ---
 ```
 
@@ -1650,7 +1538,6 @@ produces: |
 ```
 
 
-
 ```{system:process} PreConsumerWasteProductsConsumption
 ---
 label:  Pre consumer waste products consumption
@@ -1660,8 +1547,6 @@ produces: |
       
 ---
 ```
-
-
 
  ```{system:process} PaperProductsConsumption
  ---
@@ -1713,34 +1598,11 @@ produces: |
 ```
 
 
-```{system:process} InUseLeave
----
-label:  In use leave
-consumes: |
-      InUse  = 1 kg
-produces: |
-      RecycledPaper = 0.65 kg
-
----
-```
-
 ```{end-sub-processes}
 ```
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ```{end-sub-processes}
 ```
+```{bibliography}
+

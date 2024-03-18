@@ -23,24 +23,23 @@ SYS = Namespace("http://ukfires.org/analyses/UK-wood/system/")
 These definitions are taken from FAO: 
 - <https://www.fao.org/forestry/34572-0902b3c041384fd87f2451da2bb9237.pdf?msclkid=fea74627d04711ecbd9cfa4c9491bef5> 
 - <https://www.fao.org/forestry/statistics/80572/en/>
-:And from the Forest research statiatics: 
-<https://cdn.forestresearch.gov.uk/2022/02/complete_fs2021_jvyjbwa.pdf>
+
+And from the Forest research statistics: 
+- <https://cdn.forestresearch.gov.uk/2022/02/complete_fs2021_jvyjbwa.pdf>
+
+The following list enumerates exhaustively all the final wood products made out of roundwood or sawnwood. 
+**Source**: Ratajczak, E., A. Szostak, G. Bidzińska & M. Herbeć (2017) Potential resources of post-consumer wood waste in Poland. Journal of material cycles and waste management, 20, 402-413.
 
 
-## Primary wood processing 
+![list wood products](images/wood_products_1.png) 
+![list wood products](images/wood_products_2.png) 
+![list wood products](images/wood_products_3.png)
+![list wood products](images/wood_products_4.png)  
 
-```{code-cell} ipython3
-show_skeleton(SYS.Wood, ports_at_ends=True)
-```
 
+## Roundwood
 
-```{system:object} ForestResidues
-
-```
-
-### Roundwood
-
-Deliveries data is used for roundwood. Deliveries relate to the quantity of UK-grown roundwood that is 
+Deliveries data is used for roundwood. Deliveries relate to the quantity of UK-grown and imported roundwood that is 
 delivered to processors (mills) or for other uses (such as woodfuel and exports). 
 They are expressed in green tonnes (weight when freshly felled). 
 Deliveries should not be confused with removals, which are the quantities of 
@@ -77,8 +76,6 @@ Hardwood refers to wood coming from non-coniferous trees.
 
 ### Sawnwood 
 
-
-
 Defition from FAO: 
 :Wood that has been produced from both domestic and imported roundwood, either 
 by sawing lengthways or by a profile-chipping process and that exceeds 6 mm in 
@@ -106,11 +103,6 @@ produced by resawing previously sawn pieces.
 ```{end-sub-objects}
 ```
 
-### Recycled fibres to pallets
-
-```{system:object} RecycledWoodFibreToPallets
-:label: Recycled fibres to pallets
-```
 
 ### WBP products
 
@@ -119,6 +111,7 @@ The definitions for these WBP products come from FAO.
 
 ```{system:object} WBPFibres
 :label: WBP Fibres
+Fibre mixes used for making wood-based panels. 
 ```
 
 ```{system:object} WBPproducts
@@ -167,13 +160,10 @@ be made from a veneer sheet or another material.
 - **It excludes** glulam.
 ```
 
-```{end-sub-objects}
-```
-
 
 ```{system:object} OtherEngineeredWoodProducts
 :label: Other engineered wood products
-
+Includes other engineered wood panels such as glue-laminated and cross-laminated panels.
 ```
 
 ```{end-sub-objects}
@@ -183,27 +173,15 @@ be made from a veneer sheet or another material.
 ```
 ### Commercial products
 
-```{system:object} Products
-:label: Products
-:become_parent: true
-```
 
 ## Products manufacturing
 
 ```{system:object} CommercialProducts
 :label: Commercial products
 :become_parent: true
-
-
 This category includes commercial products manufactured from wood. This was aggregated for this MFA. 
-- **It excludes** the energy industry, the paper industry and timber products going into the construction and joinery industry.  
-
+- **It excludes** the energy industry, the paper industry and wood products going into the construction and joinery industries.  
 ```
-
-```{code-cell} ipython3
-show_skeleton(SYS.ProductsManufacturing, ports_at_ends=True)
-```
-
 
 ### Fencing 
 
@@ -214,38 +192,18 @@ show_skeleton(SYS.ProductsManufacturing, ports_at_ends=True)
 This category refers to round fencing and fencing made out of sawnwood. 
 Data for round fencing was taken from ForestResearch who obtained the data from the Survey of Round Fencing Manufacturers. 
 Data for fencing from sawnwood was obtained from Chapter 2: Timber - Table 2.17a  as a percent of sawnwood from large mills going into construction, fencing, packaging pallets and other uses. 
-
-
-```
-```{system:object}  RoundwoodToFencingAndOutdoor
-:label:  Roundwood to fencing and outdoor
 ```
 
-```{system:object}  SawnwoodToFencingAndOutdoor
-:label:  Sawnwood to fencing and outdoor
-```
-
-```{system:object}  Decking
-:label:  Decking
-```
 
 ```{system:object}  FencingPosts
 :label:  Fencing posts
 ```
 
-```{system:object}  WoodenOutbuildings 
-:label:  Wooden outbuildings 
-```
 
 ```{system:object}  FencingRailsAndBoards
 :label:  Fencing rails and boards
 ```
 
-
-
-```{system:object} RailwaySleepers
-:label: Railway sleepers
-```
 
 ```{end-sub-objects}
 ```
@@ -261,29 +219,22 @@ Data for fencing from sawnwood was obtained from Chapter 2: Timber - Table 2.17a
 ```{system:object} Pallets
 :label: Pallets
 
-This category is compromised of the following Prodcom commodity codes: 
-- New flat pallets and pallet collars of wood (4415202)
-- Box pallets and load boards of wood EXCLUDING: - flat pallets (4415209)
-
-Refurbished flat pallets and pallet collars of wood (16249999) are not included. 
-
-Data is taken from the annual prodcom table for 2020.
+This category is compromised of: 
+- New flat pallets and pallet collars of wood 
+- Box pallets and load boards of wood EXCLUDING: - flat pallets 
 ```
 
 ```{system:object} OtherWoodContainers
 :label: Other containers
 
-This categpry is compromised of the following Prodcom commodity codes: 
-- Cases, boxes, crates, drums and similar packings of wood EXCLUDING: - cable drums (4415101)
-- Cable-drums of wood (4415109)
-
-Data is taken from the annual prodcom table for 2020.
-
+This categpry is compromised of: 
+- Cases, boxes, crates, drums and similar packings of wood EXCLUDING: - cable drums 
+- Cable-drums of wood 
 ```
 
 ```{system:object} RefurbishedPallets
 :label: Refurbished pallets
-
+Wood that has been used to refurbish pallets in use.
 ```
 
 ```{end-sub-objects}
@@ -295,8 +246,8 @@ Data is taken from the annual prodcom table for 2020.
 
 ```{system:object} Furniture
 :become_parent: true
-Furniture includes the following prodcom commodity codes from: 
-<file:///C:/Users/rla44/OneDrive%20-%20University%20of%20Bath/MFA%20information/TRADA/wood-used-in-furniture-the-uk-mass-balance-and-efficiency-of-use.pdf>
+Furniture designates the manufacturing of the wooden components of seats, office, shop, dining room, kitchen,
+bedroom furniture and furniture for non-domestic uses.
 
 ```
 
@@ -326,8 +277,6 @@ Furniture includes the following prodcom commodity codes from:
 
 
 
-
-
 ### OtherObjects
 
 ```{system:object} OtherProducts
@@ -337,6 +286,7 @@ Furniture includes the following prodcom commodity codes from:
 
 ```{system:object} OtherObjects
 :label: Other objects
+This process is an aggregate for all small commercial objects produced from wood excluding wood wool and flour. 
 ```
 
 ```{system:object} WoodWoolAndFlour
@@ -348,22 +298,23 @@ Furniture includes the following prodcom commodity codes from:
 ```{end-sub-objects}
 ```
 
-
-
-
-## The building industry 
-
-### Building elements for the structure of new builds 
-
-```{system:object} ConstructionProducts
-:label: Construction products
-:become_parent: true
+```{end-sub-objects}
 ```
 
 
-```{system:object} NewBuildsStructure
-:label: New structures
+
+## Construction industry 
+ 
+```{system:object} Construction
+:label: Construction
 :become_parent: true
+```
+### Building elements for the structure of residential new builds 
+
+```{system:object} SawnProductsToCst
+:label: Sawn products to construction
+:become_parent: true
+Sawn construction products used in the construction of residential new-builds.
 ```
 ```{system:object} WoodFramesForNewStructures
 :label: Wood frames for new structures
@@ -383,315 +334,6 @@ Example of a typical construction with a wooden frame for upper floors and a con
 
 ```{end-sub-objects}
 ```
-
-### Others
-
-```{system:object} SawnProductsToCst
-:label: Sawn products to cst
-```
-
-```{system:object} SawnwoodToOther
-:become_parent: true
-:label: Sawnwood to other
-```
-
-```{system:object} SawnwoodToRMIAndOther
-:label: Sawnwood to rmi and other
-
-This includes domestic and non-domestic buildings old and new. 
-```
-
-
-```{system:object} FormworkScaffolding
-:label: Formwork Scaffolding
-
-This category includes all the sawnwood used during construction works for scaffolding or as formwork. 
-```
-
-```{end-sub-objects}
-```
-
-
-```{system:object} WBPProductsToCst
-:label: Wood-based panel products to cst
-```
-
-```{system:object} PlywoodToRMIAndOther
-:label: Plywood to construction
-```
-
-```{system:object} ParticleboardToRMIAndOther
-:label: Particleboard to construction
-```
-
-
-```{system:object} FibreboardToRMIAndOther
-:label: Fibreboard to construction
-```
-
-```{system:object} OtherEngineeredWoodProductsToCst
-:label: Other engineered wood products to cst
-```
-```{end-sub-objects}
-```
-
-### Joinery
-
-
-```{system:object} Joinery
-:become_parent: true
-:label: Joinery
-
-This category is compromised of the following Prodcom commodity codes: 
-- 441820 Doors, their frames and thresholds, of wood
-- 441810 - Windows, French-windows and their frames, of 
-
-Flooring compromised of the following Prodcom commodity codes: 
-- 440910 Softwood continuously shaped INCLUDING: - tongued, grooved, rebated, chamfered, V-jointed, beaded, moulded, rounded - strips and friezes for parquet flooring, not assembled
-- 44092910 + 44092991 + 44092999  Wood; continously shaped, tongued, grooved and the like INCLUDING: - strips and friezes for parquet flooring EXCLUDING: - assembled strips and friezes for parquet flooring - coniferous wood - bamboo
-- 441872 + 441879 - Assembled parquet panels of wood EXCLUDING: - those for mosaic floors
-- 441872 + 441879 - Assembled parquet panels of wood EXCLUDING: - those for mosaic floors
-```
-
-```{system:object} Windows
-:label: Windows 
-```
-
-```{system:object} Flooring
-:label: Flooring
-```
-
-```{system:object} Doors
-:label: Doors 
-```
-
-
-```{end-sub-objects}
-```
-
-
-```{end-sub-objects}
-```
-
-```{end-sub-objects}
-```
-
-
-
-
-
-
-
-
-## The paper industry
-
-Definitions for the paper industry directly come from FAO and ForestResearch.
-
-### Pulp
-
-```{system:object} PaperPulp
-:label: Paper Pulp
-:become_parent: true
-```
-
-
-```{system:object} Pulp
-:label: Pulp
-
-Fibrous material prepared from pulpwood, wood chips, particles or residues by 
-mechanical and/or chemical process for further manufacture into paper, paperboard, 
-fibreboard or other cellulose products. 
-It is an aggregate comprising mechanical wood pulp; semi-chemical wood pulp; chemical wood pulp; and dissolving wood pulp.
-It is reported in metric tonnes air-dry weight (i.e. with 10% moisture content). 
-
-```
-
-```{system:object} RecycledPulp
-:label: Recycled pulp
-
-Fibrous material prepared from pulpwood, wood chips, particles or residues by 
-mechanical and/or chemical process for further manufacture into paper, paperboard, 
-fibreboard or other cellulose products. 
-It is an aggregate comprising mechanical wood pulp; semi-chemical wood pulp; chemical wood pulp; and dissolving wood pulp.
-It is reported in metric tonnes air-dry weight (i.e. with 10% moisture content). 
-
-```
-
-```{end-sub-objects}
-```
-
-
-
-
-
-### Paper products
-
-```{system:object} PaperProducts
-:label: Paper products
-:become_parent: true
-```
-
-```{system:object} GraphicPapers
-:label: Graphic papers
-```
-
-```{system:object} SanitaryPapers
-:label: Sanitary papers
-```
-
-```{system:object} Packaging
-:label: Packaging
-```
-
-```{system:object} OtherPaperProducts
-:label: Other paper products
-```
-
-```{end-sub-objects}
-```
-
-
-
-
-
-## The energy industry
-
-Energy from any fuel that is derived from biomass.
-
-An estimated 776 thousand green tonnes (mainly softwood) of woodfuel were 
-supplied by sawmills in 2020 and a further 79 thousand green tonnes were supplied 
-by round fencing manufacturers (Table 2.31). Almost three quarters (72%) of the 
-total woodfuel supplied was sold to bioenergy. 
-
-Roundwood that will be used as fuel for purposes such as cooking, heating or power 
-production. 
-
-- **It includes** wood harvested from main stems, branches and other parts of 
-trees (where these are harvested for fuel) and wood that will be used for the 
-production of charcoal (e.g. in pit kilns and portable ovens), wood pellets and other 
-agglomerates. It also includes wood chips to be used for fuel that are made directly (i.e. in the forest) from roundwood. 
-- **It excludes** wood charcoal, pellets and other agglomerates. 
-
-```{system:object} FuelsForEnergy
-:label: Fuels for energy
-:become_parent: true
-```
-
-
-```{system:object} WoodPellets
-:label: Wood pellets
-```
-
-
-```{system:object} OtherEnergyFeedstocks
-:label: Other feedstocks
-```
-
-```{end-sub-objects}
-```
-
-
-
-```{system:object} WoodFibresForEnergy
-:label: Wood fibres for energy
-:become_parent: true
-```
-
-```{system:object} WoodPelletsWoodFibres
-:label: Wood pellets wood fibres
-```
-
-
-```{system:object} OtherEnergyFeedstocksWoodFibres
-:label: Other energy feedstocks wood fibres
-```
-
-```{system:object} WoodCharcoal
-:label: WoodCharcoal
-```
-
-```{end-sub-objects}
-```
-
-
-## Waste, recycling and by-products
-
-### By-products
-
-```{system:object} ByProducts
-:label: By-products
-
-This is an object made for this model that aggregates any by-products that are used as intermediate products elsewhere in the production chain.
-```
-
-## Waste, recycling and by-products
-
-
-```{system:object} RecycledPaper
-:label: Recycled paper
-```
-
-
-
-### Other materials
-
-```{system:object} OtherMaterials
-:label: Other materials
-
-This object includes binders and any other materials other then wood. 
-```
-
-
-```{system:object} IndustrialResidues
-:label: Industrial residues
-:become_parent: true
-```
-
-```{system:object} PreConsumerWasteProducts
-:label: Pre Consumer Waste Products
-```
-
-```{system:object} PreConsumerWasteConstruction
-:label: Pre Consumer Waste Construction
-```
-
-```{end-sub-objects}
-```
-
-```{system:object} RecycledWoodFibres
-:label: Recycled fibres
-:become_parent: true
-```
-
-```{system:object} RecycledWoodFibre
-:label: Recycled wood fibre
-```
-
-
-```{system:object} PostConsumerWood
-:label: PostConsumerWood
-```
-
-
-```{end-sub-objects}
-```
-
-
-```{system:object} InUse
-:label: In use
-```
-
-```{system:object} InUseProducts
-:label: In use products
-```
-
-
-### NewBuilds
-
-```{system:object} NewBuilds
-:label: NewBuilds
-```
-
 
 
 ### Houses types
@@ -729,6 +371,290 @@ This object includes binders and any other materials other then wood.
 :label: Flat low rise
 ```
 
+```{end-sub-objects}
+```
+
+### Other sawn products to construction
+
+```{system:object} OtherSawnProductsToCst
+:become_parent: true
+:label: Other sawn products to cst
+
+Other sawn construction products, which include sawn products used for infrastructure works such as railway sleepers
+and sawn products used in the construction of non-residential new-builds, refurbishments and repair
+and maintenance works. They also include wood formwork and scaffolding and the sawn parts of prefabricated
+outbuildings.
+```
+
+```{system:object} SawnwoodToRMIAndOther
+:label: Sawnwood to rmi and other
+
+This includes domestic and non-domestic buildings old and new. 
+```
+
+```{system:object} FormworkScaffolding
+:label: Formwork Scaffolding
+
+This category includes all the sawnwood used during construction works for scaffolding or as formwork. 
+```
+
+```{system:object} RailwaySleepers
+:label: Railway sleepers
+
+```
+
+```{end-sub-objects}
+```
+
+
+### Engineered products to construction
+
+```{system:object} EngineeredProductsToCst
+:become_parent: true
+:label: Engineered products to cst
+
+Other engineered construction products includes wood-based panel products, such as particleboard, fibre-
+board and plywood, and engineered products such as glue-laminated and cross-laminated panels shaped into con-
+struction products on-site or off-site.
+```
+
+
+
+```{system:object} PlywoodToRMIAndOther
+:label: Plywood to construction
+```
+
+```{system:object} ParticleboardToRMIAndOther
+:label: Particleboard to construction
+```
+
+
+```{system:object} FibreboardToRMIAndOther
+:label: Fibreboard to construction
+```
+
+```{system:object} OtherEngineeredWoodProductsToCst
+:label: Other engineered wood products to cst
+```
+```{end-sub-objects}
+```
+
+### Joinery
+
+
+```{system:object} Joinery
+:become_parent: true
+:label: Joinery
+
+Joinery, which is comprised of doors, windows, their frames and thresholds and
+wood used for flooring.
+
+```{system:object} Windows
+:label: Windows 
+```
+
+```{system:object} Flooring
+:label: Flooring
+```
+
+```{system:object} Doors
+:label: Doors 
+```
+
+
+```{end-sub-objects}
+```
+
+```{end-sub-objects}
+```
+
+
+
+
+## The paper industry
+
+Definitions for the paper industry directly come from FAO and ForestResearch.
+
+### Pulp
+
+```{system:object} PaperPulp
+:label: Paper Pulp
+:become_parent: true
+```
+
+```{system:object} Pulp
+:label: Pulp
+Fibrous material prepared from pulpwood, wood chips, particles or residues by 
+mechanical and/or chemical process for further manufacture into paper and paperboard.
+It is an aggregate comprising mechanical wood pulp; semi-chemical wood pulp; chemical wood pulp; and dissolving wood pulp.
+It is reported in metric tonnes air-dry weight (i.e. with 10% moisture content). 
+
+
+```
+
+```{system:object} RecycledPulp
+:label: Recycled pulp
+Pulp produced from recycled paper.
+```
+
+```{end-sub-objects}
+```
+
+
+
+### Paper products
+
+```{system:object} PaperProducts
+:label: Paper products
+:become_parent: true
+```
+
+```{system:object} GraphicPapers
+:label: Graphic papers
+```
+
+```{system:object} SanitaryPapers
+:label: Sanitary papers
+```
+
+```{system:object} Packaging
+:label: Packaging
+```
+
+```{system:object} OtherPaperProducts
+:label: Other paper products
+```
+
+```{end-sub-objects}
+```
+
+
+
+## The energy industry
+
+Energy is comprised of wood fibres used in their aggregated and non-aggregated form for electricity and heat
+generation.
+
+
+
+```{system:object} Energy
+:label: Energy
+:become_parent: true
+```
+
+
+```{system:object} WoodFibresForEnergy
+:label: Wood fibres for energy
+:become_parent: true
+```
+
+```{system:object} WoodPelletsWoodFibres
+:label: Wood pellets wood fibres
+```
+
+
+```{system:object} OtherEnergyFeedstocksWoodFibres
+:label: Other energy feedstocks wood fibres
+```
+
+```{system:object} WoodCharcoal
+:label: WoodCharcoal
+```
+
+```{end-sub-objects}
+```
+
+```{system:object} FuelsForEnergy
+:label: Fuels for energy
+:become_parent: true
+```
+
+
+```{system:object} WoodPellets
+:label: Wood pellets
+```
+
+
+```{system:object} OtherEnergyFeedstocks
+:label: Other feedstocks
+Other energy feedstocks include wood charcoal, briquettes, waste fibres, sawmills by-products, roundwood
+and forest residues.
+```
+
+```{end-sub-objects}
+```
+
+```{end-sub-objects}
+```
+
+
+## Waste, recycling and by-products
+
+### By-products (sawmills)
+
+```{system:object} ByProducts
+:label: By-products
+by-product of sawmills including bark, chips, shavings and sawdust
+```
+### Forest residues
+
+```{system:object} ForestResidues
+:label: Forest residues
+Forest residues refer to smaller diameters of wood such as branches removed from forests during harvesting.
+```
+
+### Fibres for recycling 
+
+```{system:object} RecycledWoodFibreToPallets
+:label: Recycled fibres to pallets
+```
+
+```{system:object} RecycledWoodFibres
+:label: Recycled fibres
+:become_parent: true
+```
+
+```{system:object} RecycledWoodFibre
+:label: Recycled wood fibre
+```
+
+```{system:object} PostConsumerWood
+:label: PostConsumerWood
+Wood recovered from post-consumer sources.
+```
+
+```{end-sub-objects}
+```
+
+### Paper for recycling 
+
+```{system:object} RecycledPaper
+:label: Recycled paper
+Paper for recycling recovered from post-consumer sources.
+```
+
+### Industrial residues
+
+```{system:object} IndustrialResidues
+:label: Industrial residues
+:become_parent: true
+```
+
+```{system:object} PreConsumerWasteProducts
+:label: Pre Consumer Waste Products
+Industrial residues generated during the manufacturing of commercial products.
+```
+
+```{system:object} PreConsumerWasteConstruction
+:label: Pre Consumer Waste Construction
+Industrial residues generated during the manufacturing of construction products.
+```
+
+
+```{end-sub-objects}
+```
+
+```{bibliography}
 
 
 
