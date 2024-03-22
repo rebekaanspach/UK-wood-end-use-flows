@@ -20,7 +20,7 @@ The model's structure (describing how the data fit together), known data observa
 1. **Model's structure (recipes)** and their uncertainty characterisation:
 
  - are stored in the ''*system-definitions\structure.md*'' file
- - are referenced in Table S3 of the supplementary information (SI) (containing references to secondary data)
+ - are referenced in Table S3 of the supporting information (SI) (containing references to secondary data)
  - are described in Section S2.2 of the SI and in the ''*system-definitions\structure.md*'' file
 
 2. **Data observations** and their uncertainty characterisation: 
