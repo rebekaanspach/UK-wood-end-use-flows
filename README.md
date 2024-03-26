@@ -19,7 +19,7 @@ The model's structure (describing how the data fit together), known data observa
 
 1. **Model's structure (recipes)** and their uncertainty characterisation:
 
- - are stored in the ''*system-definitions\structure.md*'' file
+ - are stored in the ''*system-definitions\structure.md*'' file with their uncertainty characterisation stored in the ''*data\uncertainty.py*'' file
  - are referenced in Table S3 of the supporting information (SI) (containing references to secondary data)
  - are described in Section S2.2 of the SI and in the ''*system-definitions\structure.md*'' file
 
@@ -31,7 +31,7 @@ The model's structure (describing how the data fit together), known data observa
 
 3. **Conversion factors** and their uncertainty characterisation:
 
- - are stored in ''*data\uncertainty.py*'' file 
+ - are stored in the ''*data\uncertainty.py*'' file
  - are referenced in Table S5-S7 of the SI
  - are described in Section S3 of the SI 
 
